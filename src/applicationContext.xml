@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd 
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd "
+	default-autowire="byName">
+
+
+	<context:property-placeholder location="classpath:jdbc.remove.properties" />
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url" value="${jdbc.url}"></property>
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+	</bean>
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="configLocation">
+			<value>classpath:hibernate.cfg.xml</value>
+		</property>
+
+	</bean>
+
+	<!-- 配置Hibernate事务管理 -->
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="batch*" propagation="REQUIRED" />
+			<tx:method name="*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut expression="execution(* njci.service.impl.*.*(..))"
+			id="serviceMethod" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethod" />
+	</aop:config>
+
+	<bean id="userInfoDao" class="njci.dao.impl.UserInfoDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+
+	</bean>
+
+	<bean id="roleInfoDao" class="njci.dao.impl.RoleInfoDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+
+	</bean>
+
+	<bean id="newsTypeDao" class="njci.dao.impl.NewsTypeDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="newsDao" class="njci.dao.impl.NewsDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="typeInfoDao" class="njci.dao.impl.TypeInfoDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="brandInfoDao" class="njci.dao.impl.BrandInfoDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="productInfoDao" class="njci.dao.impl.ProductInfoDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- service层 -->
+
+	<bean id="userInfoService" class="njci.service.impl.UserInfoServiceImpl">
+		<property name="userInfoDao" ref="userInfoDao"></property>
+	</bean>
+	<bean id="roleInfoService" class="njci.service.impl.RoleInfoServiceImpl">
+		<property name="roleInfoDao" ref="roleInfoDao"></property>
+	</bean>
+
+	<bean id="newsTypeService" class="njci.service.impl.NewsTypeServiceImpl">
+		<property name="newsTypeDao" ref="newsTypeDao"></property>
+	</bean>
+
+	<bean id="newsService" class="njci.service.impl.NewsServiceImpl">
+		<property name="newsDao" ref="newsDao"></property>
+	</bean>
+
+	<bean id="typeInfoService" class="njci.service.impl.TypeInfoServiceImpl">
+		<property name="typeInfoDao" ref="typeInfoDao"></property>
+	</bean>
+
+	<bean id="brandInfoService" class="njci.service.impl.BrandInfoServiceImpl">
+		<property name="brandInfoDao" ref="brandInfoDao"></property>
+	</bean>
+
+	<bean id="productInfoService" class="njci.service.impl.ProductInfoServiceImpl">
+		<property name="productInfoDao" ref="productInfoDao"></property>
+
+	</bean>
+
+
+
+	<!-- action层 -->
+	<bean id="userInfoAction" class="njci.action.UserInfoAction">
+		<property name="userInfoService" ref="userInfoService"></property>
+		<property name="roleInfoService" ref="roleInfoService"></property>
+	</bean>
+
+	<bean id="newsTypeAction" class="njci.action.NewsTypeAction">
+		<property name="newsTypeService" ref="newsTypeService"></property>
+	</bean>
+	<bean id="newsAction" class="njci.action.NewsAction">
+		<property name="newsService" ref="newsService"></property>
+		<property name="newsTypeService" ref="newsTypeService"></property>
+
+	</bean>
+
+	<bean id="typeInfoAction" class="njci.action.TypeInfoAction">
+		<property name="typeInfoService" ref="typeInfoService"></property>
+	</bean>
+
+	<bean id="brandInfoAction" class="njci.action.BrandInfoAction">
+		<property name="brandInfoService" ref="brandInfoService">
+		</property>
+		<property name="typeInfoService" ref="typeInfoService"></property>
+
+
+	</bean>
+
+	<bean id="productInfoAction" class="njci.action.ProductInfoAction">
+
+		<property name="productInfoService" ref="productInfoService"></property>
+		<property name="brandInfoService" ref="brandInfoService"></property>
+		<property name="userInfoService" ref="userInfoService"></property>
+
+	</bean>
+
+	<!-- 上传的action    不用注入 -->
+	<bean id="fileUploadAction" class="njci.action.FileUploadAction">
+
+	</bean>
+
+
+	<!--
+		<import resource="applicationContext-dao.xml" /> <import
+		resource="applicationContext-service.xml" /> <import
+		resource="applicationContext-action.xml" />
+	-->
+</beans>

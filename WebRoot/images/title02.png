@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>中国交通新闻网</title>
+<meta name="Keywords" content="交通" />
+<meta name="Description" content="中国交通报" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="qc:admins" content="27411626406272426375" />
+<link rel="icon" href="910.files/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="910.files/favicon.ico" type="image/x-icon"/>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/xxx/page22.css" />
+<link type="text/css" rel="stylesheet" href="css/alltop1.css" />
+<meta name="baidu-site-verification" content="EhIeLwNEze" />
+<style type="text/css">
+.dtbb{width:1000px;height:30px; background:#EFEFEF; margin-bottom:10px; clear:both;}
+.dtbb p { float:left; padding-left:10px; font:bold 14px "微软雅黑"; color:#AF1616; line-height:30px;}
+#marquee6 {width:919px;height:30px; float:left; overflow:hidden;}
+#marquee6 ul li {float:left; padding-right:50px; line-height:30px; list-style-type:square;}
+/*
+《《《《《《《《《《《右下角弹窗样式》》》》》》》》》》》》》》
+.shengming{ background:url(910.files/shengming.jpg) no-repeat; width:290px; height:230px; position:fixed; right:0; bottom:0; z-index:99999;}
+.shengming .sm_more{ margin-left:208px; margin-top:175px; display:block; color:#0068b7; text-decoration:underline;}
+.shengming .sm_close{ display:block; width:14px; height:14px; background:url(910.files/X_03.jpg) no-repeat; margin-left:264px; margin-top:11px;}
+*/
+.n_topnew .moreTT{width:21px; height:64px; padding-top:4px; display:block; float:right;background-color:#f8f8f8; border:1px #d2d2d2 solid; border-right:none; border-radius:5px 0 0 5px; -webkit-border-radius:5px 0 0 5px; -moz-border-radius:5px 0 0 5px; text-align:center; color:#858585; line-height:15px;margin-top:20px;}
+.n_topnew .moreTT:hover{ text-decoration:none;}
+.box02 .tbhx ul li{ padding:0 5px;}
+.subnav{width:130px;}
+</style>
+
+<script type="text/javascript" src="css/login-bootstrap.js"></script>
+<script type="text/javascript" src="css/jquery-191.js" charset="utf-8"></script>
+<script type="text/javascript" src="css/jquery-cookie-140.js" charset="utf-8"></script>
+<script type="text/javascript" src="css/sso-nocomment.js"></script>
+<script type="text/javascript" src="css/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="910.files/kxbdSuperMarquee.js"></script>
+<script language="JavaScript" type="text/javascript" src="910.files/js.js"></script>
+<!--<script language="JavaScript" type="text/javascript" src="910.files/tuan.js"></script>-->  <!--两侧广告固定置顶代码-->
+
+	<script type="text/javascript">
+		$(function(){
+			$('#marquee6').kxbdSuperMarquee({
+				isMarquee:true,
+				isEqual:false,
+				scrollDelay:20,
+				direction:'left'
+			});
+		});
+		
+		//郑重声明关闭按钮《《《《《《右下角弹窗》》》》》》》》》》
+		//$().ready(function(){
+//			$('.sm_close').click(function(){
+//				$('.shengming').css({"display":"none"});
+//			})
+		
+//		})
+	</script>
+
+
+<script>
+	$(function(){
+		jQuery(".sliderbox").slide({titCell:".slider-li ul",mainCell:".slider-ul ul",autoPage:true,effect:"leftLoop",interTime:5000,delayTime:300,autoPlay:true,vis:1});
+		jQuery(".njj04").slide({titCell:".slider-lisy ul",mainCell:".slider-ulsy ul",autoPage:true,effect:"leftLoop",interTime:5000,delayTime:300,autoPlay:true,vis:1});
+		jQuery(".sliderboxn2").slide({titCell:".slider-lin2 ul",mainCell:".slider-uln2 ul",autoPage:true,effect:"leftLoop",interTime:5000,delayTime:300,autoPlay:true,vis:1});
+		jQuery(".rankinglist").slide({delayTime:0});
+		jQuery(".rankinglist2").slide({delayTime:0});
+		jQuery(".cxlk").slide({delayTime:0});
+		jQuery(".bomtab").slide({delayTime:0});
+		$('.d li').hover(function(){
+			$(this).children('.ds').animate({bottom:'0px'},200);	
+		},function(){
+			$(this).children('.ds').animate({bottom:'-40px'},200);	
+		})
+	})
+</script>
+<SCRIPT language=javascript> 
+$(document).ready(function()
+{
+if($("#scrollDiv1 ul li").length>1)
+	{setInterval('AutoScroll2("#scrollDiv1")',6000);}	
+			
+						
+});
+ 
+function AutoScroll2(obj){
+	$(obj).find("ul").animate({
+		marginTop:"-67px"
+	},2000,function(){
+		$(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+	});
+}
+ 
+</SCRIPT>
+<SCRIPT language=javascript> 
+$(document).ready(function()
+{
+
+
+if($("#scrollDiv2 ul:first li").length>1)
+	{setInterval('AutoScroll("#scrollDiv2")',3000);}	
+	
+if($("#scrollDiv3 ul:first li").length>1)
+	{setInterval('AutoScroll("#scrollDiv3")',3000);}
+	
+if($("#scrollDiv4 ul:first li").length>1)
+	{setInterval('AutoScroll("#scrollDiv4")',3000);}
+	
+if($("#scrollDiv5 ul:first li").length>1)
+	{setInterval('AutoScroll("#scrollDiv5")',3000);}
+						
+						
+});
+ 
+function AutoScroll(obj){
+	$(obj).find("ul:first").animate({
+		marginTop:"-26px"
+	},1000,function(){
+		$(this).css({marginTop:"0px"}).find("li:first").appendTo(this);
+	});
+}
+ 
+</SCRIPT>
+
+<script type="text/javascript" language="javascript" author="luxiaoqing"> 
+<!--
+function initArray(){for(i=0;i<initArray.arguments.length;i++)
+this[i]=initArray.arguments[i];}var isnMonths=new initArray
+ 
+("01","02","03","04","05","06","07","08","09","10","11","12");var isnDays=new initArray
+ 
+("星期日","星期一","星期二","星期三","星期四","星期五","星期六","星期日");today=new Date();hrs=today.getHours
+ 
+();min=today.getMinutes();sec=today.getSeconds();clckh=""+((hrs>12)?hrs-12:hrs);
+clckm=((min<10)?"0":"")+min;clcks=((sec<10)?"0":"")+sec;clck=(hrs>=12)?"下午":"上午";var stnr="";var ns="0123456789";var 
+ 
+a="";
+ 
+//-->
+</script>
+
+</head>
+
+
+
+<body>
+
+<div class="mingdan" id="mingdan" style="width:110px; position:absolute; left:50%; margin-left:510px; top:105px;">
+	<a class="mb10" style="display:block;" href="zhuanti/node_2200.htm" target="_blank"><img src="910.files/xiaokang.jpg" width="110" height="420" /></a></div>
+
+<div class="mingdan2" id="mingdan2" style="width:110px; position:absolute; right:50%; margin-right:510px; top:105px;">
+	<a class="mb10" style="display:block;" href="zhuanti/node_2120.htm" target="_blank"><img src="910.files/gdjt.jpg" width="110" height="420" /></a></div>
+
+<!--<div class="mingdan3" id="mingdan3" style="width:110px; position:absolute; right:50%; margin-right:510px; top:535px;">
+	<a class="mb10" style="display:block;" href="http://www.zgjtb.com/zhuanti/node_2042.htm" target="_blank"><img src="910.files/shanxi.jpg" width="110" height="420" /></a></div>
+-->	
+<!--<div class="mingdan4" id="mingdan4" style="width:110px; position:absolute; left:50%; margin-left:510px; top:535px;">
+	<a class="mb10" style="display:block;" href="http://www.zgjtb.com/2015-12/04/content_63282.htm" target="_blank"><img src="910.files/importantMessage.jpg" width="110" height="250" /></a></div>
+-->
+<div class="wrapper">
+<p class="logon"><a href="http://www.zgjtb.com/"><img src="910.files/xbb_01.jpg" /></a>
+<p class="rili"><span><script type="text/javascript" language="javascript"> 
+<!--
+function getFullYear(d)
+{
+yr=d.getYear();
+if(yr<1000)yr+=1900;return yr;
+}
+document.write(getFullYear(today)+"年"+isnMonths[today.getMonth()]+"月"+today.getDate()+"日&nbsp;"+isnDays[today.getDay()]);
+ 
+//-->
+ 
+</script>
+</span></p>
+<p class="tiqi"><iframe allowtransparency="true" frameborder="0" width="180" height="36" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=3&z=2&t=0&v=0&d=3&bd=0&k=&f=&q=1&e=1&a=1&c=54511&w=180&h=36&align=center"></iframe></p>
+<iframe id="serach" src="http://was.zgjtb.com:8080/was5/web/search.htm" width="304" height="32" scrolling="no" marginheight="0" frameborder="0" style="float:right;margin-top:30px;"></iframe>
+</div>
+
+<div style="clear:both;"></div>
+<!--头部导航开始-->
+<div class="wrap daohang">
+<ul class="dh01 ml30">
+<li class="b"><a href="node_142.htm"  target="_parent"  class="">要闻</a></li>
+<li class="b"><a href="node_146.htm"  target="_parent"  class="">舆情</a></li>
+<li class="b"><a href="node_144.htm"  target="_parent"  class="">深度</a></li>
+<li class="b"><a href="node_145.htm"  target="_parent"  class="">专家</a></li>
+<li class="b"><a href="node_1022.htm"  target="_parent"  class="">人物</a></li>
+<li class="b"><a href="node_1028.htm"  target="_parent"  class="">视线</a></li>
+</ul>
+<ul class="dh01">
+<li class="b"><a href="tielu/node_106.htm"  target="_parent"  class="">铁路</a></li>
+<li><a href="tielu/node_130.htm"  target="_parent"  class="">建设</a></li>
+<li><a href="tielu/node_1038.htm"  target="_parent"  class="">运营</a></li>
+<li class="b"><a href="minhang/node_105.htm"  target="_parent"  class="">民航</a></li>
+<li><a href="minhang/node_208.htm"  target="_parent"  class="">商业</a></li>
+<li><a href="node_1037.htm"  target="_parent"  class="">通航</a></li>
+</ul>
+<ul class="dh01">
+<li class="b"><a href="gonglu/node_103.htm"  target="_parent"  class="">公路</a></li>
+<li><a href="gonglu/node_123.htm"  target="_parent"  class="">建设</a></li>
+<li><a href="gonglu/node_124.htm"  target="_parent"  class="">养护</a></li>
+<li class="b"><a href="youzheng/node_107.htm"  target="_parent"  class="">运输</a></li>
+<li><a href="youzheng/node_205.htm"  target="_parent"  class="">快递</a></li>
+<li><a href="youzheng/node_132.htm"  target="_parent"  class="">客运</a></li>
+</ul>
+<ul class="dh01">
+<li class="b"><a href="shuiyun/node_104.htm"  target="_parent"  class="">水运</a></li>
+<li><a href="shuiyun/node_138.htm"  target="_parent"  class="">海事</a></li>
+<li><a href="shuiyun/node_137.htm"  target="_parent"  class="">航运</a></li>
+<li class="b"><a href="qiche/index.htm"  target="_parent"  class="">汽车</a></li>
+<li><a href="qiche/node_114.htm"  target="_parent"  class="">聚焦</a></li>
+<li><a href="qiche/node_115.htm"  target="_parent"  class="">市场</a></li>
+</ul>
+<ul class="dh01 b">
+<li><a href="zhuanti/node_2062.htm"  target="_parent"  class="">集采</a></li>
+<li style="width:100px;"><a href="zhitong/node_380.htm" target="_blank">直通地方</a></li>
+<li class="dh102"><a href="node_1025.htm"  target="_parent"  class="">全媒体</a></li>
+<li class="dh100"><a href="#" class="tutor">区域交通</a>
+<div class="subnav">
+	<a href="http://sichuan.zgjtb.com/" target="_blank" style="color:#0094dc;">四川</a>
+	<a href="http://shandong.zgjtb.com/" target="_blank" style="color:#0094dc;">山东</a>
+	<a href="http://jiangxi.zgjtb.com/" target="_blank" style="color:#0094dc;">江西</a>
+</div>
+</li>
+</ul>
+<ul class="dh02 b">
+<li><a href="http://tg.zgjtb.com:7001/newsedit/batman/Login.jsp" target="_blank">记者投稿</a></li>
+<li class="dh101"><a href="#" class="tutor2">报社机构</a>
+<div class="subnav2"><a href="zhuanti/node_346.htm" target="_blank" style="color:#0094dc;">读者俱乐部</a> <a href="zhuanti/node_342.htm" target="_blank" style="color:#0094dc;">培训中心</a> <a href="shengxiang/node_540.htm" target="_blank" style="color:#0094dc;">声像中心</a> <a href="node_5101.htm" target="_blank" style="color:#0094dc;">报刊协会</a></div>
+</li>
+</ul>
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		$('.tutor').click(function(){
+			$('.subnav').css({"display":"block","z-index":"9999999"})
+			return false
+		})
+		$('.subnav').hover(function(){$(this).css({"display":"block"})},function(){$(this).css({"display":"none"})})
+	})
+</script>
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		$('.tutor2').click(function(){
+			$('.subnav2').css({"display":"block","z-index":"9999999"})
+			return false
+		})
+		$('.subnav2').hover(function(){$(this).css({"display":"block"})},function(){$(this).css({"display":"none"})})
+	})
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="wrapper main_con">
+	
+
+	
+	
+	
+	
+		<div class="headline mb10" style="width:auto;">
+		  <a href="zhuanti/node_2220.htm" target="_blank"><img  style="height:120px;" src="attachement/jpg/site2/20160628/f8b1569e5ce618dc4dc301.jpg" border="0"></a>
+		</div>
+	
+		
+		
+		
+		
+		
+		
+	<div class="dtbb">	
+		<p><a href="node_461.htm" target="_blank" style="font:bold 14px; color:#af1616;">动态播报：</a></p>
+		<div id="marquee6">
+			<ul style="height: 30px;">
+			    <li><a href="2016-06/07/content_85901.htm" target="_blank">中国交通报社2016年招聘第四批拟录用人员公示</a></li><li><a href="2016-05/16/content_83797.htm" target="_blank">宁波市将于5月20日举行高速公路PPP项目推介会</a></li><li><a href="2016-05/11/content_83319.htm" target="_blank">中国交通报社2016年招聘第三批拟录用人员公示</a></li><li><a href="2016-04/12/content_80200.htm" target="_blank">中国交通报社2016年招聘第二批拟录用人员公示</a></li><li><a href="2016-03/21/content_77605.htm" target="_blank">中国交通报社2016年招聘第一批拟录用人员公示</a></li>
+			</ul>
+	  </div>
+	</div>
+	
+	
+	<!--新增-->	
+	<div class="banner_li">
+	  <ul><li><a href="2016-05/23/content_84358.htm" target="_blank"><img src="attachement/jpg/site2/20160523/c81f661ad7a518acaf8a01.jpg" border="0"></a><div class="d"><p><a href="2016-05/23/content_84358.htm" target="_blank">世界经济中心东移</a></p><div class="des">穆沙希德指出，今天，世界经济中心正在从西方转向东方转移。</div></div></li><li><a href="2016-04/26/content_81749.htm" target="_blank"><img src="attachement/jpg/site2/20160426/c81f661ad7a51889203305.JPG" border="0"></a><div class="d"><p><a href="2016-04/26/content_81749.htm" target="_blank">PPP项目：只闻雷声</a></p><div class="des">尽管国内PPP项目的投资额巨大，但签约率仍然偏低。</div></div></li><li><a href="2016-04/26/content_81748.htm" target="_blank"><img src="attachement/jpg/site2/20160426/c81f661ad7a518891c2e03.jpg" border="0"></a><div class="d"><p><a href="2016-04/26/content_81748.htm" target="_blank">财政部长详解营改增热点问题</a></p><div class="des">财政部部长楼继伟说解营改增意义、行业税只减不增等问题。</div></div></li><li><a href="2016-03/24/content_78059.htm" target="_blank"><img src="attachement/jpg/site2/20160324/c81f661ad7a5185dda450b.jpg" border="0"></a><div class="d"><p><a href="2016-03/24/content_78059.htm" target="_blank">亚洲经济在转型中孕育新动能</a></p><div class="des">亚洲2015年是净资本输出区域，这意味着经济增长潜力还很大。</div></div></li></ul>
+	</div>
+
+	<div class="n_topnew">
+	<a class="moreTT" href="node_141.htm" target="_blank">更多头条</a>
+    <p class="n_topnew_p"><a href="2016-06/29/content_88170.htm" target="_blank">国务院常务会议原则通过《中长期铁路网规划》</a></p><div class="n_topnew_d">国务院总理李克强6月29日主持召开国务院常务会议，原则通过《中长期铁路网规划》，以交通大动脉建设支撑经济社会升级发展。</div>
+	</div>	
+	<!--新增-->	
+	
+<div class="left-box f-l">
+<a href="http://www.guojiaojicai.com/" target="_blank" class="first-img" ><img src="attachement/jpg/site2/20160303/f8b1569e5ce61841ffd901.jpg" border="0" style="width:350px;height:100px;"></a>
+			
+			
+				<div class="blank10">clear</div>
+			<h2 class="i-new"><span><a href="node_142.htm"  target="_parent"  class="">>></a></span>要闻 
+			</h2>
+
+
+			
+	        <ul class="nul01h"><li><a href="2016-06/29/content_88176.htm" target="_blank">杨传堂：始终强化“四个意识”始终发挥示范引领作用</a></li></ul>
+	        <ul class="nul01"><li><a href="2016-06/29/content_88175.htm" target="_blank">戴东昌：加强协作聚焦“瓶颈” 促进次区域交通发展</a></li><li><a href="2016-06/29/content_88173.htm" target="_blank">2015年公路建设从业企业信用评价结果公布</a></li><li><a href="2016-06/29/content_88172.htm" target="_blank">中国交通通信信息中心亮相世界移动大会</a></li><li><a href="2016-06/29/content_88171.htm" target="_blank">广州港公安局专案组荣立集体一等功</a></li></ul>
+
+	        <ul class="nul01h"><li><a href="2016-06/29/content_88174.htm" target="_blank">【我的公交我的城】许昌公交许民幸福</a></li></ul>
+	        <ul class="nul01"><li><a href="2016-06/29/content_88135.htm" target="_blank">船员后继乏力 谁能继续远洋</a></li><li><a href="2016-06/29/content_88133.htm" target="_blank">深圳助力航空航天产业发展 2020年达1500亿</a></li><li><a href="2016-06/29/content_88129.htm" target="_blank">雨季，地下通道积水达30厘米就禁行</a></li><li><a href="2016-06/29/content_88115.htm" target="_blank">港珠澳大桥主体桥梁成功合龙 大桥总长55公里</a></li></ul>
+
+	        <ul class="nul01h"><li><a href="2016-06/29/content_88114.htm" target="_blank">专车降门槛揽司机：审核几乎为零</a></li></ul>
+	        <ul class="nul01"><li><a href="2016-06/29/content_88112.htm" target="_blank">通信中心作为基础电信运营商参加世界移动大会</a></li><li><a href="2016-06/29/content_88110.htm" target="_blank">京津冀首个海铁联运集装箱中心投运</a></li><li><a href="2016-06/29/content_88105.htm" target="_blank">航企布局海外，让我们飞更高更远</a></li><li><a href="2016-06/28/content_88050.htm" target="_blank">交通部召开庆祝建党95周年暨“两优一先”表彰大会</a></li></ul>
+
+			<h2 class="i-new nmt10"><span><a href="node_146.htm"  target="_parent"  class="">>></a></span>舆情 
+			</h2>
+			<ul class="nul01 nmt10"><li><a href="2016-06/22/content_87399.htm" target="_blank">【时评】安全问题不解决 专车难过政策关</a></li><li><a href="2016-06/21/content_87281.htm" target="_blank">【新华时评】乘火车出站验票应改改了</a></li><li><a href="2016-06/20/content_87102.htm" target="_blank">媒体：舆论同情副镇长开专车实质是仇恨贪官</a></li><li><a href="2016-06/15/content_86621.htm" target="_blank">【专家时评】从高速路上停车做饭说起</a></li><li><a href="2016-06/13/content_86437.htm" target="_blank">北京纾解“首堵”之困：拥堵费山雨欲来</a></li><li><a href="2016-06/01/content_85336.htm" target="_blank">【时评】漏洞不补 快递实名有隐忧</a></li><li><a href="2016-05/30/content_85142.htm" target="_blank">收“拥堵费”引热议 网民观点各有态度</a></li><li><a href="2016-05/24/content_84569.htm" target="_blank">上海中环高架桥“被压断”，网民的反应竟是这样…</a></li><li><a href="2016-05/23/content_84404.htm" target="_blank">快递包装需要做“减法” 德美等国建议适度包装</a></li></ul>
+</div>
+	  <div style="width:630px;float:right;">
+		<div class="sliderbox">
+			<div class="slider-ul">
+			  <ul><li><a href="2016-06/29/content_88169.htm" target="_blank"><img src="attachement/jpg/site2/20160629/9c4e36c8737418de22aa01.jpg" border="0"></a><span>bj</span><p><a href="2016-06/29/content_88169.htm" target="_blank">港珠澳大桥22.9公里主体桥梁全线贯通</a></p></li><li><a href="2016-06/29/content_88127.htm" target="_blank"><img src="attachement/jpg/site2/20160629/c81f661ac8ec18ddb14927.jpg" border="0"></a><span>bj</span><p><a href="2016-06/29/content_88127.htm" target="_blank">“我的公交我的城”系列活动走进武汉</a></p></li><li><a href="2016-06/28/content_88051.htm" target="_blank"><img src="attachement/jpg/site2/20160628/9c4e36c8737418dcca0a03.jpg" border="0"></a><span>bj</span><p><a href="2016-06/28/content_88051.htm" target="_blank">交通运输部召开庆祝建党95周年暨直属机关“两优一先”表彰大会</a></p></li><li><a href="2016-06/28/content_87978.htm" target="_blank"><img src="attachement/jpg/site2/20160628/002481eb98ed18dc416f0b.jpg" border="0"></a><span>bj</span><p><a href="2016-06/28/content_87978.htm" target="_blank">【我的公交我的城】启动仪式暨许昌公交成果展</a></p></li><li><a href="2016-06/28/content_87966.htm" target="_blank"><img src="attachement/jpg/site2/20160628/c81f661ac8ec18dc336d01.jpg" border="0"></a><span>bj</span><p><a href="2016-06/28/content_87966.htm" target="_blank">“我的公交我的城”重大主题宣传活动在许昌正式启动</a></p></li></ul>
+			</div>
+			<div class="slider-li">
+				<ul><li>1</li></ul>
+			</div>
+		</div>
+		<div class="blank10">clear</div>
+		<div class="left-box f-l">
+			<h2 class="i-depth mb10"><span><a href="node_144.htm"  target="_parent"  class="">>></a></span>深度</h2>
+		  <div class="d-first mb10">
+		    <a href="2016-04/15/content_80619.htm" target="_blank"><img src="attachement/jpg/site2/20160415/c81f661ad7a5187ae1fb0c.jpg" border="0"></a>
+		  </div>
+			<div class="i-viewpoint mb10">
+			  <div id="scrollDiv1" style="height:201px;overflow:hidden;">
+			<ul><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177dbcea0c.png" border="0"></a><p><a href="node_145.htm" target="_blank">匡海波</a></p><span><a href="node_145.htm" target="_blank">大连海事大学交通运输管理学院工商管理一级学科负责人。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177db4b00a.png" border="0"></a><p><a href="node_145.htm" target="_blank">严伟</a></p><span><a href="node_145.htm" target="_blank">中国（上海）自贸区供应链研究院副院长。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177dace305.png" border="0"></a><p><a href="node_145.htm" target="_blank">蔡晓禹</a></p><span><a href="node_145.htm" target="_blank">重庆交通大学交通运输学院智能交通系专业负责人。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177db7020b.png" border="0"></a><p><a href="node_145.htm" target="_blank">真虹</a></p><span><a href="node_145.htm" target="_blank">上海海事大学上海国际航运研究中心教授。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177dafb208.png" border="0"></a><p><a href="node_145.htm" target="_blank">周建庭</a></p><span><a href="node_145.htm" target="_blank">重庆交通大学助教、讲师、副教授、教授、博导。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/jpg/site2/20150925/002481eb9c55176f0c3704.jpg" border="0"></a><p><a href="node_145.htm" target="_blank">陈伟炯</a></p><span><a href="node_145.htm" target="_blank">上海海事大学科学研究院院长、中国（上海）自贸区供应链研究院副院长。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/png/site2/20151006/9cb654eb1702177db0c009.png" border="0"></a><p><a href="node_145.htm" target="_blank">马庆禄</a></p><span><a href="node_145.htm" target="_blank">马庆禄，重庆交通大学交通运输学院副教授，研究方向为智能交通与安全。</a></span></li><li><a href="node_145.htm" target="_blank"><img src="attachement/jpg/site2/20150929/002481eb9c551774960102.jpg" border="0"></a><p><a href="node_145.htm" target="_blank">肖英杰</a></p><span><a href="node_145.htm" target="_blank">上海海事大学商船学院院长、航运仿真技术教育部工程研究中心主任。</a></span></li></ul>
+			  </div>
+			  <a href="node_145.htm"><img src="css/xxx/viewpoint2.png" style="width:25px;height:208px;" /></a>			</div>
+			  
+					  <div class="d-first2 nmt10">
+					    <a href="2015-12/04/content_63282.htm" target="_blank"><img src="attachement/jpg/site2/20151215/f8b1569e5ce617da0ed601.jpg" border="0"></a>
+					  </div>
+		</div>
+		
+		
+		<div class="right-box f-r">
+		  <div class="traffic-news">
+			<h2><span><a href="node_1022.htm"  target="_parent"  class="">>></a></span>人物</h2>
+
+		<div class="sliderboxn2">
+			<div class="slider-uln2">
+			  <ul><li><a href="2016-06/27/content_87879.htm" target="_blank"><img src="attachement/jpg/site2/20160627/c81f661ad7a518dae3ce13.jpg" border="0"></a><span></span><p><a href="2016-06/27/content_87879.htm" target="_blank">吾普尔·玉素普夫妇：半个世纪的民汉情</a></p></li><li><a href="2016-06/27/content_87878.htm" target="_blank"><img src="attachement/jpg/site2/20160627/c81f661ad7a518dae20c0f.jpg" border="0"></a><span></span><p><a href="2016-06/27/content_87878.htm" target="_blank">走出国门的中国机务人</a></p></li><li><a href="2016-06/21/content_87209.htm" target="_blank"><img src="attachement/jpg/site2/20160621/c81f661ad7a518d2f52e1b.jpg" border="0"></a><span></span><p><a href="2016-06/21/content_87209.htm" target="_blank">张页：树立上海航运指数品牌</a></p></li><li><a href="2016-04/08/content_79944.htm" target="_blank"><img src="attachement/jpg/site2/20160408/c81f661ad7a51871ad0012.JPG" border="0"></a><span></span><p><a href="2016-04/08/content_79944.htm" target="_blank">张德华：三年援疆路 一生新疆情</a></p></li><li><a href="2016-02/02/content_72610.htm" target="_blank"><img src="attachement/jpg/site2/20160202/c81f661ad7a5181a8a6801.JPG" border="0"></a><span></span><p><a href="2016-02/02/content_72610.htm" target="_blank">追怀袁庚：向前走 莫回头</a></p></li></ul>
+			</div>
+			<div class="slider-lin2">
+				<ul><li>1</li></ul>
+			</div>
+		</div>
+
+		  </div>
+			
+			<div class="rankinglist">
+				<h2 >
+					<div class="f-r hd">
+						<ul>
+							<li class="on">点击排行</li>
+							<li>编辑推荐</li>
+						</ul>
+					</div>
+					<span>热点文章排行榜</span>
+				</h2>
+			  <div class="hot-list bd">
+					<ul>
+					
+					<iframe id="top_jtb" src="http://phpstat.zgjtb.com/phpstat/topProxy/contentProxy.php?website=abceffgh&nodeid=0&toptype=_today&displaycount=10&titlelength=17&perfixchar=pic&pictype=pic1" width="250" height="214" scrolling="no" marginheight="0" frameborder="0" style="margin-left:8px;margin-top:8px;"></iframe>
+
+					</ul>
+                    <ul class="hot-list2"><li><a href="2015-04/30/content_27060.htm" target="_blank">【权威发布】2014年交通运输行业发展统 ...</a></li><li><a href="2015-02/10/content_19461.htm" target="_blank">长江黄金水道有了“龙头法”</a></li><li><a href="2014-09/02/content_8007.htm" target="_blank">湖南铁腕治超：落后县市暂停资金拨付项 ...</a></li><li><a href="2014-08/21/content_7256.htm" target="_blank">权威发布：交通运输业经济统计专项调查 ...</a></li><li><a href="2014-07/31/content_5653.htm" target="_blank">基层交通局长：差别化补贴助西部地区公 ...</a></li><li><a href="2014-09/01/content_7917.htm" target="_blank">新华社：托举起高原“生命线”</a></li><li><a href="2014-08/27/content_7710.htm" target="_blank">交通运输部海事系统一批干部履新</a></li><li><a href="2014-10/30/content_11783.htm" target="_blank">长安福特锐界：定价若高或遇“滑铁卢”</a></li></ul>
+			  </div>
+			</div>
+		</div>
+		
+	  </div>
+		<div class="blank10">clear</div>
+
+			<div class="zhanlue">
+				<div class="title02">
+					<a href="node_1023.htm"  target="_parent"  class="">战略合作</a><span>战略合作</span>
+				</div>
+				<div class="zhanlue_li">
+				<div class="gslider">
+				  <ul><li><img src="attachement/jpg/site2/20160226/005056c00001183a0ca001.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816ac41fe0c.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816ac40a10b.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816ac40720a.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abe1a208.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abdeb707.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abde9f06.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abde8605.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abde6e04.jpg" border="0"></li><li><img src="attachement/jpg/site2/20150430/c81f661ad77816abde4d03.jpg" border="0"></li></ul>
+				</div>
+				</div>
+				
+				     <script type="text/javascript">
+                jQuery(".zhanlue_li").slide({mainCell:".gslider ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:7,easing:"swing"});
+                </script>
+
+			</div>
+			<div class="blank10">clear</div>
+			<div class="shixian">
+				<div class="ntitle01">
+					<a href="node_1028.htm"  target="_parent"  class="">视线</a><span>视线</span>
+				</div>
+				<div style="height:10px;"></div>
+				<div class="sx720">
+				
+				<div class="picFocus">
+			<div class="bd">
+              <ul><li><a href="2016-02/24/content_74352.htm" target="_blank"><img src="attachement/jpg/site2/20160224/c81f661ad7781837547901.jpg" border="0"></a></li><li><a href="2016-02/03/content_72790.htm" target="_blank"><img src="attachement/jpg/site2/20160203/c81f661ad778181c077102.jpg" border="0"></a></li><li><a href="2016-02/03/content_72791.htm" target="_blank"><img src="attachement/jpg/site2/20160203/f8b1569e5ce6181c088e04.jpg" border="0"></a></li><li><a href="2016-01/19/content_70357.htm" target="_blank"><img src="attachement/png/site2/20160119/c81f661ad7781808202701.png" border="0"></a></li><li><a href="2015-09/08/content_52531.htm" target="_blank"><img src="attachement/jpg/site2/20151008/f8b1569e5ce6178068c222.jpg" border="0"></a></li></ul>
+			</div>
+ 
+			<div class="hd">
+			  <ul><li><div><h2>《坚守，是一种责任》</h2><p>【交心交谈】春运特别节目</p></div><img src="attachement/jpg/site2/20160224/c81f661ad7781837547901.jpg" border="0"></li><li><div><h2>《新春特辑》</h2><p>恭祝新春愉快、万事顺遂</p></div><img src="attachement/jpg/site2/20160203/c81f661ad778181c077102.jpg" border="0"></li><li><div><h2>《共同话春运》</h2><p>共同话春运，我为您服务</p></div><img src="attachement/jpg/site2/20160203/f8b1569e5ce6181c088e04.jpg" border="0"></li><li><div><h2>《空乘，不是你想的那样》</h2><p>南航空姐的真实讲述</p></div><img src="attachement/png/site2/20160119/c81f661ad7781808202701.png" border="0"></li><li><div><h2>《“传说”中的收费员》</h2><p>普通收费员的苦与乐</p></div><img src="attachement/jpg/site2/20151008/f8b1569e5ce6178068c222.jpg" border="0"></li></ul>
+			</div>
+ 
+		</div>
+		<script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>
+
+				
+				</div>
+				<div class="sx250">
+				  <ul class="sxul01"><li><a href="2016-04/20/content_81144.htm" target="_blank">《拯救2015》</a></li><li><a href="2015-04/29/content_27282.htm" target="_blank">中国邮政表彰“金方向盘汽车驾驶员”</a></li><li><a href="2015-04/28/content_27281.htm" target="_blank">打车软件注册审核存漏洞 乘客频繁叫来黑车</a></li><li><a href="2015-04/28/content_27280.htm" target="_blank">全国沿海邮轮港口布局规划方案出炉</a></li><li><a href="2015-04/27/content_27279.htm" target="_blank">“一带一路”频出利好 中国标准借船出海</a></li><li><a href="2015-04/30/content_27278.htm" target="_blank">北车副总裁哈佛演讲：愿为全美提供高铁</a></li><li><a href="2015-04/30/content_27277.htm" target="_blank">【本网专稿】稳中有变的2015上海车展</a></li><li><a href="2015-04/30/content_27276.htm" target="_blank">全球包裹联盟成立 由我国企业主导</a></li><li><a href="2015-04/29/content_27275.htm" target="_blank">翁孟勇与捷克交通部长举行工作会谈</a></li><li><a href="2015-04/29/content_27274.htm" target="_blank">浙江金华两站台需“跨栏”进入 网友：学刘翔</a></li></ul>
+				</div>
+				<div style="height:10px;"></div>
+
+			</div>	
+				
+	  
+		
+
+		
+		<div class="adbox01 mb10"><a href="2015-08/04/content_42766.htm" target="_blank"><img src="attachement/jpg/site2/20151102/f8b1569e5ce617a1506502.jpg" border="0"></a></div>
+		
+		<div class="lbox">
+			<div class="left-box f-l mb10">
+			  <div class="leftm">
+					<h2><span><a href="tielu/node_106.htm"  target="_parent"  class="">>></a></span>铁路</h2>
+					
+				    <ul><li><a href="tielu/2016-06/30/content_88212.htm" target="_blank"><img src="attachement/png/site2/20160630/002481eb9c5518debfcd01.png" border="0"></a><p><a href="tielu/2016-06/30/content_88212.htm" target="_blank">京沪高铁开通运营5周年</a></p><div>6月30日，北京至上海高速铁路开通运营已满5周年，累计安全运送旅客突破4.5亿人次。</div></li><li><a href="tielu/2016-06/30/content_88209.htm" target="_blank"></a><p><a href="tielu/2016-06/30/content_88209.htm" target="_blank">西渝高铁拟2018年开建</a></p><div>27日，记者从铁道部门获悉，西安至重庆高铁已纳入国家和陕西“十三五”规划纲要，目前，陕西省发改委正在委托中铁一院积极开展规划设计等前期工作，计划2018年开工建设。</div></li><li><a href="tielu/2016-06/30/content_88206.htm" target="_blank"></a><p><a href="tielu/2016-06/30/content_88206.htm" target="_blank">贵州“十三五”高铁将突破1500公里</a></p><div>贵州省政府近日出台加快铁路建设的意见，计划到2020年，全省铁路营业里程超过4000公里，其中高速铁路超过1500公里。</div></li><li><a href="tielu/2016-06/30/content_88198.htm" target="_blank"></a><p><a href="tielu/2016-06/30/content_88198.htm" target="_blank">郑济铁路河南段沿途共新建、改（扩）建车站8个</a></p><div>6月27日，新建郑州至济南铁路河南段选址意见书公示结束，正线在河南省境内长约237.172km，河南段沿途共新建、改(扩)建车站8个。</div></li></ul>
+			  </div>
+			</div>
+			<div class="left-box f-r mb10">
+			  <div class="leftm">
+				  <h2><span><a href="gonglu/node_103.htm"  target="_parent"  class="">>></a></span>公路</h2>
+					
+				    <ul><li><a href="gonglu/2016-06/29/content_88057.htm" target="_blank"><img src="attachement/jpg/site2/20160629/c81f661ac8ec18dd6cc801.jpg" border="0"></a><p><a href="gonglu/2016-06/29/content_88057.htm" target="_blank">山西五盂高速公路通车</a></p><div>6月25日，山西省五台至盂县高速公路正式通车，至此山西省投入运营的高速公路总里程达到5103公里。</div></li><li><a href="gonglu/2016-06/29/content_88054.htm" target="_blank"></a><p><a href="gonglu/2016-06/29/content_88054.htm" target="_blank">福建5年打造17条运输大通道</a></p><div>“十三五”期，福建计划完成交通投资7500亿元，重点构筑大通道、培育主枢纽、完善互通网、推进智能化。</div></li><li><a href="gonglu/2016-06/29/content_88060.htm" target="_blank"></a><p><a href="gonglu/2016-06/29/content_88060.htm" target="_blank">湖南：独立方暗访直击高速服务区真相</a></p><div>湖南省交通运输厅党组书记、厅长胡伟林表示，针对暗访发现的情况，湖南交通运输系统将高度重视，加强管理，并继续抓好第三方暗访考核工作。</div></li><li><a href="gonglu/2016-06/29/content_88063.htm" target="_blank"></a><p><a href="gonglu/2016-06/29/content_88063.htm" target="_blank">中交企协交通产品分会召开第三届理事会</a></p><div>日前，中国交通企业管理协会交通产品分会第三届理事会在四川绵阳召开。</div></li></ul>
+			  </div>
+			</div>
+			<div class="ad02 mb10">
+			<a href="sichuan/node_2100.htm" target="_blank"><img src="attachement/jpg/site2/20160120/f8b1569e5ce618094b8f05.jpg" border="0"></a>
+			</div>
+			<div class="left-box f-l mb10">
+			  <div class="leftm">
+				  <h2><span><a href="shuiyun/node_104.htm"  target="_parent"  class="">>></a></span>水运</h2>
+					
+				    <ul><li><a href="shuiyun/2016-06/30/content_88236.htm" target="_blank"><img src="attachement/jpg/site2/20160630/002481eb9c5518decdcc03.jpg" border="0"></a><p><a href="shuiyun/2016-06/30/content_88236.htm" target="_blank">珠江水系焊牢危险品运输安全链</a></p><div>6月21日，交通运输部珠江航务管理局在广西柳州组织召开了珠江水系省际危险品运输企业座谈会。</div></li><li><a href="shuiyun/2016-06/30/content_88231.htm" target="_blank"></a><p><a href="shuiyun/2016-06/30/content_88231.htm" target="_blank">三明地方海事为流动船员上党课</a></p><div>“用身边的人和事，讲述党员先锋模范作用，既生动又形象，记得牢。”6月24日，福建三明市地方海事局党支部将党课搬进客船船舱，为流动船员党员上党课。</div></li><li><a href="shuiyun/2016-06/30/content_88228.htm" target="_blank"></a><p><a href="shuiyun/2016-06/30/content_88228.htm" target="_blank">海口航标处保障火箭运载船安全进靠港</a></p><div>日前，长征七号运载火箭在海南文昌航天发射场发射。为保障火箭运载船舶安全进靠清澜港，南海航海保障中心海口航标处结合辖区海域实际，多措并举全力做好安全保障工作。</div></li><li><a href="shuiyun/2016-06/30/content_88224.htm" target="_blank"></a><p><a href="shuiyun/2016-06/30/content_88224.htm" target="_blank">秦皇岛海事为远洋帆船量身制定海上护航方案</a></p><div>日前，由河北省秦皇岛市人民政府等单位联合举办的“2016重走海上丝绸之路”（东线）航海活动在秦皇岛启航。</div></li></ul>
+			  </div>
+			</div>
+			<div class="left-box f-r mb10">
+			  <div class="leftm">
+				  <h2><span><a href="minhang/node_105.htm"  target="_parent"  class="">>></a></span>民航</h2>
+					
+				    <ul><li><a href="minhang/2016-06/30/content_88215.htm" target="_blank"><img src="attachement/jpg/site2/20160630/002481eb9c5518dec68a02.jpg" border="0"></a><p><a href="minhang/2016-06/30/content_88215.htm" target="_blank">敦煌机场新开郑州=西宁=敦煌航班</a></p><div>6月29日，郑州=西宁=敦煌航班首航仪式在敦煌机场顺利举行。这是敦煌机场2016年新开的第4条航线。</div></li><li><a href="minhang/2016-06/30/content_88217.htm" target="_blank"></a><p><a href="minhang/2016-06/30/content_88217.htm" target="_blank">北京—奥克兰姊妹机场风采图片展揭幕</a></p><div>6月29日上午，为期一个月的“北京-奥克兰姊妹机场风采图片展”在首都机场T3-C二层APM国际到港站台“文化国门”展示区正式揭幕。</div></li><li><a href="minhang/2016-06/30/content_88218.htm" target="_blank"></a><p><a href="minhang/2016-06/30/content_88218.htm" target="_blank">红土航空新开合肥、太原、沈阳航线迎暑运</a></p><div>暑运高峰日益临近，云南红土航空股份有限公司将于7月3日新开昆明=合肥=太原航线、7月5日新开昆明=合肥=沈阳航线，均由空客A321机型执飞。</div></li><li><a href="minhang/2016-06/30/content_88216.htm" target="_blank"></a><p><a href="minhang/2016-06/30/content_88216.htm" target="_blank">西班牙伊比利亚航空开通马德里至上海航线</a></p><div>西班牙伊比利亚航空公司马德里至上海直达航班将于28日首航。这是该公司首次开通直飞中国的航线。</div></li></ul>
+			  </div>
+			</div>
+			<div class="ad02 mb10">
+			<a href="zhuanti/node_2040.htm" target="_blank"><img src="attachement/jpg/site2/20151231/f8b1569e5ce617ef091b01.jpg" border="0"></a>
+			</div>
+			<div class="left-box f-l mb10">
+			  <div class="leftm">
+				  <h2><span><a href="qiche/index.htm"  target="_parent"  class="">>></a></span>汽车</h2>
+					
+				    <ul><li><a href="qiche/2016-06/27/content_87860.htm" target="_blank"><img src="attachement/jpg/site2/20160627/c81f661ac8ec18dadc7b15.jpg" border="0"></a><p><a href="qiche/2016-06/27/content_87860.htm" target="_blank">换新大灯组 新宝马4系路试谍照</a></p><div>新款宝马4系还将换装新的动力总成，其预计将于今年年底上市。</div></li><li><a href="qiche/2016-06/27/content_87853.htm" target="_blank"></a><p><a href="qiche/2016-06/27/content_87853.htm" target="_blank">“特权”在手，特斯拉国产之路有望？</a></p><div>特斯拉在充电桩网络的建设上，目前已有400多个超级充电桩及1300多个目的地充电桩已经覆盖了华北、华东、华南以及西北、西南等重点区域。</div></li><li><a href="qiche/2016-06/27/content_87859.htm" target="_blank"></a><p><a href="qiche/2016-06/27/content_87859.htm" target="_blank">助推2025战略 大众考虑在华建电池工厂</a></p><div>近日，有海外媒体报道，大众为达成其2025战略，将有望在中国投资数十亿建设电池工厂。</div></li><li><a href="qiche/2016-06/27/content_87856.htm" target="_blank"></a><p><a href="qiche/2016-06/27/content_87856.htm" target="_blank">两种换挡机构 广汽本田冠道内饰曝光</a></p><div>近日，有国内媒体再次曝光了一组广汽本田冠道的内饰谍照，新车将根据搭载的发动机不同将采用按键式和机械式换挡结构。</div></li></ul>
+			  </div>
+			</div>
+			<div class="left-box f-r mb10">
+			  <div class="leftm">
+				  <h2><span><a href="youzheng/node_107.htm"  target="_parent"  class="">>></a></span>运输物流</h2>
+					
+				    <ul><li><a href="youzheng/2016-06/28/content_88014.htm" target="_blank"><img src="attachement/jpg/site2/20160628/001f160e8dd718dc6c5002.jpg" border="0"></a><p><a href="youzheng/2016-06/28/content_88014.htm" target="_blank">长沙迈入地铁换乘时代</a></p><div>6月28日，长沙地铁1号线正式开通试运营，坐上地铁1号线，长沙市民就可一路畅通、从南往北穿越大长沙啦。</div></li><li><a href="youzheng/2016-06/28/content_87994.htm" target="_blank"></a><p><a href="youzheng/2016-06/28/content_87994.htm" target="_blank">西安公共自行车有了“电动120”</a></p><div>近日，陕西省西安市公共自行车“电动120”应急巡修队伍正式上岗。巡修队由百名巡修人员和50辆电动车组成，将分布到全市8个区域特级站，全天候流动巡查修理公共自行车。</div></li><li><a href="youzheng/2016-06/28/content_87993.htm" target="_blank"></a><p><a href="youzheng/2016-06/28/content_87993.htm" target="_blank">青岛公交有“保镖” 司乘更有安全感</a></p><div>随车乘务管理员的主要职责是维持车辆管辖范围内的治安秩序、做好巡视和安全检查，在职权范围内按规定程序对各类危险品、违禁品进行处理，配合服务等工作。</div></li><li><a href="youzheng/2016-06/28/content_87992.htm" target="_blank"></a><p><a href="youzheng/2016-06/28/content_87992.htm" target="_blank">北京将建公交立体停车楼</a></p><div>北京公交集团与首钢总公司日前共同签署战略合作协议。根据协议，北京将有十多处公交场站有可能被改造成为立体停车楼。</div></li></ul>
+			  </div>
+			</div>
+
+<div style="clear:both;"></div>
+
+
+			
+			
+		</div>
+		<div class="right-box f-r">
+		<div class="box02 mb10 bomtab" style="display:none;">
+							<div class="tbhx hd">
+					<ul>
+					<li><a href="zhitong/node_380.htm">工作人员查询系统</a></li>
+					</ul>
+				</div>
+				
+				<div style="height:84px;"></div>
+		  </div>
+		
+					<div class="box02 mb10 bomtab">
+
+					
+				<div class="tbhx hd">
+					<ul>
+						<li><a href="zhitong/node_380.htm">直通地方</a></li></ul>
+				</div>
+				<div class="tbhxbox bd">
+
+ <ul><li><a href="zhitong/2016-06/29/content_88167.htm" target="_blank">【江苏】贾汪区首批十四台纯电动公交车上路运营</a></li><li><a href="zhitong/2016-06/29/content_88166.htm" target="_blank">【重庆】交建领导心系灾区坐镇龙山片区现场指挥抢险</a></li><li><a href="zhitong/2016-06/29/content_88165.htm" target="_blank">【湖南】冷水江市交通运输局紧急部署当前安全生产工作</a></li><li><a href="zhitong/2016-06/29/content_88164.htm" target="_blank">【江苏】高邮公路：打造“微”平台 推进“两学一做”</a></li><li><a href="zhitong/2016-06/29/content_88163.htm" target="_blank">【内蒙古】鄂前旗运管分局开展夜查集中行动备战“创城”</a></li><li><a href="zhitong/2016-06/29/content_88162.htm" target="_blank">【江苏】泰兴防汛演练力提公路保安畅实战能力</a></li><li><a href="zhitong/2016-06/29/content_88161.htm" target="_blank">【浙江】天台新天北线沥青路面大中修工程开始浇筑</a></li><li><a href="zhitong/2016-06/29/content_88160.htm" target="_blank">【云南】中铁二十局昆明绕城高速项目防洪防汛进入战备模式</a></li><li><a href="zhitong/2016-06/29/content_88159.htm" target="_blank">【山西】闻垣高速华峰收费站党支部召开“两学一做”专题讨论会</a></li><li><a href="zhitong/2016-06/29/content_88158.htm" target="_blank">【江苏】苏州市吴江区盛泽收费站向司乘发放便利袋</a></li><li><a href="zhitong/2016-06/29/content_88157.htm" target="_blank">【云南】普洱多部门打击偷逃通行费行为成果丰硕</a></li><li><a href="zhitong/2016-06/29/content_88156.htm" target="_blank">【福建】当事人驾车发生交通事故损坏路产，却获公路部门点赞</a></li><li><a href="zhitong/2016-06/29/content_88155.htm" target="_blank">【重庆】站房一期工程建设完成 重庆西站现雏形</a></li><li><a href="zhitong/2016-06/29/content_88154.htm" target="_blank">【江苏】宁和城际12标转入电力接触网施工 年内通车</a></li><li><a href="zhitong/2016-06/29/content_88153.htm" target="_blank">【浙江】宁波鄞州建立全市首座公交生态停保场</a></li></ul>
+
+
+			  </div>
+			</div>
+		
+		
+			<div class="mb10">
+<iframe width="260" height="480" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=260&height=500&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3928511449&verifier=9cd40337&dpc=1"></iframe>
+			</div>
+			
+
+			<div class="box02 mb10 bomtab">
+				<div class="tbhx hd">
+					<ul>
+						<li><a href="node_154.htm" target="_blank">招投标</a></li>
+						<li><a href="node_155.htm" target="_blank">航行公告</a></li>
+						<li><a href="node_920.htm" target="_blank">遗失公告</a></li>
+						<li><a href="node_921.htm" target="_blank">遗失声明</a></li>
+					</ul>
+				</div>
+				<div class="tbhxbox bd">
+                   <div id="scrollDiv2" style="height:215px;overflow:hidden;">
+ <ul><li><a href="2015-11/24/content_61221.htm" target="_blank">利用亚行贷款河南鹤壁淇河流域环境治理及生态保护项目选聘采购代理机构二次招标公告</a></li><li><a href="2015-11/06/content_57786.htm" target="_blank">长江中游荆江河段航道整治工程昌门溪至熊家洲段工程工程测量招标公告</a></li><li><a href="2015-11/06/content_57784.htm" target="_blank">长江上游九龙坡至朝天门河段航道建设工程施工监理招标公告</a></li><li><a href="2015-11/06/content_57783.htm" target="_blank">长江上游九龙坡至朝天门河段航道建设工程施工招标公告</a></li><li><a href="2015-11/05/content_57588.htm" target="_blank">招标公告</a></li><li><a href="2015-11/04/content_57364.htm" target="_blank">长江下游江心洲河段航道整治工程施工监理招标公告</a></li><li><a href="2015-11/04/content_57362.htm" target="_blank">长江下游江心洲河段航道整治工程施工招标公告</a></li><li><a href="2015-10/13/content_53513.htm" target="_blank">宁波—舟山港老塘山港区舟山实华公司原油码头二期工程施工招标公告</a></li><li><a href="2015-09/23/content_50966.htm" target="_blank"><P>广西桂林至柳城、柳州经合山至南宁高速公路项目投资人招标(二次)公告 </P> <P>招标编号：0773-1540GNOB00235/1/2</P></a></li><li><a href="2015-09/18/content_50319.htm" target="_blank">青岛港董家口港区港投万邦 矿石码头工程设计中标结果公示</a></li><li><a href="2015-09/18/content_50318.htm" target="_blank">航道维护应急清障船建造项目招标公告</a></li><li><a href="2015-08/28/content_47211.htm" target="_blank">广东省广州增城沙庄至花都北兴公路二期工程（荔城至花都北兴段）项目钢绞线采购（CL05标段）招标招标公告</a></li></ul>
+				  </div>
+					 <div id="scrollDiv3" style="height:215px;overflow:hidden;"><ul>					<li><a href="2015-09/01/content_47762.htm" target="_blank"><P>中华人民共和国江苏海事局航行通告</P></a></li><li><a href="2015-08/28/content_47212.htm" target="_blank"><P>中华人民共和国江苏海事局航行通告</P></a></li><li><a href="2014-11/05/content_12362.htm" target="_blank">中华人民共和国济南海事局航行通告</a></li><li><a href="2014-11/05/content_12361.htm" target="_blank">中华人民共和国上海海事局航行通告</a></li><li><a href="2014-10/15/content_10564.htm" target="_blank">中华人民共和国广东海事局航行通告</a></li><li><a href="2014-09/29/content_9660.htm" target="_blank">中华人民共和国天津海事局航行通告</a></li><li><a href="2014-09/24/content_9322.htm" target="_blank">中华人民共和国济南海事局航行通告</a></li><li><a href="2014-09/24/content_9321.htm" target="_blank">中华人民共和国上海海事局航行通告</a></li><li><a href="2014-09/22/content_9198.htm" target="_blank">中华人民共和国南京海事局航行通告</a></li><li><a href="2014-09/22/content_9197.htm" target="_blank">中华人民共和国镇江海事局航行通告</a></li><li><a href="2014-09/22/content_9196.htm" target="_blank">中华人民共和国济南海事局航行通告</a></li><li><a href="2014-09/17/content_9009.htm" target="_blank">中华人民共和国上海海事局航行通告</a></li>					</ul>
+					</div>
+					<div id="scrollDiv4" style="height:215px;overflow:hidden;">
+					</div>
+					 <div id="scrollDiv5" style="height:215px;overflow:hidden;"><ul>					<li><a href="2016-03/02/content_75400.htm" target="_blank">钟铁祥</a></li><li><a href="2016-03/02/content_75399.htm" target="_blank">钟育发</a></li><li><a href="2016-03/02/content_75398.htm" target="_blank">冯国祥</a></li><li><a href="2016-03/02/content_75397.htm" target="_blank">许德凤</a></li><li><a href="2016-03/02/content_75396.htm" target="_blank">刘玉华</a></li><li><a href="2016-03/02/content_75394.htm" target="_blank">张扬成</a></li><li><a href="2016-02/03/content_72780.htm" target="_blank">陈如国</a></li><li><a href="2016-02/03/content_72779.htm" target="_blank">吴兆娣</a></li><li><a href="2016-02/03/content_72778.htm" target="_blank">王诗群</a></li><li><a href="2016-02/03/content_72777.htm" target="_blank">张晓兵</a></li><li><a href="2016-02/03/content_72759.htm" target="_blank"><SPAN>高风强</SPAN></a></li><li><a href="2016-01/28/content_72020.htm" target="_blank"><SPAN>徐宏挺</SPAN></a></li>					</ul>
+					</div>
+
+
+
+			  </div>
+			</div>
+			<div class="box02 mb10">
+				<div class="dzb">
+					<h2>电子报</h2>
+					<p style="width:204px;margin:0 auto;padding:10px 0;"><a href="http://epaper.zgjtb.com/" target="_blank"><img src="css/demo/demo08.jpg" border="0" /></a></p>
+				</div>
+			</div>
+		</div>
+
+				<div class="blank10">clear</div>
+
+
+		<div class="adbox01 mb10"><a href="zhuanti/node_781.htm" target="_blank"><img src="attachement/jpg/site2/20150617/f8b1569e5ce616eb78410a.jpg" border="0"></a></div>
+		
+		
+<div class="ntitle01"><a href="node_1025.htm"  target="_parent"  class="">全媒体</a><span>全媒体</span></div>
+<div class="rankinglist2">
+<div class="nw80 hd">
+<ul>
+<li style="height:127px;overflow:hidden;"><a href="node_1032.htm" target="_blank"><img src="910.files/xbb_05.jpg" /></a></li>
+<li style="height:127px;overflow:hidden;"><a href="node_1033.htm" target="_blank"><img src="910.files/xbb_06.jpg" /></a></li>
+<li style="height:126px;overflow:hidden;"><a href="node_1034.htm" target="_blank"><img src="910.files/xbb_07.jpg" /></a></li>
+</ul>
+</div>
+<div class="bd">
+<ul class="nw80ul"><li><a href="2016-04/20/content_81140.htm" target="_blank"><img src="attachement/png/site2/20160420/c81f661ad778188195dc01.png" border="0"><p>《拯救2015》</p></a></li><li><a href="2015-11/03/content_57091.htm" target="_blank"><img src="attachement/jpg/site2/20151104/acb57d9e2d6317a3a66b03.jpg" border="0"><p>广元市交通运输应急指挥体系建设巡礼</p></a></li><li><a href="2015-05/15/content_28963.htm" target="_blank"><img src="attachement/png/site2/20150515/acb57d9b932016bfce8a01.png" border="0"><p>“好奇”号火星车拍到火星蓝色日落</p></a></li><li><a href="2015-05/15/content_28902.htm" target="_blank"><img src="attachement/jpg/site2/20150515/acb57d9b932016bf9b1a04.jpg" border="0"><p>探营2015上海国际车展：科技改变行车方式</p></a></li><li><a href="2015-05/15/content_28887.htm" target="_blank"><img src="attachement/jpg/site2/20150722/4cbb585fc4f81719893804.jpg" border="0"><p>云南省21条高速公路养护施工进展顺利</p></a></li><li><a href="2015-05/14/content_28837.htm" target="_blank"><img src="attachement/jpg/site2/20150722/4cbb585fc4f8171989d206.jpg" border="0"><p>北京将减免新能源汽车停车费过路费</p></a></li><li><a href="2015-05/14/content_28830.htm" target="_blank"><img src="attachement/png/site2/20150514/acb57d9b932016beb5e932.png" border="0"><p>寻找未来中国安全能源</p></a></li><li><a href="2015-05/06/content_28014.htm" target="_blank"><img src="attachement/jpg/site2/20150722/4cbb585fc4f817198bc008.jpg" border="0"><p>智慧城市+指挥交通</p></a></li><li><a href="2015-05/06/content_28010.htm" target="_blank"><img src="attachement/png/site2/20150506/acb57d9b932016b41bfd06.png" border="0"><p>互联网+智慧城市</p></a></li><li><a href="2015-04/30/content_27089.htm" target="_blank"><img src="attachement/jpg/site2/20150430/acb57d9b932016abea912c.jpg" border="0"><p>公安部发布“五一”交通出行预警</p></a></li><li><a href="2015-04/30/content_27020.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abcff810.png" border="0"><p>中国将新发卫星 “一带一路”通信信号全覆盖</p></a></li><li><a href="2015-04/30/content_27015.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abcef40b.png" border="0"><p>智慧城市建设、智能交通技术运营</p></a></li><li><a href="2015-04/30/content_27003.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abd18612.png" border="0"><p>长春智能交通系统将在8月上岗</p></a></li><li><a href="2015-04/30/content_26999.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abd23013.png" border="0"><p>一带一路 共建繁荣</p></a></li><li><a href="2015-04/30/content_26995.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abd3ba14.png" border="0"><p>文明出行 要飙车请来赛道</p></a></li></ul>
+<ul class="nw80ul"><li><a href="2016-06/23/content_87502.htm" target="_blank"><img src="attachement/jpg/site2/20160623/0021705cbb5d18d58a6b01.jpg" border="0"><p>中交视讯节目20160623</p></a></li><li><a href="2016-05/27/content_84875.htm" target="_blank"><img src="attachement/jpg/site2/20160527/0021705cbb5d18b22c2f03.jpg" border="0"><p>中交视讯节目20160527</p></a></li><li><a href="2016-05/27/content_84870.htm" target="_blank"><img src="attachement/jpg/site2/20160527/0021705cbb5d18b22c0b02.jpg" border="0"><p>中交视讯节目20160504</p></a></li><li><a href="2016-05/27/content_84867.htm" target="_blank"><img src="attachement/jpg/site2/20160527/0021705cbb5d18b22bd401.jpg" border="0"><p>中交视讯节目20160414</p></a></li><li><a href="2016-03/31/content_78833.htm" target="_blank"><img src="attachement/jpg/site2/20160331/0021705cbb5d1866bca401.jpg" border="0"><p>中交视讯节目20160330</p></a></li><li><a href="2016-03/23/content_77861.htm" target="_blank"><img src="attachement/jpg/site2/20160323/0021705cbb5d185c7c3201.jpg" border="0"><p>中交视讯节目20160323</p></a></li><li><a href="2016-03/17/content_77261.htm" target="_blank"><img src="attachement/jpg/site2/20160317/0021705cbb5d1854aff201.jpg" border="0"><p>中交视讯节目20160317</p></a></li><li><a href="2016-03/10/content_76441.htm" target="_blank"><img src="attachement/jpg/site2/20160310/0021705cbb5d184b43c31a.jpg" border="0"><p>中交视讯节目20160310</p></a></li><li><a href="2016-03/03/content_76438.htm" target="_blank"><img src="attachement/jpg/site2/20160310/0021705cbb5d184b3e6f19.jpg" border="0"><p>中交视讯节目20160303</p></a></li><li><a href="2016-02/26/content_74804.htm" target="_blank"><img src="attachement/jpg/site2/20160226/0021705cbb5d183a177103.jpg" border="0"><p>中交视讯节目20160226</p></a></li><li><a href="2016-02/26/content_74801.htm" target="_blank"><img src="attachement/jpg/site2/20160226/0021705cbb5d183a172e02.jpg" border="0"><p>中交视讯节目20160216</p></a></li><li><a href="2016-01/22/content_71022.htm" target="_blank"><img src="attachement/jpg/site2/20160122/0021705cbb5d180c259c01.jpg" border="0"><p>中交视讯节目20160122</p></a></li><li><a href="2015-12/31/content_67404.htm" target="_blank"><img src="attachement/jpg/site2/20151231/0021705cbb5d17eed87401.jpg" border="0"><p>中交视讯节目20151231</p></a></li><li><a href="2015-12/11/content_64404.htm" target="_blank"><img src="attachement/jpg/site2/20151211/0021705cbb5d17d4918101.jpg" border="0"><p>中交视讯节目20151211</p></a></li><li><a href="2015-11/19/content_60225.htm" target="_blank"><img src="attachement/jpg/site2/20151119/0021705cbb5d17b7b97402.jpg" border="0"><p>中交视讯节目20151119</p></a></li></ul>
+<ul class="nw80ul"><li><a href="2015-11/24/content_61205.htm" target="_blank"><img src="attachement/jpg/site2/20151124/c81f661ad7a517be57f22f.jpg" border="0"><p>43小时换梁，宝宝惊呆了</p></a></li><li><a href="2015-05/14/content_28833.htm" target="_blank"><img src="attachement/jpg/site2/20150722/4cbb585fc4f817198e140e.jpg" border="0"><p>北京首条中低速磁悬浮交通线明年通车</p></a></li><li><a href="2015-04/30/content_27030.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abcfb20e.png" border="0"><p>《温情提示》全国文明交通宣传广告</p></a></li><li><a href="2015-04/29/content_26968.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abd9b81e.png" border="0"><p>很有创意！国外的交通安全公益广告</p></a></li><li><a href="2015-04/29/content_26967.htm" target="_blank"><img src="attachement/jpg/site2/20150430/acb57d9b932016abda681f.jpg" border="0"><p>航拍欧洲城市交通</p></a></li><li><a href="2015-04/29/content_26955.htm" target="_blank"><img src="attachement/jpg/site2/20150430/acb57d9b932016abe48929.jpg" border="0"><p>【官方完整】实拍世界首款实用型“飞行汽车”</p></a></li><li><a href="2015-04/29/content_26952.htm" target="_blank"><img src="attachement/jpg/site2/20150430/acb57d9b932016abe8072b.jpg" border="0"><p>超级列车 比飞机更快和更安全的新交通系统</p></a></li><li><a href="2015-04/30/content_27090.htm" target="_blank"><img src="attachement/jpg/site2/20150430/acb57d9b932016abec452e.jpg" border="0"><p>新西兰交通安全创意广告：开慢一点，且行且珍惜</p></a></li><li><a href="2015-04/30/content_27032.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abc69803.png" border="0"><p>创意短片 交通工具的发展历史</p></a></li><li><a href="2015-04/30/content_27031.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abcf8a0d.png" border="0"><p>超大脑洞交通安全公益短片《街舞街灯》</p></a></li><li><a href="2015-04/30/content_27025.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abcfcf0f.png" border="0"><p>泰国交通公益广告 搞笑又有教育意义</p></a></li><li><a href="2015-04/30/content_27007.htm" target="_blank"><img src="attachement/png/site2/20150430/acb57d9b932016abd01f11.png" border="0"><p>交通安全公益片《安全带》</p></a></li></ul>
+</div>
+</div>
+<div class="blank10">clear</div>
+
+<iframe id="bottom_hd" src="node_1031.htm" width="100%" height="620" scrolling="no" marginheight="0" frameborder="0"></iframe>
+		
+		<div class="lbox">
+		<div class="impression">
+				<h2><a href="node_148.htm"  target="_parent"  class="">更多>></a>印象交通</h2>
+				<div class="d">
+					<ul>
+						<li class="d01">
+<a href="2014-06/29/content_2399.htm" target="_blank"><img src="attachement/jpg/site2/20150601/005056c0000116d60b170c.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2399.htm" target="_blank">海上打桩</a></p></div>
+						</li>
+						<li class="d02">
+<a href="2014-06/29/content_2403.htm" target="_blank"><img src="attachement/jpg/site2/20140629/f8b1569e5bfa151a04c706.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2403.htm" target="_blank">香港屯門公路</a></p></div>
+						</li>
+						<li class="d02">
+<a href="2014-06/29/content_2408.htm" target="_blank"><img src="attachement/jpg/site2/20140629/f8b1569e5bfa151a05d608.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2408.htm" target="_blank">海巡艇编队在巡航</a></p></div>
+						</li>
+						<li class="d03">
+<a href="2014-06/29/content_2409.htm" target="_blank"><img src="attachement/jpg/site2/20140629/f8b1569e5bfa151a061909.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2409.htm" target="_blank">雅江18道拐路段车辆川流不息</a></p></div>
+						</li>
+						<li class="d04">
+<a href="2014-06/29/content_2413.htm" target="_blank"><img src="attachement/jpg/site2/20140629/f8b1569e5bfa151a069b0b.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2413.htm" target="_blank">马来西亚槟城第二跨海大桥</a></p></div>
+						</li>
+						<li class="d05">
+<a href="2014-06/29/content_2430.htm" target="_blank"><img src="attachement/jpg/site2/20150601/005056c0000116d60c9a2a.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2430.htm" target="_blank">墨脱公路建设中翻越雪山背运柴油</a></p></div>
+						</li>
+						<li class="d03">
+<a href="2014-06/29/content_2410.htm" target="_blank"><img src="attachement/jpg/site2/20150601/005056c0000116d60caf2f.jpg" border="0"></a><div class="ds"><span>bj</span><p><a href="2014-06/29/content_2410.htm" target="_blank">西藏墨脱公路嘎隆拉隧道</a></p></div>
+						</li>
+					</ul>
+				</div>
+		  </div>
+	  </div>
+<div class="right-box f-r" style="background:#f4f4f4;height:384px;">
+<h2 class="ztzth2"><a href="node_148.htm"  target="_parent"  class="">更多>></a>报社机构</h2>
+<ul class="ztzth3">
+<li><a href="zhuanti/node_346.htm" target="_blank"><img src="css/juelebu1.gif" border="0" /></a></li>
+
+<li><a href="zhuanti/node_342.htm" target="_blank"><img src="50.files/peixun.jpg" /></a></li>
+<li><a href="shengxiang/node_540.htm" target="_blank"><img src="50.files/shengxiang.jpg" /></a></li>
+<li><a href="node_5101.htm" target="_blank"><img src="css/jtad3.jpg" /></a></li>
+</ul>
+</div>
+		
+				
+				
+<iframe id="bottom_jtb" src="node_162.htm" width="100%" height="260" scrolling="no" marginheight="0" frameborder="0"></iframe>
+	</div>
+	
+<!-- PHPStat Start -->
+<script language="javascript">var __$nodeid=100;</script><script language="JavaScript" charset="gb2312" src="http://phpstat.zgjtb.com/phpstat/count/abceffgh/abceffgh.js" ></script><noscript><img src="http://phpstat.zgjtb.com/phpstat/count/abceffgh/abceffgh.php" alt="" style="border:0" /></noscript>
+<!-- /PHPStat End -->
+
+<!--<script>tMenu("mingdan","contents");</script>  两侧广告固定置顶代码-->
+<!--<script>dMenu("diaocha","contents");</script> -->
+</body>
+</html>

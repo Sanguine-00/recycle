@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "struts-2.1.dtd" >
+<struts>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<constant name="struts.ui.theme" value="simple"></constant>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+	<constant name="struts.multipart.maxSize" value="5242880"></constant>
+
+	<package name="authInterceptor" namespace="/" extends="struts-default">
+
+		<interceptors>
+			<interceptor name="authInterceptor" class="njci.interceptor.AuthInterceptor"></interceptor>
+
+			<interceptor-stack name="struts-default">
+				<interceptor-ref name="authInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+
+
+		</interceptors>
+		<default-interceptor-ref name="struts-default"></default-interceptor-ref>
+
+		<global-results>
+			<result name="login">/manager/login.html</result>
+		</global-results>
+
+	</package>
+
+
+	<package name="userInfoAvoidInterceptors" extends="struts-default"
+		namespace="/">
+		<action name="login" method="login" class="userInfoAction">
+			<result name="success" type="redirect">/manager/index.jsp</result>
+			<result name="error">
+				/manager/login.html</result>
+		</action>
+	</package>
+
+	<package name="userInfo" extends="struts-default" namespace="/">
+		<action name="findAllUsers" method="findAllUsers" class="userInfoAction">
+			<result name="success">/manager//manager.jsp</result>
+		</action>
+
+		<action name="editUserInfo" method="editUserInfo" class="userInfoAction">
+			<result name="success">/manager//addmanager.jsp</result>
+		</action>
+
+		<action name="deleteUserById" method="deleteByUserId" class="userInfoAction">
+			<result name="success" type="redirectAction">findAllUsers</result>
+		</action>
+
+
+
+		<action name="editUserResult" method="editUserResult" class="userInfoAction">
+			<result name="success" type="redirectAction">findAllUsers</result>
+			<result name="error">/manager//addmanager.jsp</result>
+			<result name="login" type="redirectAction">login</result>
+		</action>
+
+		<action name="logout" method="logout" class="userInfoAction">
+			<result name="success">/manager/login.jsp</result>
+		</action>
+	</package>
+
+	<package name="newsType" extends="struts-default" namespace="/">
+
+		<action name="findAllNewsType" method="findAllNewsType" class="newsTypeAction">
+			<result name="success">/manager/article_category.jsp </result>
+		</action>
+		<action name="saveNewsType" method="save" class="newsTypeAction">
+			<result name="success" type="redirectAction">
+				findAllNewsType
+			</result>
+		</action>
+
+		<action name="editNewsType" method="editUserInfo" class="newsTypeAction">
+			<result name="success">/manager/add_article_category.jsp</result>
+		</action>
+
+		<action name="deleteNewsType" method="deleteByUserId" class="newsTypeAction">
+			<result name="success" type="redirectAction">
+				findAllNewsType
+			</result>
+		</action>
+	</package>
+
+	<package name="news" extends="struts-default" namespace="/">
+		<action name="findAllNews" class="newsAction" method="findAllNews">
+			<result name="success">/manager/article.jsp</result>
+		</action>
+		<action name="editNewsById" class="newsAction" method="editNewsById">
+			<result name="success">/manager/addarticle.jsp</result>
+		</action>
+
+		<action name="deleteNewsById" class="newsAction" method="deleteNewsById">
+			<result name="success" type="redirectAction">findAllNews</result>
+		</action>
+		<action name="saveUpdatedNews" class="newsAction" method="saveUpdatedNews">
+			<result name="success" type="redirectAction">findAllNews</result>
+		</action>
+
+		<action name="findNewsByTypeId" class="newsAction" method="findNewsByTypeId">
+			<result name="success">/manager/article.jsp</result>
+		</action>
+
+		<action name="newsDetaile" class="newsAction" method="newsDetaile">
+			<result name="success">/manager/news_detail.jsp</result>
+		</action>
+
+
+	</package>
+
+	<package name="typeInfo" extends="struts-default" namespace="/">
+		<action name="findAllTypeInfo" class="typeInfoAction" method="findAllTypeInfo">
+			<result name="success">/manager/product_category.jsp</result>
+		</action>
+		<action name="editTypeInfoById" class="typeInfoAction" method="editTypeInfoById">
+			<result name="success">/manager/add_product_category.jsp</result>
+		</action>
+		<action name="saveUpdatedTypeInfo" class="typeInfoAction"
+			method="saveUpdatedTypeInfo">
+			<result name="success" type="redirectAction">findAllTypeInfo</result>
+		</action>
+		<action name="deleteTypeInfoById" class="typeInfoAction"
+			method="deleteTypeInfoById">
+			<result name="success" type="redirectAction">findAllTypeInfo</result>
+		</action>
+
+	</package>
+	<package name="brandInfo" extends="struts-default" namespace="/">
+		<action name="findAllBrandInfo" class="brandInfoAction" method="findAllBrandInfo">
+			<result name="success">/manager/product_brand.jsp</result>
+		</action>
+		<action name="editBrandInfoById" class="brandInfoAction"
+			method="editNewsById">
+			<result name="success">/manager/add_brand.jsp</result>
+		</action>
+		<action name="saveUpdatedBrandInfo" class="brandInfoAction"
+			method="saveUpdatedBrandInfo">
+			<result name="success" type="redirectAction">findByTypeInfoId</result>
+		</action>
+		<action name="deleteBrandInfoById" class="brandInfoAction"
+			method="deleteBrandInfoById">
+			<result name="success" type="redirectAction">findByTypeInfoId</result>
+		</action>
+		<action name="findByTypeInfoId" class="brandInfoAction" method="findByTypeInfoId">
+			<result name="success">/manager/product_brand.jsp</result>
+		</action>
+
+
+	</package>
+	<package name="productInfo" extends="struts-default" namespace="/">
+
+		<action name="findAllProductInfo" class="productInfoAction"
+			method="findAllProductInfo">
+			<result name="success">/manager/product.jsp</result>
+		</action>
+		<action name="editProductById" class="productInfoAction"
+			method="editProductById">
+			<result name="success">/manager/addproduct.jsp</result>
+		</action>
+		<action name="saveUpdatedProductInfo" class="productInfoAction"
+			method="saveUpdatedProductInfo">
+
+			<result name="success" type="redirectAction">findAllProductInfo</result>
+		</action>
+		<action name="deleteProductInfoById" class="productInfoAction"
+			method="deleteProductInfoById">
+			<result name="success" type="redirectAction">findAllProductInfo</result>
+		</action>
+		<action name="findByUserInfoIdAndBrandInfoId" class="productInfoAction"
+			method="findByUserInfoIdAndBrandInfoId">
+			<result name="success">/manager/product.jsp</result>
+		</action>
+
+
+	</package>
+
+
+
+	<!-- 异步调用专用包 -->
+	<package name="jsonPacket" extends="json-default" namespace="/">
+
+		<action name="findAllTypeInfoInBrandInfo" class="brandInfoAction"
+			method="findAllTypeInfo">
+			<result name="jsonres" type="json" />
+		</action>
+
+		<action name="uploadPic" class="fileUploadAction" method="uploadPic">
+			<result name="jsonres" type="json" />
+		</action>
+
+		<action name="findAllUserInfoInProductInfo" class="productInfoAction"
+			method="findAllUserInfo">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="findAllBrandInfoInProductInfo" class="productInfoAction"
+			method="findAllBrandInfo">
+			<result name="jsonres" type="json" />
+		</action>
+
+
+		<action name="loginInAjax" class="userInfoAction" method="loginInAjax">
+			<result name="jsonres" type="json"></result>
+		</action>
+
+	</package>
+
+</struts>
