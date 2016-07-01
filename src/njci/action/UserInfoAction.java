@@ -234,4 +234,33 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 		return SUCCESS;
 	}
 
+	public String publicLogin() {
+
+		userInfoService.getUserByNameAndPwd(name, password);
+
+		System.out.println(name + "---" + password);
+		UserInfo userInfo = userInfoService.login(name, password);
+		if (userInfo != null) {
+			if (userInfo.getId() == 1) {
+				ActionContext.getContext().getSession().put("login", userInfo);
+				System.out.println("userInfo.getName()" + userInfo.getName());
+				session.put("loginUser", userInfo);
+				return SUCCESS;
+			} else {
+				return ERROR;
+			}
+		} else {
+			return ERROR;
+		}
+
+	}
+
+	public String publicRegister() {
+		UserInfo userInfo = new UserInfo();
+		userInfo.setName(name);
+		userInfo.setPassword(EncryptUtil.md5Crypt(password));
+		userInfo.setRoleInfo(roleInfoService.getById(1));
+		return SUCCESS;
+	}
+
 }

@@ -18,8 +18,11 @@ a {
 	text-decoration: none;
 }
 
+h1{
+	font-size: 20px "微软雅黑";
+}
+
 #main {
-	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -27,15 +30,6 @@ a {
 #header {
 	border: 0px;
 	height: 139px;
-}
-
-#logo {
-	border: 0px;
-	float: left;
-	height: auto;
-	width: 280px;
-	margin: 10px;
-	padding-top: 4px;
 }
 
 #date {
@@ -48,7 +42,7 @@ a {
 }
 
 #date span {
-	color: blue;
+	color: olive;
 	font-style: inherit;
 }
 
@@ -93,7 +87,8 @@ a {
 
 /* menu*/
 #headerMenu {
-	width: 998px; height : 68px;
+	width: 998px;
+	height: 68px;
 	background-color: #0094dc;
 	border-top: 1px solid #007ec6;
 	border-bottom: 1px solid #41beff;
@@ -141,7 +136,7 @@ a {
 }
 
 #headerMenu .navi_end {
-	float:left;
+	float: left;
 	width: 40px;
 	height: 68;
 	background: url("../images/xbb_02.jpg") no-repeat;
@@ -162,10 +157,47 @@ a {
 /*   头部结束     	*/
 #content {
 	border: 0px;
-	height: 800px
+	width: 1190px;
+}
+
+#newsContent{
+	margin-bottom: 50px;
+}
+
+#newsLeft {
+	float: left;
+	width: 1000px;
+	height: 1111px;
+	margin-left: 118px;
+}
+#newsLeft .currnet{
+	padding: 2px;
+}
+#newsLeft .news_title{
+	padding: 2px;
+}
+#newsLeft .news_title h1{
+	text-align: center;
+}
+#newsLeft .news_title p{
+	text-align: right;
+	padding-right: 20px;
+	margin-right: 212px;
+}
+
+#newsLeft .publicTime {
+	padding:2px;
+}
+#newsRight {
+	width: 156px;
+	float: left;
+	margin-left: 10px;
+}
+
+#newsRight li{
+	padding: 5px 2px;
 }
 
 #footer {
 	border: 2px solid blue;
-	height: 200px
 }

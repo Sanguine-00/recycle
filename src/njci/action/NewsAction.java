@@ -160,6 +160,7 @@ public class NewsAction extends ActionSupport implements SessionAware {
 			this.content = news.getContent();
 			this.newsType = news.getNewsType();
 			this.userInfo = news.getUserInfo();
+			this.time = news.getTime();
 			this.newsTypeId = news.getNewsType().getId();
 			this.userInfoId = news.getUserInfo().getId();
 		}

@@ -1,0 +1,3510 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="renderer" content="webkit">
+		<title>手机回收｜二手手机回收｜笔记本回收｜专业二手数码回收平台－爱回收官网</title>
+		<meta name="description"
+			content="爱回收-中国专业的电子产品回收平台，为您提供手机回收、笔记本回收、微单、单反数码相机回收、镜头回收、psp游戏机等二手数码产品回收业务，权威机构检测，高价上门回收-爱回收官网！" />
+		<meta name="Keywords" content="手机回收,笔记本回收,相机回收,数码产品回收" />
+
+		<link href="/Static/css/Common/common_new.min.css?v=423"
+			rel="Stylesheet" type="text/css" />
+
+		<link href="/favicon.ico" mce_href="/favicon.ico" rel="bookmark"
+			type="image/x-icon" />
+		<link href="/favicon.ico" mce_href="/favicon.ico" rel="icon"
+			type="image/x-icon" />
+		<link href="/favicon.ico" mce_href="/favicon.ico" rel="shortcut icon"
+			type="image/x-icon" />
+
+		<link rel="alternate" media="only screen and (max-width: 640px)"
+			href="http://m.aihuishou.com" />
+		<meta name="mobile-agent"
+			content="format=html5; url=http://m.aihuishou.com" />
+		<link rel="canonical" href="http://www.aihuishou.com" />
+		<link
+			href="/Scripts/graphics/plugins/fancybox/jquery.fancybox.css?v=423"
+			rel="stylesheet" type="text/css" />
+		<link id="css" href="/Static/css/home/index.min.css?v=423"
+			rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript">
+    /* Google */
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-24492769-1']);
+    _gaq.push(['_trackPageview']);
+    /* DSP */
+    var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', 'm-24216-1']);
+
+    //var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6206c0fb3ed4e6feb904c97664c91527' type='text/javascript'%3E%3C/script%3E"));
+    var _ahs = [];
+    var baseDomain = "";
+    var loading = "<div class='loading'><div class='loading_icon'></div>信息加载中，让眼睛放松一下吧！</div>";
+    var version = 423;
+    var aihuishouConfig = {
+        popwindowUrl: "/PopWindow",
+        apiUrl: "/Api",
+        pageClick : {}
+    };
+
+    _ahs.push(function () {
+        $(document).ready(function () {
+            /* placeholder BEGIN */
+            jQuery.placeholder = function (input) {
+                var $input = $(input);
+                var placeholder = $input.attr('placeholder');
+                if (!placeholder) return true;
+                if ($input.val) {
+                    if ($input.val() == '' || $input.val() === placeholder) $input.val(placeholder).addClass('placeholder');
+                    $input.focus(function () {
+                        if ($input.val() == placeholder) $input.val('').removeClass('placeholder');
+                    }).blur(function () {
+                        if ($input.val() == '') $input.val(placeholder).addClass('placeholder');
+                    });
+                }
+                else if ($input.text) {
+                    var placeholder = $input.attr('placeholder');
+                    if (!placeholder) return true;
+                    if (!$input.text()) $input.text(placeholder).addClass('placeholder');
+                    $input.focus(function () {
+                        if ($input.text() == placeholder) $input.text('').removeClass('placeholder');
+                    });
+                    $input.blur(function () {
+                        if ($input.text() == '') $input.text(placeholder).addClass('placeholder');
+                    });
+                }
+            };
+            jQuery.fn.placeholder = function () {
+                this.each(function () {
+                    var input = this;
+                    jQuery.placeholder(input);
+                });
+                return this;
+            };
+
+            jQuery.fn.valueExcludePlaceHolder = function(){
+                var result = "";
+                this.each(function(){
+                    var $input = $(this);
+                    var placeholder = $input.attr("placeholder");
+                    if ($input.val)
+                    {                      
+                        var value = $input.val();
+                        if (placeholder != value)
+                        {
+                            result = value;
+                        }                      
+                    }
+                    else if ($input.text)
+                    {
+                        var value = $input.text();
+                        if (placeholder != value)
+                        {
+                            result = value;
+                        }                
+                    }                   
+                });
+                return result;
+            };
+
+            $('input').placeholder();
+            $('textarea').placeholder();
+            /* placeholder END */
+
+        });
+    });
+</script>
+		<script type="text/javascript">
+    function MCR(Controller, Model, Render) {
+        this.controller = new Controller();
+        this.model = new Model();
+        this.render = new Render();
+
+        this.controller.model = this.model;
+        this.controller.render = this.render;
+        this.model.controller = this.controller;
+        this.render.controller = this.controller;
+
+
+        if (typeof (this.model.init) == "function") {
+            this.model.init();
+        }
+
+        if (typeof (this.render.init) == "function") {
+            this.render.init();
+        }
+
+        if (typeof (this.controller.init) == "function") {
+            this.controller.init();
+        }
+    }
+
+    function ahsRender() {
+        this.viewCache = {};
+        _ahs.push(["/Scripts/easytemplate.js?v=" + version]);
+
+        //同步获取view模板
+        this.getViewTemplate = function (path) {
+            if (path.id) {
+                if (this.viewCache[path.id]) {
+                    return this.viewCache[path.id];
+                }
+                else {
+                    var template = $("#pageTemplate").find("#" + path.id).val();
+                    this.viewCache[path.id] = template;
+                    return template;
+                }
+            }
+        };
+
+        //同步渲染view
+        this.view = function (viewPath, model) {
+            return easyTemplate(this.getViewTemplate(viewPath), model).toString();
+        };
+
+    }
+</script>
+	</head>
+	<body class="">
+
+
+		<div id="section-ldx-banner">
+			<div id="ldx-banner-sm">
+				<div class="closeWrap">
+					<div class="closeBtn"></div>
+				</div>
+			</div>
+			<div id="ldx-banner-lg"></div>
+		</div>
+
+
+		<div id="header" class=" ">
+			<div class="navbar">
+				<div class="navbar-content">
+					<div id="region-selection" data-currentid="1">
+						南京
+					</div>
+					<ul class="nav-right">
+						<li class="ordercenter  ">
+							<i></i>
+							<a href="javascript:;" title="订单中心" id="head_pc" class="no_hover">
+								我的订单<span class="triangle_right"></span> </a>
+
+							<div class="logon-hover">
+								<a href="/account">个人中心</a>
+								<a onclick=if (confirm('确定要退出吗？') == false) {
+		return
+									false;
+	};
+href="/Account/Logout.html" title="退出登录"
+									id="logout_btn" class="no_hover"> 退出登录 </a>
+							</div>
+
+						</li>
+						<li class="recyclecart">
+							<div id="recycle-cart">
+								<i class="icon-cart"></i>回收车
+								<span class="highlight">0</span>件
+								<i class="icon-dropdown"></i>
+								<div class="spacer"></div>
+								<div id="recycle-cart-pop">
+
+									<div class="nogoods">
+										回收车中还没有商品，赶紧回收吧！
+									</div>
+									<div class="hasgoods"></div>
+								</div>
+							</div>
+						</li>
+
+						<li class="">
+							<a href="/activity/zhaopin" target="_blank" title="爱回收2016校园招聘"
+								class="no_hover">2016校园招聘</a>
+						</li>
+						<li class="highlight">
+							<a href="/home/Intro.html" title="爱回收网,关于我们,专业手机回收,服务贴心,价格公道"
+								class="no_hover" target="_blank">关于我们</a>
+						</li>
+						<li class="highlight">
+							<a href="/home/safe.html" target="_blank"
+								title="安全保-知名保险公司和爱回收网联合推出的安全保障服务" class="no_hover">安全保</a>
+						</li>
+						<li>
+							<a
+								href="/activity/project100?utm_source=portal&utm_medium=portal_header&utm_campaign=project100"
+								class="no_hover main_project"
+								title="爱回收网100工程-1元换数据线,0元手机贴膜,0元电池换新" target="_blank">100服务</a>
+						</li>
+						<li>
+							<a href="http://www.kdyoupin.com//b2b" title="企业电商商家，二手机，库存机回收"
+								class="no_hover main_project" target="_blank">企业回收</a>
+						</li>
+						<li>
+							<a href="/help/CommonQuestion.html" target="_blank"
+								title="帮助中心 | 常见问题" class="no_hover">帮助中心</a>
+						</li>
+						<li class="sitemap">
+							网站导航
+							<i class="icon-dropdown"></i>
+							<div class="spacer"></div>
+							<ul id="header_sitemap_pop">
+								<li>
+									<dl>
+										<dt>
+											主要频道
+										</dt>
+										<dd>
+											<a href="/" class="no_hover"
+												title="爱回收旧机回收,专业手机回收,笔记本回收,中国专业可靠的二手手机回收平台" target="_blank">旧机回收</a>
+										</dd>
+										<dd>
+											<a href="http://www.aiweixiu.com" class="no_hover"
+												title="方便快捷专业，爱维修带给您全新的维修体验" target="_blank">手机快修</a>
+										</dd>
+										<dd>
+											<a href="http://www.kdyoupin.com" class="no_hover"
+												title="口袋优品,二手手机,专业质检,品质认证,买二手手机的不二选择" target="_blank">口袋优品</a>
+										</dd>
+
+									</dl>
+								</li>
+								<li class="other-channel">
+									<dl>
+										<dt>
+											其他频道
+										</dt>
+										<dd>
+											<a href="/share" class="no_hover"
+												title="爱回收网怎么样,专业可信,爱回收网真实用户评价,晒单返现,微博晒单" target="_blank">用户评价</a>
+										</dd>
+										<dd>
+											<a href="/home/xiaoge.html" class="no_hover"
+												title="爱回收网专业质检团队,优质快捷有范儿" target="_blank">走近小哥</a>
+										</dd>
+										<dd>
+											<a href="/home/Intro.html" title="爱回收网,关于我们,专业手机回收,服务贴心,价格公道"
+												class="no_hover" target="_blank">关于我们</a>
+										</dd>
+										<dd>
+											<a href="/brand" title="二手数码产品回收品牌-二手电子产品回收品牌-爱回收官网"
+												class="no_hover" target="_blank">回收品牌</a>
+										</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>
+											相关服务
+										</dt>
+										<dd>
+											<a class="no_hover" title="爱回收：服务条款"
+												href="/help/AhsServices.html" target="_blank" rel="nofollow">服务条款</a>
+										</dd>
+										<dd>
+											<a class="no_hover" title="爱回收：投诉建议"
+												href="/help/Suggestion.html" target="_blank" rel="nofollow">投诉建议</a>
+										</dd>
+										<dd class="kefu_pop">
+											<a href="#kefupop" class="no_hover">在线客服</a>
+										</dd>
+									</dl>
+								</li>
+							</ul>
+						</li>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="top-area">
+				<div class="search">
+					<a href="/" title="爱回收网,手机回收,笔记本回收,中国专业可靠的二手数码回收平台"> <span
+						class="icon-logo"></span> <span class="icon-description">手机回收一站式平台</span>
+					</a>
+					<div class="searchbox">
+						<input id="txt-keyword" type="text" placeholder="请输入手机型号"
+							autocomplete="off" class="ac_input" />
+						<a id="btnSearchKeyWords" href="/shouji"
+							title="二手手机回收｜旧手机回收｜二手手机交易－爱回收"> </a>
+					</div>
+				</div>
+
+				<div class="nav-projects">
+					<div class="tab-menu">
+						<ul>
+							<li>
+								<a href="http://www.aihuishou.com" target="_blank"
+									class="activemenu" title="手机回收,二手手机回收,专业靠谱的数码产品回收平台"> 旧机回收
+									<i></i> </a>
+							</li>
+							<li>
+								<a href="http://www.aiweixiu.com" title="爱维修,手机快修服务,爱维修官网"
+									target="_blank">手机快修<i></i> </a>
+							</li>
+							<li>
+								<a href="http://www.kdyoupin.com"
+									title="口袋优品,二手良品官网,超划算的二手手机购买网" target="_blank">
+									<div class="popup-triangle">
+
+										<span class="arrow"></span>
+										<span class="tip">二手手机购买</span>
+
+									</div> 口袋优品<i></i> </a>
+							</li>
+						</ul>
+						<div class="icon-app">
+							<i></i>爱回收APP
+							<div class="app-content">
+								<img class="wechat" src="/Images/Common/wechat-app-download.png" />
+								<p>
+									下载爱回收网App
+								</p>
+								<b>掌上回收更健康</b>
+								<img class="ios-android-plate"
+									src="/Images/Common/ios-android-plate.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="body">
+
+
+
+
+
+			<div id="section-banner">
+				<div id="nav-banners" class="swiper-container">
+					<div class="swiper-wrapper">
+
+
+
+
+
+						<div class="swiper-slide">
+							<a
+								style="background-image: url(/Static/img/home/banners/banner-jiadian.png)"
+								href="/Product/Search.html?c=53"
+								title="爱回收家电回收,彩电回收,冰箱回收,洗衣机回收" target="_blank"></a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								style="background-image: url(/Static/img/home/banners/banner_3c.png?v=2)"
+								href="/youxiji?utm_source=portal&amp;utm_medium=portal_banner&amp;utm_campaign=weixiu_exchange_screen"
+								title="智能3C数码 开始回收" target="_blank"></a>
+						</div>
+
+						<div class="swiper-slide">
+							<a
+								style="background-image: url(/Static/img/home/banners/samsung-banner.png)"
+								href="http://support-cn.samsung.com/campaign/mobilephone/cchange/"
+								title="旧爱换C 三星手机以旧换新" target="_blank" rel="nofollow"></a>
+						</div>
+						<div class="swiper-slide">
+							<a
+								style="background-image: url(/Static/img/home/banners/tester-banner.png)"
+								href="http://www.kdyoupin.com/site/ErshouTester?utm_source=portal&utm_medium=portal_banner&utm_campaign=testphones"
+								title="企业测试机，新的太贵，旧得刚好" target="_blank"></a>
+						</div>
+
+
+						<div class="swiper-slide">
+							<div
+								style="background-image: url(/Static/img/home/banners/banner-highprice.jpg); display: block; height: 356px; width: 1920px; background-position: center center; background-repeat: no-repeat;"
+								href="#" title="二手手机回收，限时高价回收" rel="nofollow"></div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+
+				<div id="category-pop">
+					<ul class="category-nav">
+
+						<li class="phone category">
+							<dl>
+								<dt>
+									<a href="/shouji" target="_blank" title="手机回收">手机回收</a>
+								</dt>
+
+							</dl>
+						</li>
+						<li class="tablet category">
+							<dl>
+								<dt>
+									<a href="/pingban" target="_blank" title="平板电脑回收">平板电脑回收</a>
+								</dt>
+
+							</dl>
+						</li>
+						<li class="notebook category">
+							<dl>
+								<dt>
+									<a href="/laptop" target="_blank" title="笔记本回收">笔记本回收</a>
+								</dt>
+
+							</dl>
+						</li>
+						<li class="camera category">
+							<dl>
+								<dt>
+									<a href="/Product/Search.html?c=22" target="_blank"
+										title="摄影摄像回收">摄影摄像回收</a>
+								</dt>
+
+							</dl>
+						</li>
+						<li class="youxiji category">
+							<dl>
+								<dt>
+									<a href="/youxiji" target="_blank" title="智能数码回收">智能数码回收</a>
+								</dt>
+
+							</dl>
+						</li>
+						<li class="jiadian category">
+							<dl>
+								<dt>
+									<a href="/Product/Search.html?c=53" target="_blank"
+										title="家用电器回收">家用电器回收</a>
+								</dt>
+
+							</dl>
+						</li>
+					</ul>
+					<div id="more-category-pop" class="showphone">
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/shouji/b52" title="苹果回收">苹果</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17458.html" target="_blank"
+											title="苹果 iPhone 5S手机回收">苹果 iPhone 5S</a>
+									</li>
+									<li>
+										<a href="/product/17460.html" target="_blank"
+											title="苹果 iPhone 4S手机回收">苹果 iPhone 4S</a>
+									</li>
+									<li>
+										<a href="/product/17455.html" target="_blank"
+											title="苹果 iPhone 4手机回收">苹果 iPhone 4</a>
+									</li>
+									<li>
+										<a href="/product/17461.html" target="_blank"
+											title="苹果 iPhone 6手机回收">苹果 iPhone 6</a>
+									</li>
+									<li>
+										<a href="/product/17457.html" target="_blank"
+											title="苹果 iPhone 5手机回收">苹果 iPhone 5</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b52" target="_blank"
+									title="更多二手苹果手机回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/shouji/b7" title="三星回收">三星</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17492.html" target="_blank"
+											title="三星 Galaxy S3手机回收">三星 Galaxy S3</a>
+									</li>
+									<li>
+										<a href="/product/17488.html" target="_blank"
+											title="三星 Galaxy Note 3手机回收">三星 Galaxy Note 3</a>
+									</li>
+									<li>
+										<a href="/product/17486.html" target="_blank"
+											title="三星 Galaxy Note 2手机回收">三星 Galaxy Note 2</a>
+									</li>
+									<li>
+										<a href="/product/17493.html" target="_blank"
+											title="三星 Galaxy S4手机回收">三星 Galaxy S4</a>
+									</li>
+									<li>
+										<a href="/product/17494.html" target="_blank"
+											title="三星 Galaxy S5手机回收">三星 Galaxy S5</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b7" target="_blank"
+									title="更多二手三星手机回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/shouji/b184" title="小米回收">小米</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17507.html" target="_blank"
+											title="小米手机3手机回收">小米手机3</a>
+									</li>
+									<li>
+										<a href="/product/17506.html" target="_blank"
+											title="小米手机2S手机回收">小米手机2S</a>
+									</li>
+									<li>
+										<a href="/product/14990.html" target="_blank"
+											title="小米手机4手机回收">小米手机4</a>
+									</li>
+									<li>
+										<a href="/product/10025.html" target="_blank"
+											title="红米Note手机回收">红米Note</a>
+									</li>
+									<li>
+										<a href="/product/17508.html" target="_blank"
+											title="红米手机1S手机回收">红米手机1S</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b184" target="_blank"
+									title="更多二手小米手机回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/shouji/b9" title="华为回收">华为</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/14972.html" target="_blank"
+											title="华为 荣耀6手机回收">华为 荣耀6</a>
+									</li>
+									<li>
+										<a href="/product/15080.html" target="_blank"
+											title="华为 Mate 7手机回收">华为 Mate 7</a>
+									</li>
+									<li>
+										<a href="/product/9427.html" target="_blank"
+											title="华为 Ascend P6手机回收">华为 Ascend P6</a>
+									</li>
+									<li>
+										<a href="/product/17252.html" target="_blank"
+											title="华为 荣耀3C手机回收">华为 荣耀3C</a>
+									</li>
+									<li>
+										<a href="/product/17259.html" target="_blank"
+											title="华为 荣耀畅玩4X手机回收">华为 荣耀畅玩4X</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b9" target="_blank"
+									title="更多二手华为手机回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/shouji/b24" title="魅族回收">魅族</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17614.html" target="_blank"
+											title="魅族 魅蓝 Note 2手机回收">魅族 魅蓝 Note 2</a>
+									</li>
+									<li>
+										<a href="/product/17305.html" target="_blank"
+											title="魅族 魅蓝 Note手机回收">魅族 魅蓝 Note</a>
+									</li>
+									<li>
+										<a href="/product/9479.html" target="_blank"
+											title="魅族 MX3手机回收">魅族 MX3</a>
+									</li>
+									<li>
+										<a href="/product/15054.html" target="_blank"
+											title="魅族 MX4手机回收">魅族 MX4</a>
+									</li>
+									<li>
+										<a href="/product/17753.html" target="_blank"
+											title="魅族魅蓝 2手机回收">魅族魅蓝 2</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b24" target="_blank"
+									title="更多二手魅族手机回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/shouji/b4" title="OPPO回收">OPPO</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17579.html" target="_blank"
+											title="OPPO R7移动/电信手机回收">OPPO R7移动/电信</a>
+									</li>
+									<li>
+										<a href="/product/10173.html" target="_blank"
+											title="OPPO R1S（R8007）手机回收">OPPO R1S（R8007）</a>
+									</li>
+									<li>
+										<a href="/product/10109.html" target="_blank"
+											title="OPPO Find 7（轻装版/X9007）手机回收">OPPO Find 7（轻装版/X9007）</a>
+									</li>
+									<li>
+										<a href="/product/9183.html" target="_blank"
+											title="OPPO x909 Find 5/16G手机回收">OPPO x909 Find 5/16G</a>
+									</li>
+									<li>
+										<a href="/product/15044.html" target="_blank"
+											title="OPPO R3(7007)手机回收">OPPO R3(7007)</a>
+									</li>
+								</ul>
+								<a class="more" href="/shouji/b4" target="_blank"
+									title="更多二手OPPO手机回收">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands" href="/shouji"
+								title="更多手机回收">更多手机品牌</a>
+						</div>
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/pingban/b52" title="苹果回收">苹果</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/7425.html" target="_blank"
+											title="iPad 2代平板电脑回收">iPad 2代</a>
+									</li>
+									<li>
+										<a href="/product/8757.html" target="_blank"
+											title="iPad Mini平板电脑回收">iPad Mini</a>
+									</li>
+									<li>
+										<a href="/product/7424.html" target="_blank"
+											title="iPad 1代平板电脑回收">iPad 1代</a>
+									</li>
+									<li>
+										<a href="/product/9640.html" target="_blank"
+											title="iPad Mini2平板电脑回收">iPad Mini2</a>
+									</li>
+									<li>
+										<a href="/product/8218.html" target="_blank"
+											title="iPad 3代（New iPad）平板电脑回收">iPad 3代（New iPad）</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b52" target="_blank"
+									title="更多二手苹果平板电脑回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/pingban/b7" title="三星回收">三星</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/8643.html" target="_blank"
+											title="三星 N8000平板电脑回收">三星 N8000</a>
+									</li>
+									<li>
+										<a href="/product/15005.html" target="_blank"
+											title="三星 GALAXY Tab S T705C（4G版）平板电脑回收">三星 GALAXY Tab S
+											T705C（4G版）</a>
+									</li>
+									<li>
+										<a href="/product/7417.html" target="_blank"
+											title="三星 GALAXY Tab P1000平板电脑回收">三星 GALAXY Tab P1000</a>
+									</li>
+									<li>
+										<a href="/product/8515.html" target="_blank"
+											title="三星 P3100平板电脑回收">三星 P3100</a>
+									</li>
+									<li>
+										<a href="/product/9424.html" target="_blank"
+											title="三星 GALAXY Note 8.0 N5100平板电脑回收">三星 GALAXY Note 8.0
+											N5100</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b7" target="_blank"
+									title="更多二手三星平板电脑回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/pingban/b184" title="小米回收">小米</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/15032.html" target="_blank"
+											title="小米平板平板电脑回收">小米平板</a>
+									</li>
+									<li>
+										<a href="/product/17944.html" target="_blank"
+											title="小米平板2平板电脑回收">小米平板2</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b184" target="_blank"
+									title="更多二手小米平板电脑回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/pingban/b9" title="华为回收">华为</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17554.html" target="_blank"
+											title="华为 荣耀X1平板电脑回收">华为 荣耀X1</a>
+									</li>
+									<li>
+										<a href="/product/17555.html" target="_blank"
+											title="华为 荣耀x2平板电脑回收">华为 荣耀x2</a>
+									</li>
+									<li>
+										<a href="/product/17772.html" target="_blank"
+											title="华为&#160;&#160;M2平板电脑回收">华为&#160;&#160;M2</a>
+									</li>
+									<li>
+										<a href="/product/19289.html" target="_blank"
+											title="华为MediaPad 10 FHD平板电脑回收">华为MediaPad 10 FHD</a>
+									</li>
+									<li>
+										<a href="/product/17961.html" target="_blank"
+											title="华为 荣耀T1-701U平板电脑回收">华为 荣耀T1-701U</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b9" target="_blank"
+									title="更多二手华为平板电脑回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/pingban/b272" title="微软回收">微软</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/9049.html" target="_blank"
+											title="微软 Surface RT平板电脑回收">微软 Surface RT</a>
+									</li>
+									<li>
+										<a href="/product/14982.html" target="_blank"
+											title="微软 Surface 2平板电脑回收">微软 Surface 2</a>
+									</li>
+									<li>
+										<a href="/product/19290.html" target="_blank"
+											title="微软 surface pro3平板电脑回收">微软 surface pro3</a>
+									</li>
+									<li>
+										<a href="/product/9294.html" target="_blank"
+											title="微软 Surface Pro平板电脑回收">微软 Surface Pro</a>
+									</li>
+									<li>
+										<a href="/product/17644.html" target="_blank"
+											title="微软 Surface 3平板电脑回收">微软 Surface 3</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b272" target="_blank"
+									title="更多二手微软平板电脑回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/pingban/b19" title="诺基亚回收">诺基亚</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17924.html" target="_blank"
+											title="诺基亚 N1平板电脑回收">诺基亚 N1</a>
+									</li>
+									<li>
+										<a href="/product/20788.html" target="_blank"
+											title="诺基亚Lumia Coffee Tab平板电脑回收">诺基亚Lumia Coffee Tab</a>
+									</li>
+									<li>
+										<a href="/product/20786.html" target="_blank"
+											title="诺基亚Lumia 2520平板电脑回收">诺基亚Lumia 2520</a>
+									</li>
+									<li>
+										<a href="/product/20789.html" target="_blank"
+											title="诺基亚Lumia Phablet平板电脑回收">诺基亚Lumia Phablet</a>
+									</li>
+									<li>
+										<a href="/product/20787.html" target="_blank"
+											title="诺基亚Lumia Tablet平板电脑回收">诺基亚Lumia Tablet</a>
+									</li>
+								</ul>
+								<a class="more" href="/pingban/b19" target="_blank"
+									title="更多二手诺基亚平板电脑回收">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands" href="/pingban"
+								title="更多平板电脑回收">更多平板电脑品牌</a>
+						</div>
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/laptop/b52" title="苹果回收">苹果</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17970.html" target="_blank"
+											title="苹果 11年 13寸 MacBook Pro笔记本回收">苹果 11年 13寸 MacBook
+											Pro</a>
+									</li>
+									<li>
+										<a href="/product/17718.html" target="_blank"
+											title="苹果 15年 13寸 MacBook Air笔记本回收">苹果 15年 13寸 MacBook
+											Air</a>
+									</li>
+									<li>
+										<a href="/product/17721.html" target="_blank"
+											title="苹果 普通屏 12年 13寸 MacBook Pro笔记本回收">苹果 普通屏 12年 13寸
+											MacBook Pro</a>
+									</li>
+									<li>
+										<a href="/product/17975.html" target="_blank"
+											title="苹果 11年 11寸 MacBook Air笔记本回收">苹果 11年 11寸 MacBook
+											Air</a>
+									</li>
+									<li>
+										<a href="/product/17974.html" target="_blank"
+											title="苹果 10年 11寸 MacBook Air笔记本回收">苹果 10年 11寸 MacBook
+											Air</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b52" target="_blank"
+									title="更多二手苹果笔记本回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/laptop/b105" title="联想ThinkPad回收">联想ThinkPad</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/6587.html" target="_blank"
+											title="联想ThinkPad E40笔记本回收">联想ThinkPad E40</a>
+									</li>
+									<li>
+										<a href="/product/6586.html" target="_blank"
+											title="联想ThinkPad E420笔记本回收">联想ThinkPad E420</a>
+									</li>
+									<li>
+										<a href="/product/6602.html" target="_blank"
+											title="联想ThinkPad SL410笔记本回收">联想ThinkPad SL410</a>
+									</li>
+									<li>
+										<a href="/product/6635.html" target="_blank"
+											title="联想ThinkPad X200笔记本回收">联想ThinkPad X200</a>
+									</li>
+									<li>
+										<a href="/product/6609.html" target="_blank"
+											title="联想Thinkpad X100e笔记本回收">联想Thinkpad X100e</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b105" target="_blank"
+									title="更多二手联想ThinkPad笔记本回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/laptop/b103" title="华硕回收">华硕</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/9189.html" target="_blank"
+											title="华硕 EeePC笔记本回收">华硕 EeePC</a>
+									</li>
+									<li>
+										<a href="/product/6309.html" target="_blank"
+											title="华硕X42笔记本回收">华硕X42</a>
+									</li>
+									<li>
+										<a href="/product/6332.html" target="_blank"
+											title="华硕K42笔记本回收">华硕K42</a>
+									</li>
+									<li>
+										<a href="/product/6306.html" target="_blank"
+											title="华硕K43笔记本回收">华硕K43</a>
+									</li>
+									<li>
+										<a href="/product/6301.html" target="_blank"
+											title="华硕A43笔记本回收">华硕A43</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b103" target="_blank"
+									title="更多二手华硕笔记本回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/laptop/b18" title="联想回收">联想</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/6073.html" target="_blank"
+											title="联想Y450笔记本回收">联想Y450</a>
+									</li>
+									<li>
+										<a href="/product/6061.html" target="_blank"
+											title="联想Y470笔记本回收">联想Y470</a>
+									</li>
+									<li>
+										<a href="/product/6083.html" target="_blank"
+											title="联想G450笔记本回收">联想G450</a>
+									</li>
+									<li>
+										<a href="/product/6062.html" target="_blank"
+											title="联想G470笔记本回收">联想G470</a>
+									</li>
+									<li>
+										<a href="/product/6060.html" target="_blank"
+											title="联想Y460笔记本回收">联想Y460</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b18" target="_blank"
+									title="更多二手联想笔记本回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/laptop/b104" title="宏碁回收">宏碁</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/6470.html" target="_blank"
+											title="Acer 4741G 系列笔记本回收">Acer 4741G 系列</a>
+									</li>
+									<li>
+										<a href="/product/6469.html" target="_blank"
+											title="Acer 4750G笔记本回收">Acer 4750G</a>
+									</li>
+									<li>
+										<a href="/product/8796.html" target="_blank"
+											title="Acer E1-471G笔记本回收">Acer E1-471G</a>
+									</li>
+									<li>
+										<a href="/product/6473.html" target="_blank"
+											title="Acer 4743G笔记本回收">Acer 4743G</a>
+									</li>
+									<li>
+										<a href="/product/6499.html" target="_blank"
+											title="Acer 4736笔记本回收">Acer 4736</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b104" target="_blank"
+									title="更多二手宏碁笔记本回收">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/laptop/b51" title="戴尔回收">戴尔</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/6860.html" target="_blank"
+											title="戴尔Inspiron 灵越 14笔记本回收">戴尔Inspiron 灵越 14</a>
+									</li>
+									<li>
+										<a href="/product/6852.html" target="_blank"
+											title="戴尔Inspiron 灵越 15R笔记本回收">戴尔Inspiron 灵越 15R</a>
+									</li>
+									<li>
+										<a href="/product/6851.html" target="_blank"
+											title="戴尔Inspiron 灵越 14R笔记本回收">戴尔Inspiron 灵越 14R</a>
+									</li>
+									<li>
+										<a href="/product/16933.html" target="_blank"
+											title="戴尔 Inspiron 灵越 14R（N4110）换壳版笔记本回收">戴尔 Inspiron 灵越
+											14R（N4110）换壳版</a>
+									</li>
+									<li>
+										<a href="/product/17642.html" target="_blank"
+											title="戴尔 Latitude E6410笔记本回收">戴尔 Latitude E6410</a>
+									</li>
+								</ul>
+								<a class="more" href="/laptop/b51" target="_blank"
+									title="更多二手戴尔笔记本回收">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands" href="/laptop"
+								title="更多笔记本回收">更多笔记本品牌</a>
+						</div>
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/danfan" title="二手单反相机回收">单反相机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/15631.html" target="_blank"
+											title="尼康D3100 机身">尼康D3100 机身</a>
+									</li>
+									<li>
+										<a href="/product/15591.html" target="_blank"
+											title="佳能 600D 机身">佳能 600D 机身</a>
+									</li>
+									<li>
+										<a href="/product/10260.html" target="_blank"
+											title="佳能 450D 机身">佳能 450D 机身</a>
+									</li>
+									<li>
+										<a href="/product/10926.html" target="_blank"
+											title="尼康 D3200 机身">尼康 D3200 机身</a>
+									</li>
+									<li>
+										<a href="/product/10576.html" target="_blank"
+											title="佳能 550D 机身">佳能 550D 机身</a>
+									</li>
+								</ul>
+								<a class="more" href="/danfan" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/weidan" title="二手微单相机回收">微单相机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/16126.html" target="_blank"
+											title="索尼ILCE-5000套机（E PZ 16-50mm）">索尼ILCE-5000套机（E PZ
+											16-50mm）</a>
+									</li>
+									<li>
+										<a href="/product/16161.html" target="_blank"
+											title="索尼NEX-7套机（E 18-55mm）">索尼NEX-7套机（E 18-55mm）</a>
+									</li>
+									<li>
+										<a href="/product/16162.html" target="_blank"
+											title="索尼NEX-5N套机（E 18-55mm）">索尼NEX-5N套机（E 18-55mm）</a>
+									</li>
+									<li>
+										<a href="/product/16124.html" target="_blank"
+											title="索尼NEX-5T套机（16-50mm）">索尼NEX-5T套机（16-50mm）</a>
+									</li>
+									<li>
+										<a href="/product/16123.html" target="_blank"
+											title="索尼ILCE-5100套机（16-50mm）">索尼ILCE-5100套机（16-50mm）</a>
+									</li>
+								</ul>
+								<a class="more" href="/weidan" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/digitalcamera" title="二手数码相机回收">数码相机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/16224.html" target="_blank" title="其他数码相机">其他数码相机</a>
+									</li>
+									<li>
+										<a href="/product/11648.html" target="_blank" title="索尼RX100">索尼RX100</a>
+									</li>
+									<li>
+										<a href="/product/12775.html" target="_blank" title="卡西欧TR150">卡西欧TR150</a>
+									</li>
+									<li>
+										<a href="/product/11815.html" target="_blank" title="索尼T10">索尼T10</a>
+									</li>
+									<li>
+										<a href="/product/14066.html" target="_blank" title="松下LX5GK">松下LX5GK</a>
+									</li>
+								</ul>
+								<a class="more" href="/digitalcamera" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/lens" title="二手镜头回收">镜头</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/10617.html" target="_blank"
+											title="佳能EF-S 18-55mm f/3.5-5.6 IS II">佳能EF-S 18-55mm
+											f/3.5-5.6 IS II</a>
+									</li>
+									<li>
+										<a href="/product/10541.html" target="_blank"
+											title="佳能EF 50mm f/1.8 II">佳能EF 50mm f/1.8 II</a>
+									</li>
+									<li>
+										<a href="/product/15205.html" target="_blank"
+											title="尼康AF-S DX 尼克尔 18-105mm f/3.5-5.6G ED VR">尼康AF-S DX
+											尼克尔 18-105mm f/3.5-5.6G ED VR</a>
+									</li>
+									<li>
+										<a href="/product/11459.html" target="_blank"
+											title="尼康AF-S DX 18-55mm f/3.5-5.6G VR">尼康AF-S DX 18-55mm
+											f/3.5-5.6G VR</a>
+									</li>
+									<li>
+										<a href="/product/10651.html" target="_blank"
+											title="佳能EF-S 18-55mm f/3.5-5.6 IS">佳能EF-S 18-55mm
+											f/3.5-5.6 IS</a>
+									</li>
+								</ul>
+								<a class="more" href="/lens" target="_blank">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands"
+								href="/Product/Search.html?c=22" title="更多摄影摄像回收">更多摄影摄像品牌</a>
+						</div>
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=64" title="二手智能手表回收">智能手表</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17513.html" target="_blank"
+											title="Apple Watch">Apple Watch</a>
+									</li>
+									<li>
+										<a href="/product/20744.html" target="_blank"
+											title="Apple Watch Sport">Apple Watch Sport</a>
+									</li>
+									<li>
+										<a href="/product/20547.html" target="_blank"
+											title="三星 Gear S R750">三星 Gear S R750</a>
+									</li>
+									<li>
+										<a href="/product/20546.html" target="_blank"
+											title="三星 GALAXY GEAR S2">三星 GALAXY GEAR S2</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=64" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=71" title="二手MP3/MP4回收">MP3/MP4</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/1985.html" target="_blank"
+											title="iPod Touch 4代">iPod Touch 4代</a>
+									</li>
+									<li>
+										<a href="/product/8667.html" target="_blank"
+											title="iPod Touch 5代">iPod Touch 5代</a>
+									</li>
+									<li>
+										<a href="/product/1983.html" target="_blank"
+											title="iPod Touch 2代">iPod Touch 2代</a>
+									</li>
+									<li>
+										<a href="/product/1984.html" target="_blank"
+											title="iPod Touch 3代">iPod Touch 3代</a>
+									</li>
+									<li>
+										<a href="/product/17907.html" target="_blank"
+											title="iPod Touch 6代">iPod Touch 6代</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=71" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=63" title="二手智能手环回收">智能手环</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/20536.html" target="_blank"
+											title="Jawbone UP24">Jawbone UP24</a>
+									</li>
+									<li>
+										<a href="/product/20528.html" target="_blank"
+											title="Fitbit Flex">Fitbit Flex</a>
+									</li>
+									<li>
+										<a href="/product/20532.html" target="_blank"
+											title="Jawbone UP">Jawbone UP</a>
+									</li>
+									<li>
+										<a href="/product/20545.html" target="_blank" title="华为 荣耀手环">华为
+											荣耀手环</a>
+									</li>
+									<li>
+										<a href="/product/20544.html" target="_blank" title="华为 B2">华为
+											B2</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=63" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=62" title="二手智能眼镜回收">智能眼镜</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/20960.html" target="_blank"
+											title="Google glass 2">Google glass 2</a>
+									</li>
+									<li>
+										<a href="/product/20943.html" target="_blank"
+											title="Google glass 3">Google glass 3</a>
+									</li>
+									<li>
+										<a href="/product/20959.html" target="_blank"
+											title="Google glass">Google glass</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=62" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=65" title="二手游戏机回收">游戏机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/1801.html" target="_blank"
+											title="索尼 PSP 2000">索尼 PSP 2000</a>
+									</li>
+									<li>
+										<a href="/product/1802.html" target="_blank"
+											title="索尼 PSP 3000">索尼 PSP 3000</a>
+									</li>
+									<li>
+										<a href="/product/1800.html" target="_blank"
+											title="索尼 PSP 1000">索尼 PSP 1000</a>
+									</li>
+									<li>
+										<a href="/product/1804.html" target="_blank" title="任天堂 NDSL">任天堂
+											NDSL</a>
+									</li>
+									<li>
+										<a href="/product/1807.html" target="_blank" title="神游 IDSI">神游
+											IDSI</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=65" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=72" title="二手GoPro回收">GoPro</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/17630.html" target="_blank"
+											title="GoPro Hero">GoPro Hero</a>
+									</li>
+									<li>
+										<a href="/product/17631.html" target="_blank"
+											title="GoPro Hero 3+ Black">GoPro Hero 3+ Black</a>
+									</li>
+									<li>
+										<a href="/product/17632.html" target="_blank"
+											title="GoPro Hero4 Black">GoPro Hero4 Black</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=72" target="_blank">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands" href="/youxiji"
+								title="更多智能数码回收">更多智能数码品牌</a>
+							<a target="_blank" class="morebrands"
+								href="http://store.dji.com/cn/recycle" title="大疆无人机官方回收"
+								rel="nofollow">大疆无人机官方回收</a>
+						</div>
+						<div class="category-panel">
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=54" title="二手电视机回收">电视机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21878.html" target="_blank" title="其他液晶电视">其他液晶电视</a>
+									</li>
+									<li>
+										<a href="/product/21892.html" target="_blank" title="夏普液晶电视">夏普液晶电视</a>
+									</li>
+									<li>
+										<a href="/product/21882.html" target="_blank" title="小米液晶电视">小米液晶电视</a>
+									</li>
+									<li>
+										<a href="/product/21880.html" target="_blank" title="飞利浦液晶电视">飞利浦液晶电视</a>
+									</li>
+									<li>
+										<a href="/product/21881.html" target="_blank" title="松下液晶电视">松下液晶电视</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=54" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=55" title="二手冰箱回收">冰箱</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21934.html" target="_blank" title="其他冰箱">其他冰箱</a>
+									</li>
+									<li>
+										<a href="/product/21928.html" target="_blank" title="松下冰箱">松下冰箱</a>
+									</li>
+									<li>
+										<a href="/product/21931.html" target="_blank" title="美的冰箱">美的冰箱</a>
+									</li>
+									<li>
+										<a href="/product/21933.html" target="_blank" title="夏普冰箱">夏普冰箱</a>
+									</li>
+									<li>
+										<a href="/product/21924.html" target="_blank" title="西门子冰箱">西门子冰箱</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=55" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=56" title="二手空调回收">空调</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21943.html" target="_blank" title="日立空调">日立空调</a>
+									</li>
+									<li>
+										<a href="/product/21936.html" target="_blank" title="三菱空调">三菱空调</a>
+									</li>
+									<li>
+										<a href="/product/21945.html" target="_blank" title="其他空调">其他空调</a>
+									</li>
+									<li>
+										<a href="/product/21939.html" target="_blank" title="TCL空调">TCL空调</a>
+									</li>
+									<li>
+										<a href="/product/21935.html" target="_blank" title="大金空调">大金空调</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=56" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=57" title="二手洗衣机回收">洗衣机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21948.html" target="_blank" title="松下洗衣机">松下洗衣机</a>
+									</li>
+									<li>
+										<a href="/product/21952.html" target="_blank" title="美的洗衣机">美的洗衣机</a>
+									</li>
+									<li>
+										<a href="/product/21946.html" target="_blank" title="西门子洗衣机">西门子洗衣机</a>
+									</li>
+									<li>
+										<a href="/product/21947.html" target="_blank" title="TCL洗衣机">TCL洗衣机</a>
+									</li>
+									<li>
+										<a href="/product/21950.html" target="_blank" title="博世洗衣机">博世洗衣机</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=57" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=58" title="二手油烟机回收">油烟机</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21962.html" target="_blank" title="其他油烟机">其他油烟机</a>
+									</li>
+									<li>
+										<a href="/product/21961.html" target="_blank" title="华帝油烟机">华帝油烟机</a>
+									</li>
+									<li>
+										<a href="/product/21956.html" target="_blank" title="西门子油烟机">西门子油烟机</a>
+									</li>
+									<li>
+										<a href="/product/21960.html" target="_blank" title="樱花油烟机">樱花油烟机</a>
+									</li>
+									<li>
+										<a href="/product/21955.html" target="_blank" title="老板油烟机">老板油烟机</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=58" target="_blank">更多</a>
+							</div>
+							<div class="brand-item">
+								<a href="/Product/Search.html?c=59" title="二手空气净化器回收">空气净化器</a>
+								<ul class="h-ul">
+
+									<li>
+										<a href="/product/21967.html" target="_blank" title="松下空气净化器">松下空气净化器</a>
+									</li>
+									<li>
+										<a href="/product/21963.html" target="_blank" title="飞利浦空气净化器">飞利浦空气净化器</a>
+									</li>
+									<li>
+										<a href="/product/21970.html" target="_blank" title="小米空气净化器">小米空气净化器</a>
+									</li>
+									<li>
+										<a href="/product/21964.html" target="_blank"
+											title="布鲁雅尔空气净化器">布鲁雅尔空气净化器</a>
+									</li>
+									<li>
+										<a href="/product/21973.html" target="_blank" title="其他空气净化器">其他空气净化器</a>
+									</li>
+								</ul>
+								<a class="more" href="/Product/Search.html?c=59" target="_blank">更多</a>
+							</div>
+
+							<a target="_blank" class="morebrands"
+								href="/Product/Search.html?c=53" title="更多家用电器回收">更多家用电器品牌</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="section-flow">
+				<ul>
+					<li>
+						<i></i>
+						<span>1. 搜索机型</span>
+					</li>
+					<li>
+						<i></i>
+						<span>2. 商家报价</span>
+					</li>
+					<li>
+						<i></i>
+						<span>3. 提交订单</span>
+					</li>
+					<li>
+						<i></i>
+						<span>4. 当面回收</span>
+					</li>
+				</ul>
+
+			</div>
+
+			<div id="section-hotsales">
+				<div class="hotsales">
+
+					<ul class="hotsales-header   promotion">
+						<li class="active " data-list-id="0">
+							<span><i class="icon-promotion"></i> </span>
+						</li>
+						<li data-list-id="1" class="">
+							<span>手机</span>
+						</li>
+						<li data-list-id="2">
+							<span>笔记本</span>
+						</li>
+						<li data-list-id="3">
+							<span>平板电脑</span>
+						</li>
+						<li data-list-id="4">
+							<span>摄影摄像</span>
+						</li>
+						<li data-list-id="5">
+							<span>智能数码</span>
+						</li>
+
+
+						<li data-list-id="6">
+							<span>家用电器</span>
+						</li>
+					</ul>
+					<div class="hotsales-body">
+						<div class="loading-gif">
+							<img src="/Static/img/common/loading.gif" />
+						</div>
+
+						<div id="hotsale-list-0" class="hotsale-list show">
+							<div class="info">
+								<div class="description">
+									卖不爽？这次玩大的！高价回收之毕业季压轴专场
+									<span class="recycle-rules"> 回收规则<i></i>
+										<div id="rules-pop">
+											一、活动时间：2016年6月28日10时 – 2016年7月3日22时
+											<br>
+											二、活动范围：全国
+											<br>
+											三、活动内容：活动期间，用户至爱回收网下单，即享受回收专项价。
+											<br>
+											苹果询价属性：大陆国行，A1586，金色，64G，国内保修一个月以上，外观及其他完好。
+											<br />
+											小米询价属性：移动版，外观及其他完好。
+											<br />
+											华为询价属性：大陆国行，64G，香槟金色，全网通，外观及其他完好。
+											<br />
+											三星询价属性：N7100，外观及其他完好。
+											<br />
+											VIVO询价属性：金色，外观及其他完好。
+											<br />
+											平板询价属性：大陆国行，16G，白色，wifi，外观及其他完好。
+											<br />
+											相机询价属性：国内保修一个月以上，外观及其他完好。
+											<br />
+											笔记本询价属性：苹果 13年 13寸 MacBook Air，1.7GHz Intel Core
+											i7，8GB，固态硬盘512GB，Intel HD 5000；联想Y450，intel
+											非酷睿i系列，2GB-6GB，混合|500G以下+240-256G固态，2G以下独立显卡。
+											<br />
+											智能数码询价属性：大陆国行，42毫米，运动型表带，外观及其他完好。
+											<br />
+										</div> </span>
+
+								</div>
+								<div id="js-time-countdown" data-enddt="2016/7/3 22:00:00">
+									<span>0</span><span>3</span>天
+									<span>0</span><span>5</span>时
+									<span>1</span><span>9</span>分
+									<span>5</span><span>2</span>秒
+								</div>
+							</div>
+							<div class="hotsale-prods">
+								<ul>
+									<li>
+										<a
+											href="/product/17461.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="苹果 iPhone 6限时高价回收"> <i
+											class="pricediff">+120</i>
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=5502b8bdc4aec790430000c1&amp;w=168"
+													alt="高价二手苹果 iPhone 6回收" />
+											</div> <span class="name">苹果 iPhone 6</span> <span>回收均价<i
+												class="">￥3320</i><s class="original-price">￥3200</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/17507.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="小米手机3限时高价回收">
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=55256a42785b4fc849000217&amp;w=168"
+													alt="高价二手小米手机3回收" />
+											</div> <span class="name">小米手机3</span> <span>回收均价<i class="">￥240</i><s
+												class="original-price">￥180</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/17895.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="华为 Mate 8限时高价回收"> <i
+											class="pricediff">+120</i>
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=56580716263be40843000679&amp;w=168"
+													alt="高价二手华为 Mate 8回收" />
+											</div> <span class="name">华为 Mate 8</span> <span>回收均价<i
+												class="">￥1920</i><s class="original-price">￥1800</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/17486.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="三星 Galaxy Note 2限时高价回收">
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=551bc3d61f11b6604b0002d3&amp;w=168"
+													alt="高价二手三星 Galaxy Note 2回收" />
+											</div> <span class="name">三星 Galaxy Note 2</span> <span>回收均价<i
+												class="">￥400</i><s class="original-price">￥300</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/17916.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="vivo X6 D限时高价回收">
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=5666842f05a7670000000041&amp;w=168"
+													alt="高价二手vivo X6 D回收" />
+											</div> <span class="name">vivo X6 D</span> <span>回收均价<i
+												class="">￥1160</i><s class="original-price">￥1100</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/20744.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="Apple Watch Sport限时高价回收">
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=573a79c72718373428000005&amp;w=168"
+													alt="高价二手Apple Watch Sport回收" />
+											</div> <span class="name">Apple Watch Sport</span> <span>回收均价<i
+												class="">￥1085</i><s class="original-price">￥1000</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/8757.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="iPad Mini限时高价回收">
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=53c4f87c6830f0c41800002a&amp;w=168"
+													alt="高价二手iPad Mini回收" />
+											</div> <span class="name">iPad Mini</span> <span>回收均价<i
+												class="">￥600</i><s class="original-price">￥500</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/17984.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="苹果 13年 13寸 MacBook Air限时高价回收"> <i
+											class="pricediff">+300</i>
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=567a453d9402620000000260&amp;w=168"
+													alt="高价二手苹果 13年 13寸 MacBook Air回收" />
+											</div> <span class="name">苹果 13年 13寸 MacBook Air</span> <span>回收均价<i
+												class="">￥4000</i><s class="original-price">￥3700</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/6073.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="联想Y450限时高价回收"> <i
+											class="pricediff">+150</i>
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=53ab85126b3e92c4250007ea&amp;w=168"
+													alt="高价二手联想Y450回收" />
+											</div> <span class="name">联想Y450</span> <span>回收均价<i
+												class="">￥550</i><s class="original-price">￥400</s> </span> </a>
+									</li>
+									<li>
+										<a
+											href="/product/15447.html?utm_source=portal&utm_medium=gaojia&utm_campaign=2016"
+											target="_blank" title="佳能 70D 机身限时高价回收"> <i
+											class="pricediff">+170</i>
+
+											<div class="img-box">
+												<img class="lazy-load" src="/Images/Common/ahs_loading.gif"
+													data-original="http://static.aihuishou.com/image?file=56d002ed66c166a42d0000dd&amp;w=168"
+													alt="高价二手佳能 70D 机身回收" />
+											</div> <span class="name">佳能 70D 机身</span> <span>回收均价<i
+												class="">￥2870</i><s class="original-price">￥2700</s> </span> </a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div id="hotsale-list-1" class="hotsale-list ">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="1" data-bid="52">
+										<span> <i class="icon-apple"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="7">
+										<span> <i class="icon-samsung"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="184">
+										<span> <i class="icon-mi"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="9">
+										<span> <i class="icon-huawei"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="24">
+										<span> <i class="icon-meizu"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="4">
+										<span> <i class="icon-oppo"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="16">
+										<span> <i class="icon-vivo"></i> </span>
+									</li>
+									<li class="" data-catgid="1" data-bid="365">
+										<span> <i class="icon-lemall"></i> </span>
+									</li>
+									<li class="morebrands">
+										<a href="/shouji" target="_blank"><i class="icon-more"></i><i
+											class="icon-more"></i><i class="icon-more"></i> </a>
+									</li>
+
+
+								</ul>
+
+							</div>
+							<div class="hotsale-prods">
+								<div class="brand-item">
+									<a href="/shouji/b52" title="苹果回收">苹果</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/17458.html" target="_blank"
+												title="苹果 iPhone 5S手机回收">苹果 iPhone 5S</a>
+										</li>
+										<li>
+											<a href="/product/17460.html" target="_blank"
+												title="苹果 iPhone 4S手机回收">苹果 iPhone 4S</a>
+										</li>
+										<li>
+											<a href="/product/17455.html" target="_blank"
+												title="苹果 iPhone 4手机回收">苹果 iPhone 4</a>
+										</li>
+										<li>
+											<a href="/product/17461.html" target="_blank"
+												title="苹果 iPhone 6手机回收">苹果 iPhone 6</a>
+										</li>
+										<li>
+											<a href="/product/17457.html" target="_blank"
+												title="苹果 iPhone 5手机回收">苹果 iPhone 5</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b52" target="_blank"
+										title="更多二手苹果手机回收">更多</a>
+								</div>
+								<div class="brand-item">
+									<a href="/shouji/b7" title="三星回收">三星</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/17492.html" target="_blank"
+												title="三星 Galaxy S3手机回收">三星 Galaxy S3</a>
+										</li>
+										<li>
+											<a href="/product/17488.html" target="_blank"
+												title="三星 Galaxy Note 3手机回收">三星 Galaxy Note 3</a>
+										</li>
+										<li>
+											<a href="/product/17486.html" target="_blank"
+												title="三星 Galaxy Note 2手机回收">三星 Galaxy Note 2</a>
+										</li>
+										<li>
+											<a href="/product/17493.html" target="_blank"
+												title="三星 Galaxy S4手机回收">三星 Galaxy S4</a>
+										</li>
+										<li>
+											<a href="/product/17494.html" target="_blank"
+												title="三星 Galaxy S5手机回收">三星 Galaxy S5</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b7" target="_blank"
+										title="更多二手三星手机回收">更多</a>
+								</div>
+								<div class="brand-item">
+									<a href="/shouji/b184" title="小米回收">小米</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/17507.html" target="_blank"
+												title="小米手机3手机回收">小米手机3</a>
+										</li>
+										<li>
+											<a href="/product/17506.html" target="_blank"
+												title="小米手机2S手机回收">小米手机2S</a>
+										</li>
+										<li>
+											<a href="/product/14990.html" target="_blank"
+												title="小米手机4手机回收">小米手机4</a>
+										</li>
+										<li>
+											<a href="/product/10025.html" target="_blank"
+												title="红米Note手机回收">红米Note</a>
+										</li>
+										<li>
+											<a href="/product/17508.html" target="_blank"
+												title="红米手机1S手机回收">红米手机1S</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b184" target="_blank"
+										title="更多二手小米手机回收">更多</a>
+								</div>
+								<div class="brand-item">
+									<a href="/shouji/b9" title="华为回收">华为</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/14972.html" target="_blank"
+												title="华为 荣耀6手机回收">华为 荣耀6</a>
+										</li>
+										<li>
+											<a href="/product/15080.html" target="_blank"
+												title="华为 Mate 7手机回收">华为 Mate 7</a>
+										</li>
+										<li>
+											<a href="/product/9427.html" target="_blank"
+												title="华为 Ascend P6手机回收">华为 Ascend P6</a>
+										</li>
+										<li>
+											<a href="/product/17252.html" target="_blank"
+												title="华为 荣耀3C手机回收">华为 荣耀3C</a>
+										</li>
+										<li>
+											<a href="/product/17259.html" target="_blank"
+												title="华为 荣耀畅玩4X手机回收">华为 荣耀畅玩4X</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b9" target="_blank"
+										title="更多二手华为手机回收">更多</a>
+								</div>
+								<div class="brand-item">
+									<a href="/shouji/b24" title="魅族回收">魅族</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/17614.html" target="_blank"
+												title="魅族 魅蓝 Note 2手机回收">魅族 魅蓝 Note 2</a>
+										</li>
+										<li>
+											<a href="/product/17305.html" target="_blank"
+												title="魅族 魅蓝 Note手机回收">魅族 魅蓝 Note</a>
+										</li>
+										<li>
+											<a href="/product/9479.html" target="_blank"
+												title="魅族 MX3手机回收">魅族 MX3</a>
+										</li>
+										<li>
+											<a href="/product/15054.html" target="_blank"
+												title="魅族 MX4手机回收">魅族 MX4</a>
+										</li>
+										<li>
+											<a href="/product/17753.html" target="_blank"
+												title="魅族魅蓝 2手机回收">魅族魅蓝 2</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b24" target="_blank"
+										title="更多二手魅族手机回收">更多</a>
+								</div>
+								<div class="brand-item">
+									<a href="/shouji/b4" title="OPPO回收">OPPO</a>
+									<ul class="h-ul">
+
+										<li>
+											<a href="/product/17579.html" target="_blank"
+												title="OPPO R7移动/电信手机回收">OPPO R7移动/电信</a>
+										</li>
+										<li>
+											<a href="/product/10173.html" target="_blank"
+												title="OPPO R1S（R8007）手机回收">OPPO R1S（R8007）</a>
+										</li>
+										<li>
+											<a href="/product/10109.html" target="_blank"
+												title="OPPO Find 7（轻装版/X9007）手机回收">OPPO Find
+												7（轻装版/X9007）</a>
+										</li>
+										<li>
+											<a href="/product/9183.html" target="_blank"
+												title="OPPO x909 Find 5/16G手机回收">OPPO x909 Find 5/16G</a>
+										</li>
+										<li>
+											<a href="/product/15044.html" target="_blank"
+												title="OPPO R3(7007)手机回收">OPPO R3(7007)</a>
+										</li>
+									</ul>
+									<a class="more" href="/shouji/b4" target="_blank"
+										title="更多二手OPPO手机回收">更多</a>
+								</div>
+
+							</div>
+						</div>
+						<div id="hotsale-list-2" class="hotsale-list">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="5" data-bid="52">
+										<span> <i class="icon-apple"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="105">
+										<span> <i class="icon-thinkpad"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="103">
+										<span> <i class="icon-asus"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="18">
+										<span> <i class="icon-lenovo"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="104">
+										<span> <i class="icon-acer"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="51">
+										<span> <i class="icon-dell"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="106">
+										<span> <i class="icon-hasee"></i> </span>
+									</li>
+									<li class="" data-catgid="5" data-bid="102">
+										<span> <i class="icon-hp"></i> </span>
+									</li>
+									<li class="morebrands">
+										<a href="/laptop" target="_blank"><i class="icon-more"></i><i
+											class="icon-more"></i><i class="icon-more"></i> </a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="hotsale-prods">
+							</div>
+						</div>
+						<div id="hotsale-list-3" class="hotsale-list">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="6" data-bid="52">
+										<span> <i class="icon-apple"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="7">
+										<span> <i class="icon-samsung"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="184">
+										<span> <i class="icon-mi"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="9">
+										<span> <i class="icon-huawei"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="272">
+										<span> <i class="icon-microsoft"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="19">
+										<span> <i class="icon-nokia"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="18">
+										<span> <i class="icon-lenovo"></i> </span>
+									</li>
+									<li class="" data-catgid="6" data-bid="103">
+										<span> <i class="icon-asus"></i> </span>
+									</li>
+									<li class="morebrands">
+										<a href="/pingban" target="_blank"><i class="icon-more"></i><i
+											class="icon-more"></i><i class="icon-more"></i> </a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="hotsale-prods">
+							</div>
+						</div>
+						<div id="hotsale-list-4" class="hotsale-list">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="23" data-bid="">
+										<span> <i>单反相机</i> </span>
+									</li>
+									<li class="" data-catgid="24" data-bid="">
+										<span> <i>数码相机</i> </span>
+									</li>
+									<li class="" data-catgid="25" data-bid="">
+										<span> <i>镜头</i> </span>
+									</li>
+									<li class="" data-catgid="26" data-bid="">
+										<span> <i>微单相机</i> </span>
+									</li>
+
+								</ul>
+							</div>
+							<div class="hotsale-prods">
+							</div>
+						</div>
+						<div id="hotsale-list-5" class="hotsale-list">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="62" data-bid="">
+										<span> <i>智能眼镜</i> </span>
+									</li>
+									<li class="" data-catgid="63" data-bid="">
+										<span> <i>智能手环</i> </span>
+									</li>
+									<li class="" data-catgid="64" data-bid="">
+										<span> <i>智能手表</i> </span>
+									</li>
+									<li class="" data-catgid="65" data-bid="">
+										<span> <i>游戏机</i> </span>
+									</li>
+									<li class="" data-catgid="66" data-bid="">
+										<span> <i>鼠标</i> </span>
+									</li>
+									<li class="" data-catgid="67" data-bid="">
+										<span> <i>键盘</i> </span>
+									</li>
+									<li class="" data-catgid="68" data-bid="">
+										<span> <i>耳机</i> </span>
+									</li>
+									<li class="" data-catgid="69" data-bid="">
+										<span> <i>VR</i> </span>
+									</li>
+									<li class="morebrands">
+										<a href="/Product/Search.html?c=62" target="_blank"><i
+											class="icon-more"></i><i class="icon-more"></i><i
+											class="icon-more"></i> </a>
+									</li>
+
+								</ul>
+
+							</div>
+							<div class="hotsale-prods">
+							</div>
+						</div>
+						<div id="hotsale-list-6" class="hotsale-list">
+							<div class="info">
+								<ul class="nav-brands h-ul">
+									<li class="active" data-catgid="54" data-bid="">
+										<span> <i>电视机</i> </span>
+									</li>
+									<li class="" data-catgid="55" data-bid="">
+										<span> <i>冰箱</i> </span>
+									</li>
+									<li class="" data-catgid="56" data-bid="">
+										<span> <i>空调</i> </span>
+									</li>
+									<li class="" data-catgid="57" data-bid="">
+										<span> <i>洗衣机</i> </span>
+									</li>
+									<li class="" data-catgid="58" data-bid="">
+										<span> <i>油烟机</i> </span>
+									</li>
+									<li class="" data-catgid="59" data-bid="">
+										<span> <i>空气净化器</i> </span>
+									</li>
+
+								</ul>
+							</div>
+							<div class="hotsale-prods">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="section-service">
+
+				<div class="vip-service">
+					<span class="section-title">南京地区专享服务</span>
+					<div class="stores-info">
+						<div class="col-left">
+							<span class="tips-title">您身边的爱回收服务站</span>
+							<span class="tips">1元数据线 ，0元手机贴膜，0元干电池换新</span>
+
+							<img src="/Static/img/home/index/outlet.png" alt="爱回收门店回收" />
+						</div>
+						<div class="col-right">
+
+							<div class="store-dist-list">
+								<span class="allstores active">全部门店(3)</span>
+								<div id="alldistrict" class="swiper-container">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="region" data-index="0">
+												玄武区(1)
+											</div>
+											<div class="region" data-index="1">
+												秦淮区(1)
+											</div>
+											<div class="region" data-index="2">
+												栖霞区(1)
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="r-storelist-all" class="storelist current" data-page="1"
+								data-pagecount="1">
+								<ul>
+									<li class="page-1 show">
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=189&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="南京国金店门店回收">
+												<p class="store-name">
+													南京国金店
+												</p>
+												<p class="store-addr">
+													南京市玄武区汉中路1号B1层
+												</p> </a>
+										</div>
+									</li>
+									<li class="page-1 show">
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=172&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="水游城店门店回收">
+												<p class="store-name">
+													水游城店
+												</p>
+												<p class="store-addr">
+													南京市秦淮区建康路1号B2层
+												</p> </a>
+										</div>
+									</li>
+									<li class="page-1 show">
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=188&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="花园城店门店回收">
+												<p class="store-name">
+													花园城店
+												</p>
+												<p class="store-addr">
+													南京市栖霞区中山门大街699号2层
+												</p> </a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="r-storelist-0" class="storelist" data-page="1"
+								data-pagecount="1">
+								<ul>
+									<li class="page-1 show">
+
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=189&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="南京国金店门店回收">
+												<p class="store-name">
+													南京国金店
+												</p>
+												<p class="store-addr">
+													南京市玄武区汉中路1号B1层
+												</p> </a>
+										</div>
+
+									</li>
+
+
+								</ul>
+							</div>
+							<div id="r-storelist-1" class="storelist" data-page="1"
+								data-pagecount="1">
+								<ul>
+									<li class="page-1 ">
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=172&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="水游城店门店回收">
+												<p class="store-name">
+													水游城店
+												</p>
+												<p class="store-addr">
+													南京市秦淮区建康路1号B2层
+												</p> </a>
+										</div>
+									</li>
+
+
+								</ul>
+							</div>
+							<div id="r-storelist-2" class="storelist" data-page="1"
+								data-pagecount="1">
+								<ul>
+									<li class="page-1 ">
+										<div>
+											<a
+												href="/help/OutletsMode?cityId=218&shopId=188&isIframe=true"
+												data-fancybox-type="iframe" class="shop-addr-pop"
+												title="花园城店门店回收">
+												<p class="store-name">
+													花园城店
+												</p>
+												<p class="store-addr">
+													南京市栖霞区中山门大街699号2层
+												</p> </a>
+										</div>
+									</li>
+
+
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div class="free-service">
+						<span class="tips-title">便捷免费的上门服务</span>
+						<span class="tips">南京部分地区的用户，</span>
+						<span class="tips">可享受质检小哥免费上门服务</span>
+						<a id="btnOndoorRange" data-target="ondoor-range"
+							class="ondoor-addr-pop"
+							href="/help/OndoorMode.html?cityId=218&amp;isIframe=True"
+							data-fancybox-type="iframe" title="南京免费上门回收">查看具体服务范围</a>
+
+
+						<ul class="pros">
+							<li>
+								<i></i>
+								<span>专业</span>
+							</li>
+							<li>
+								<i></i>
+								<span>放心</span>
+							</li>
+							<li>
+								<i></i>
+								<span>高效</span>
+							</li>
+						</ul>
+						<i class="service-person"></i>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="section-usershare">
+				<div class="ahs-usershare">
+					<span class="section-title">爱回收6年<i class="users">22969075</i><i
+						class="">用户选择我们</i><a href="/share" class="no_hover good_remark"
+						target="_blank"><i class="all-comments">全部评价</i> </a> </span>
+					<div id="ahs-share" class="swiper-container">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5774798dfb2fce989b0000ae&amp;w=228&amp;h=220"
+											alt="不错哦~/速度快第二天就搞定了，上门服务方便！[嘻嘻][嘻嘻][嘻嘻]@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1860877892/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">孙小琦咔咔</span>
+											<div class="share-content">
+												不错哦~/速度快第二天就搞定了，上门服务方便！[嘻嘻][嘻嘻][嘻嘻]@爱回收网
+											</div>
+											<div class="share-date">
+												06月29日 13:28
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5773b3f93e5f6b8809000145&amp;w=228&amp;h=220"
+											alt="爱回收的质检工程师认真的工作，和客户良好沟通，点个赞！@爱回收网 &amp;@京东手机通讯">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1601296020/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">清风云上端</span>
+											<div class="share-content">
+												爱回收的质检工程师认真的工作，和客户良好沟通，点个赞！@爱回收网 &amp;@京东手机通讯
+											</div>
+											<div class="share-date">
+												06月29日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5773b2703e5f6b880900013d&amp;w=228&amp;h=220"
+											alt="非常不错的手机回收服务，下单方便，价格实惠，京东返券很划算；工作人员很详细的讲解回收细节，能让客户对回收服务有全面的了解，并产生好感；回收过程会全程录音，严谨又安心；另外工作人员对一些专业问题也能很好的解答，很赞！好评！@爱回收网 @京东手机通讯">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1753038802/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">科晓楠</span>
+											<div class="share-content">
+												非常不错的手机回收服务，下单方便，价格实惠，京东返券很划算；工作人员很详细的讲解回收细节，能让客户对回收服务有全面的了解，并产生好感；回收过程会全程录音，严谨又安心；另外工作人员对一些专业问题也能很好的解答，很赞！好评！@爱回收网
+												@京东手机通讯
+											</div>
+											<div class="share-date">
+												06月28日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5770826b3230a2a847000035&amp;w=228&amp;h=220"
+											alt="@爱回收网 第一次通过爱回收网回收手机，他们的服务挺棒的，下单后就有客服联系，然后负责回收的业务员也很及时热情，价格也合理。希望以后还能使用爱回收。小伙子很帅哈[嘻嘻][哈哈]">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1073131674/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">小壮壮Zhang</span>
+											<div class="share-content">
+												@爱回收网
+												第一次通过爱回收网回收手机，他们的服务挺棒的，下单后就有客服联系，然后负责回收的业务员也很及时热情，价格也合理。希望以后还能使用爱回收。小伙子很帅哈[嘻嘻][哈哈]
+											</div>
+											<div class="share-date">
+												06月26日 15:35
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=576f38863230a2a84700000d&amp;w=228&amp;h=220"
+											alt="在爱回收下单处理了家里没用的智能手机，更新手机给家里老人用。这个业务真方便小伙子大热天的上门服务态度很好非常专业。希望以后能照相机或其他电子产品回收。@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1400978161/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">老男孩Zack</span>
+											<div class="share-content">
+												在爱回收下单处理了家里没用的智能手机，更新手机给家里老人用。这个业务真方便小伙子大热天的上门服务态度很好非常专业。希望以后能照相机或其他电子产品回收。@爱回收网
+											</div>
+											<div class="share-date">
+												06月25日 10:50
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=576f373b3230a2a847000009&amp;w=228&amp;h=220"
+											alt="小生意做出大買賣的味道！全程錄音記錄交易，價格評估真實可靠，質檢技師專業熱情。“態度決定一切，細節決定成敗”，相信愛回收的前景會越來越好！@愛回收網">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1062200114/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">杰克博士</span>
+											<div class="share-content">
+												小生意做出大買賣的味道！全程錄音記錄交易，價格評估真實可靠，質檢技師專業熱情。“態度決定一切，細節決定成敗”，相信愛回收的前景會越來越好！@愛回收網
+											</div>
+											<div class="share-date">
+												06月25日 15:35
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5763ec9d4f3af60000000062&amp;w=228&amp;h=220"
+											alt="第一次用爱回收，感觉很好，回收工作人员很认真，介绍全面，态度也非常好。回收的价格也比较合理，而且关键在于很方便，总之很满意。@京东 @爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/2824302497/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">lansen2007</span>
+											<div class="share-content">
+												第一次用爱回收，感觉很好，回收工作人员很认真，介绍全面，态度也非常好。回收的价格也比较合理，而且关键在于很方便，总之很满意。@京东
+												@爱回收网
+											</div>
+											<div class="share-date">
+												06月17日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=576270f77f37b0000000003d&amp;w=228&amp;h=220"
+											alt="旧手机不用了，还能有其他环保的归宿，感谢爱回收网的意识！推荐给朋友一起把旧手机交给爱回收吧！ @爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/2426223460/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">balfourbeatty</span>
+											<div class="share-content">
+												旧手机不用了，还能有其他环保的归宿，感谢爱回收网的意识！推荐给朋友一起把旧手机交给爱回收吧！ @爱回收网
+											</div>
+											<div class="share-date">
+												06月16日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5762703c492827e81f000005&amp;w=228&amp;h=220"
+											alt="爱回收的小哥很赞，守时的很，辛苦搭公交车来的呢，以后有用不到的电子产品都变现好了@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/2608016767/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">上不了岸的派大星</span>
+											<div class="share-content">
+												爱回收的小哥很赞，守时的很，辛苦搭公交车来的呢，以后有用不到的电子产品都变现好了@爱回收网
+											</div>
+											<div class="share-date">
+												06月16日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=575d37605f7fb4000000008e&amp;w=228&amp;h=220"
+											alt="手机在家睡觉不如回收换点啊@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/2122910047/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">恶魔在枕边</span>
+											<div class="share-content">
+												手机在家睡觉不如回收换点啊@爱回收网
+											</div>
+											<div class="share-date">
+												06月12日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=575b67a017e1572066000001&amp;w=228&amp;h=220"
+											alt="最近换了新手机，旧手机闲置，尝试着到爱回收网上估了个价，觉得还不错就下单预约回收。当天接到工程师的电话，和我确认了碰头时间和地点。整个交易过程被录音，感觉挺正规的[酷]工程师的态度很好，认真检测之后，当场就把回收款给我了，还送了一张手机贴膜[抱抱]很满意哦！！[good]@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1805285082/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">甜美的诱惑</span>
+											<div class="share-content">
+												最近换了新手机，旧手机闲置，尝试着到爱回收网上估了个价，觉得还不错就下单预约回收。当天接到工程师的电话，和我确认了碰头时间和地点。整个交易过程被录音，感觉挺正规的[酷]工程师的态度很好，认真检测之后，当场就把回收款给我了，还送了一张手机贴膜[抱抱]很满意哦！！[good]@爱回收网
+											</div>
+											<div class="share-date">
+												06月09日 12:06
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=575a13cb37a760e010000009&amp;w=228&amp;h=220"
+											alt="我在 爱回收网 回收了一部手机，大家一起来参与环保吧！">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1758144667/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">浪子johnson</span>
+											<div class="share-content">
+												我在 爱回收网 回收了一部手机，大家一起来参与环保吧！
+											</div>
+											<div class="share-date">
+												06月07日 17:33
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=57592fe937a760e010000001&amp;w=228&amp;h=220"
+											alt="爱回收很给力啊，小哥服务态度好，回收价格公道！@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1402354972/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">涂兔斯基</span>
+											<div class="share-content">
+												爱回收很给力啊，小哥服务态度好，回收价格公道！@爱回收网
+											</div>
+											<div class="share-date">
+												06月09日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5757da9929b28b0000000001&amp;w=228&amp;h=220"
+											alt="在文峰一次性回收了多台机器，价格合理，服务周到，继续支持爱回收@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/2623270984/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">他人笑我太太疯癫</span>
+											<div class="share-content">
+												在文峰一次性回收了多台机器，价格合理，服务周到，继续支持爱回收@爱回收网
+											</div>
+											<div class="share-date">
+												06月08日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5754ddce3471bf3888000011&amp;w=228&amp;h=220"
+											alt="这是爱回收上门质检工程师，好的吧，很认真的样子，检查手机也很快，分分钟搞定。点个大大的赞！@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1993726424/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">橙子RunningOnTheWay_</span>
+											<div class="share-content">
+												这是爱回收上门质检工程师，好的吧，很认真的样子，检查手机也很快，分分钟搞定。点个大大的赞！@爱回收网
+											</div>
+											<div class="share-date">
+												06月05日 21:40
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5752cd87c22f2fcc10000044&amp;w=228&amp;h=220"
+											alt="@爱回收网 非常环保的方式，回收电子废弃物，需要好好提倡，大家一起行动起来">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1807836164/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">yolanda-蓝</span>
+											<div class="share-content">
+												@爱回收网 非常环保的方式，回收电子废弃物，需要好好提倡，大家一起行动起来
+											</div>
+											<div class="share-date">
+												06月04日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5750e078913a8f9414000001&amp;w=228&amp;h=220"
+											alt="爱回收的小哥 不辞辛劳 态度很好 工作认真 价格也算公道 东西给专业机构也放心一些 希望爱回收越做越好 让大家有更多实惠@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/5485363146/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">未名湖畔情人坡前</span>
+											<div class="share-content">
+												爱回收的小哥 不辞辛劳 态度很好 工作认真 价格也算公道 东西给专业机构也放心一些 希望爱回收越做越好
+												让大家有更多实惠@爱回收网
+											</div>
+											<div class="share-date">
+												06月02日 22:48
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5750deb3855bc234dc00002d&amp;w=228&amp;h=220"
+											alt="试用爱回收，流程挺顺利@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1985619361/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">逃离动物庄园的Sun</span>
+											<div class="share-content">
+												试用爱回收，流程挺顺利@爱回收网
+											</div>
+											<div class="share-date">
+												06月02日 15:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=574f8831d960d80000000040&amp;w=228&amp;h=220"
+											alt="第二次和爱回收网合作了，感谢你们周到得服务，下次还会找@爱回收网 你们的！">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/1448854085/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">YukiLin009</span>
+											<div class="share-content">
+												第二次和爱回收网合作了，感谢你们周到得服务，下次还会找@爱回收网 你们的！
+											</div>
+											<div class="share-date">
+												05月31日 15:50
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="usershare">
+									<div>
+										<img class="share-image lazy-load"
+											data-original="http://static.aihuishou.com/image?file=5742df8c49e805000000004a&amp;w=228&amp;h=220"
+											alt="爱回收网太好啦，服务人员态度好很专业，解决了我们的问题。请大家多多支持@爱回收网">
+										<img class="share-avatar lazy-load"
+											data-original="http://tp2.sinaimg.cn/5379165652/180/520315/1"
+											alt="微博头像">
+										<div class="share-detail">
+											<span class="share-name">用户静浩</span>
+											<div class="share-content">
+												爱回收网太好啦，服务人员态度好很专业，解决了我们的问题。请大家多多支持@爱回收网
+											</div>
+											<div class="share-date">
+												05月23日 00:00
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-buttons">
+							<div class="swiper-button-prev swiper-button"></div>
+							<div class="swiper-button-next swiper-button"></div>
+						</div>
+					</div>
+				</div>
+				<div id="promobanner">
+					<a
+						href="http://www.aiweixiu.com/?utm_source=portal&utm_medium=portal_inpage_banner&utm_campaign=aiweixiu"
+						title="方便快捷专业，爱维修带给您全新的维修体验" target="_blank"> <img
+							src="/Static/img/home/index/aiweixiu.jpg" /> </a>
+					<a
+						href="http://www.kdyoupin.com?utm_source=portal&utm_medium=portal_inpage_banner&utm_campaign=kdyoupin"
+						title="口袋优品,二手手机,专业质检,品质认证,买二手手机的不二选择" target="_blank"> <img
+							src="/Static/img/home/index/aes.jpg" /> </a>
+				</div>
+			</div>
+
+
+			<div id="section-partners">
+				<div class="ahs-partners">
+					<span class="section-title">合作伙伴</span>
+					<table>
+						<tr>
+							<td rowspan="2">
+								<i class="coop-worldbank"></i>
+								<span>世界银行投资企业</span>
+							</td>
+							<td rowspan="2">
+								<a title="京东" href="http://huishou.jd.com/"
+									rel="external nofollow" class="jd" target="_blank"> <i
+									class="coop-jd"></i> <span>京东战略投资伙伴</span> </a>
+							</td>
+							<td>
+								<i class="coop-mi"></i>
+							</td>
+							<td>
+								<i class="coop-tencent"></i>
+							</td>
+							<td>
+								<i class="coop-samsung"></i>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<a title="一号店"
+									href="http://my.yhd.com/oldfornew/oldfornewIndex.do"
+									rel="external nofollow" target="_blank"> <i
+									class="coop-yhd"></i> </a>
+							</td>
+
+							<td>
+								<i class="coop-dji"></i>
+							</td>
+							<td>
+								<i class="coop-58-1"></i>
+								<i class="coop-58-2"></i>
+							</td>
+						</tr>
+					</table>
+				</div>
+
+			</div>
+
+			<div id="section-newsmedia">
+				<div class="ahs-media">
+					<span class="section-title">媒体影响力</span>
+					<div class="ahs-media-content">
+						<div id="media-swiper" class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="media">
+										<a href="http://www.iyiou.com/p/25929" target="_blank"
+											class="news-img" rel="nofollow"> <img
+												src="/Static/img/home/index/news2.png" /> </a>
+										<div class="media-report">
+											<a href="http://www.iyiou.com/p/25929" target="_blank"
+												rel="nofollow"> <span class="sub-title">专访“爱回收”联合创始人</span>
+												<span class="title">回收将成为消费的入口</span> </a>
+											<div class="report">
+												手机回收不是暴利行业，但这个行业有足够大的规模和空间。通过控制运营及精细化的管理足够支撑公司的商业化。爱回收是逆向的电商模式。
+											</div>
+											<a class="detail-link" href="http://www.iyiou.com/p/25929"
+												target="_blank" rel="nofollow">查看详细</a>
+											<i class="icon-yiou"></i>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="media">
+										<a
+											href="http://www.21cbr.com/html/topics/201512/23-64609.html?from=timeline&isappinstalled=0"
+											target="_blank" class="news-img" rel="nofollow"> <img
+												src="/Static/img/home/index/news3.png" /> </a>
+										<div class="media-report">
+											<a
+												href="http://www.21cbr.com/html/topics/201512/23-64609.html?from=timeline&isappinstalled=0"
+												target="_blank" rel="nofollow"> <span class="sub-title">小米携手“爱回收</span>
+												<span class="title">手机品牌商如何“以旧换新”</span> </a>
+											<div class="report">
+												12月22日，小米的“以旧换新”服务正式上线，用户可以在小米官网上点击“以旧换新”服务
+											</div>
+											<a class="detail-link"
+												href="http://www.21cbr.com/html/topics/201512/23-64609.html?from=timeline&isappinstalled=0"
+												target="_blank" rel="nofollow">查看详细</a>
+											<i class="icon-21"></i>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="media">
+										<a href="http://dy.qq.com/article.htm?id=20151013A01O3800"
+											target="_blank" class="news-img" rel="nofollow"> <img
+												src="/Static/img/home/index/news4.png" /> </a>
+										<div class="media-report">
+											<a href="http://dy.qq.com/article.htm?id=20151013A01O3800"
+												target="_blank" rel="nofollow"> <span class="sub-title">专访“爱回收”联合创始人</span>
+												<span class="title">在二手品中淘见“不持有生活”</span> </a>
+											<div class="report">
+												对孙文俊和陈雪峰来说，二手所代表的不仅是创业观念，也是一种生活观念。减少自己对物品的占有欲，将自己的闲置物品分享出去，这是分享经济的核心观念
+											</div>
+											<a class="detail-link"
+												href="http://dy.qq.com/article.htm?id=20151013A01O3800"
+												target="_blank" rel="nofollow">查看详细</a>
+											<i class="icon-waitan"></i>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="media">
+										<a href="http://36kr.com/p/5036071.html" target="_blank"
+											class="news-img" rel="nofollow"> <img
+												src="/Static/img/home/index/news1.png" /> </a>
+										<div class="media-report">
+											<a href="http://36kr.com/p/5036071.html" target="_blank"
+												rel="nofollow"> <span class="sub-title">O2O模式做二手手机回收</span>
+												<span class="title">爱回收获得6000万美元新融资</span> </a>
+											<div class="report">
+												二手回收一直是个慢热的市场，创业者融资要比 O2O
+												这样的热门领域难多了。最近一年拿到融资的大概只有好收网、有得卖、爱回收了
+											</div>
+											<a class="detail-link" href="http://36kr.com/p/5036071.html"
+												target="_blank" rel="nofollow">查看详细</a>
+											<i class="icon-36kr"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-buttons">
+							<div class="swiper-button-prev swiper-button"></div>
+							<div class="swiper-button-next swiper-button"></div>
+						</div>
+					</div>
+				</div>
+				<div class="ahs-news">
+					<span class="section-title">热点新闻</span>
+					<ul>
+						<li>
+							<a href="http://36kr.com/p/5040778.html" target="_blank"
+								rel="nofollow"> <i class="icon-top500"></i> <span
+								class="news-title">【36Kr】中国一级市场公司估值排名500强</span> <span
+								class="news-content">一份尝试挤掉估值水分、并根据用户这一重要资产来核算公司估值的权威榜单。</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://pe.pedaily.cn/201512/20151202390908.shtml"
+								target="_blank" rel="nofollow"> <i class="icon-touzi"></i> <span
+								class="news-title">第十届中国最具投资价值企业50强榜单·风云榜</span> <span
+								class="news-content">中国最具投资价值企业50强评选由清科集团发起，是投资界首个专注高成长企业的年度评选活动，被誉为“行业投资风向标”。</span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="http://www.21businessmodel.com/html/activity/awards.html#sign"
+								target="_blank" rel="nofollow"> <i class="icon-21centry"></i>
+								<span class="news-title">21世纪中国最佳商业模式奖</span> <span
+								class="news-content">全面评估中国企业的商业模式创新能力，推荐进入评选活动，褒扬传播中国公司的最佳"商业模式创新"实践，为国内外投资者提供高价值的企业投资指引。</span>
+							</a>
+						</li>
+					</ul>
+
+				</div>
+				<div id="news-video-wrap" class="news-video-wrap">
+					<a href="/Home/VideoPage.html" class="zoom" id="video-ahs"
+						data-fancybox-type="iframe"> <img
+							src="../../Static/img/home/index/video-ahs.png" alt="爱回收介绍" /> <span
+						class="video-info-tile"> <span class="viedeo-info-inner">爱回收介绍</span>
+					</span> <span class="video-play-wrap"> <span class="video-play"></span>
+					</span> </a>
+				</div>
+			</div>
+
+
+			<div id="section-strengths">
+				<ul>
+					<li>
+						<i></i>
+						<span class="strengths">高价</span>
+						<span>百家竞价 价格公道</span>
+					</li>
+					<li>
+						<i></i>
+						<span class="strengths">便捷</span>
+						<span>交易便利 节省时间</span>
+					</li>
+					<li>
+						<i></i>
+						<span class="strengths">安全</span>
+						<span>放心回收 保障有我</span>
+					</li>
+					<li>
+						<i></i>
+						<span class="strengths">环保</span>
+						<span>综合利用 避免污染</span>
+					</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+
+		<!-- 侧边栏导航 -->
+		<div id="aside">
+
+			<a class="aside_nav no_hover" id="go_suggestion" title="投诉建议"
+				href="/Help/Suggestion.html">
+				<div class="aside_icon"></div>
+				<div class="text">
+					反馈
+				</div> </a>
+			<div class="aside_nav" id="kefu_help" title="联系爱回收客服">
+				<div class="aside_icon"></div>
+				<div class="text">
+					客服
+				</div>
+			</div>
+			<div class="aside_nav" id="ldx-sidebar" title="微信扫一扫 邀请赚现金">
+				<div class="aside_icon"></div>
+				<div class="text">
+					邀请有礼
+				</div>
+				<div class="ldx-pop"></div>
+			</div>
+			<div class="aside_nav" id="goTop" title="返回顶部">
+				<div class="aside_icon"></div>
+			</div>
+
+		</div>
+
+		<div id="foot" class="">
+			<div class="footer_info">
+				<div id="footerinfo_left">
+					<dl>
+						<dt>
+							交易方式
+						</dt>
+						<dd>
+							<a href="/help/ondoorMap.html" title="上海交易方式" class="no_hover"
+								target="_blank">上海交易方式</a>
+						</dd>
+						<dd>
+							<a href="/help/ondoorMapBJ.html" title="北京交易方式" class="no_hover"
+								target="_blank">北京交易方式</a>
+						</dd>
+						<dd>
+							<a href="/help/NationalTrade.html" title="全国交易方式"
+								class="no_hover" target="_blank">全国交易方式</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							质检说明
+						</dt>
+						<dd>
+							<a href="/help/CheckDefinition.html" title="质检名词解释"
+								class="no_hover" target="_blank">质检名词解释</a>
+						</dd>
+						<dd>
+							<a href="/help" title="专业质检说明" class="no_hover" target="_blank">专业质检说明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							帮助中心
+						</dt>
+						<dd>
+							<a href="/help/CommonQuestion.html" title="手机回收常见问题"
+								class="no_hover" target="_blank">常见问题</a>
+						</dd>
+						<dd>
+							<a href="/help/AhsServices.html" title="服务条款" class="no_hover"
+								target="_blank">服务条款</a>
+						</dd>
+						<dd>
+							<a href="/help/Suggestion.html" title="投诉建议" class="no_hover"
+								target="_blank">投诉建议</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							关于我们
+						</dt>
+						<dd>
+							<a href="/home/Intro.html" title="了解爱回收" class="no_hover"
+								target="_blank">了解我们</a>
+						</dd>
+						<dd>
+							<a href="/help/Recruit.html" title="加入爱回收" class="no_hover"
+								target="_blank">加入我们</a>
+						</dd>
+						<dd>
+							<a href="/help/Recycle.html?name=RegionCoop" title="加盟合作"
+								class="no_hover" target="_blank">加盟合作</a>
+						</dd>
+
+						<dd>
+							<a href="/activity/zhaopin" title="爱回收2015校园招聘" class="no_hover"
+								target="_blank">2016校园招聘</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							关注我们
+						</dt>
+						<dd>
+							<a href="http://e.weibo.com/aihuishou" title="爱回收网官方新浪微博"
+								class="no_hover" target="_blank" rel="external nofollow">新浪微博</a>
+						</dd>
+						<dd id="footer_weixin">
+							<a href="#footer_weixin" title="爱回收网官方微信" class="no_hover">官方微信</a>
+							<div id="head_weixin">
+								<div class="head_weixin_arrow"></div>
+								<img src="/Images/Backgrounds/head_weixin.jpg" />
+								<br />
+								微信扫描二维码，随时随地与小爱亲密接触
+								<br />
+								精彩活动，劲爆优惠触手可及
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							合作伙伴
+						</dt>
+
+
+						<dd>
+							<a title="京东" target="_blank" class="no_hover"
+								href="http://huishou.jd.com">京东</a>
+						</dd>
+						<dd>
+							<a title="大疆" target="_blank" class="no_hover"
+								href="http://store.dji.com/recycle" rel="nofollow">大疆</a>
+						</dd>
+						<dd>
+							<a href="/home/links.html" title="更多友情链接及友链申请" class="no_hover"
+								target="_blank">更多</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="footerinfo_right">
+					<div class="footerinfo_time">
+						<p class="ahs_contact_phone">
+							400-1616-365
+						</p>
+						<p class="ahs_contact_time">
+							周一至周日 9:00-21:00
+						</p>
+					</div>
+					<div class="icon_kefu_footer kefu_pop">
+						<div class="icon_kefu_text">
+							在线客服
+						</div>
+					</div>
+					<div class="footerinfo_addr">
+						<p>
+							爱回收寄件地址：上海市宝山区纪蕴路588号1号楼6楼
+						</p>
+						<p>
+							唐先生收 400-1616-365
+						</p>
+						<br />
+						<br />
+						<a href="/help/NationalTrade.html" target="_blank"
+							class="no_hover" title="爱回收免费快递说明">快递费用说明</a>
+					</div>
+
+				</div>
+				<br />
+				<br />
+			</div>
+
+
+			<div class="copyright">
+				<div class="backlinks">
+					<dl>
+						<dt>
+							友情链接：
+						</dt>
+						<dd>
+							<a href="http://shanghai.baixing.com/" target="_blank">百姓网</a>
+						</dd>
+						<dd>
+							<a href="http://bj.58.com/shouji/" target="_blank">北京二手手机</a>
+						</dd>
+						<dd>
+							<a href="http://bj.58.com/ershoushichang/" target="_blank">北京二手手机回收</a>
+						</dd>
+						<dd>
+							<a href="http://www.imobile.com.cn/" target="_blank">手机之家</a>
+						</dd>
+					</dl>
+				</div>
+				<a class="no_hover" href="http://www.miibeian.gov.cn/"
+					title="爱回收：ICP号" rel="external nofollow" target="_blank"><div
+						class="ICP"></div> </a>&nbsp;&nbsp;
+				<a class="no_hover" href="http://www.alipay.com" title="支付宝商家认证"
+					rel="external nofollow" target="_blank"><div
+						class="alipay_foot"></div> </a>&nbsp;&nbsp;
+				<a class="no_hover"
+					href='https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=dov73ne26zbqq0ili575jvlptdlmfxy2vl'
+					rel="external nofollow" target="_blank" title="上海市工商局"><div
+						class="gongshangju_foot"></div> </a>&nbsp;&nbsp;
+				<a class="no_hover" href='http://show.eastday.com/jubao/jbx2.asp'
+					rel="external nofollow" target="_blank" title="上海网警"><div
+						class="wangjing_foot"></div> </a>&nbsp;&nbsp;
+				<a class="no_hover"
+					href='http://webscan.360.cn/index/checkwebsite?url=www.aihuishou.com'
+					rel="external nofollow" target="_blank" title="360网站安全检测100分"><div
+						class="check360_foot"></div> </a>
+				<br />
+				<br />
+				Copyright 2010 - 2016 上海悦易网络信息技术有限公司 &nbsp; &nbsp; 沪ICP备10043802号 -
+				2
+
+			</div>
+
+
+		</div>
+
+
+		<div id="popwindow_shadow_bg">
+			<iframe frameborder="0" id="popwindow_frame"></iframe>
+		</div>
+		<div class="pop_window" id="popWindow"></div>
+		<div id="pageTemplate" style="display: none;">
+
+		</div>
+
+
+		<input id="userId" value="" type="hidden" />
+		<input id="ahs_um" value="" type="hidden" />
+		<input id="userIsLogin" value="0" type="hidden" />
+
+		<script src="/Scripts/common/ahs.min.js?v=423" type="text/javascript"></script>
+
+		<script type="text/javascript">
+	if (typeof JSON !== 'object') {
+		_ahs.push( [ "/Scripts/Common/json2.js" ]);
+	}
+</script>
+
+
+		<script type="text/javascript"
+			src="/Static/js/Home/index.min.js?v=423"></script>
+		<script type="text/javascript">
+	function pageClick(index, name) {
+		aihuishouConfig.pageClick.product(index);
+	}
+</script>
+
+		<script type="text/javascript">
+	addWinLoadEvent(function() {
+		ahs(_ahs);
+	});
+	_ahs
+			.push( [
+					"/Scripts/Common/common.min.js?v=" + 423,
+					function() {
+						$("#favorite")
+								.click(
+										function() {
+											var ctrl = (navigator.userAgent
+													.toLowerCase())
+													.indexOf('mac') != -1 ? 'Command/Cmd'
+													: 'CTRL';
+											if (document.all) {
+												window.external
+														.addFavorite(
+																'http://www.aihuishou.com',
+																'爱回收');
+											} else if (window.sidebar) {
+												window.sidebar
+														.addPanel(
+																'爱回收',
+																'http://www.aihuishou.com',
+																"");
+											} else {
+												alert('添加失败\n您可以尝试通过快捷键' + ctrl + ' + D 加入到收藏夹~');
+											}
+										});
+
+						$("#head_pc").click(function() {
+
+							ahs.PopWindow( {
+								name : "login",
+								param : {},
+								className : "login_pop"
+							});
+
+						});
+
+						//选择城市列表
+						$("#region_selection").click(function() {
+							ahs.PopWindow( {
+								name : "RegionSelect",
+								param : {},
+								args : {
+									changeCity : function(regionId) {
+										$.when(ahs.ajax( {
+											method : "util.UserSelectCity",
+											dataType : "json",
+											data : {
+												cityId : regionId
+											}
+										}, true)).done(function() {
+											location.href = "/";
+										});
+									}
+								}
+							});
+						});
+
+						// 选择城市列表
+						var isFirstLoad = true;
+						var $regionSelection = $("#region-selection");
+						$regionSelection.hover(function() {
+							$regionSelection.addClass('hover');
+							if (isFirstLoad == true) {
+								isFirstLoad = false;
+								ahs.ajax( {
+									method : "PopWindow.RegionSelect",
+									dataType : "text",
+									data : {
+										cityId : $regionSelection
+												.data('currentId')
+									},
+									success : function(data) {
+										$regionSelection.append(data);
+										// 如果返回数据时，不再hover，则隐藏城市列表
+									if (!$regionSelection.hasClass('hover')) {
+										$regionSelection.find('.region-pop')
+												.hide();
+									}
+								}
+								}, false);
+
+							} else {
+								$regionSelection.find('.region-pop').show();
+							}
+						}, function() {
+							$regionSelection.removeClass('hover');
+							$regionSelection.find('.region-pop').hide();
+						});
+
+						$(".region_more").click(function() {
+							ahs.PopWindow( {
+								name : "RegionSelect",
+								param : {},
+								args : {
+									changeCity : function(regionId) {
+										$.when(ahs.ajax( {
+											method : "util.UserSelectCity",
+											dataType : "json",
+											data : {
+												cityId : regionId
+											}
+										}, true)).done(function() {
+											location.href = "/";
+										});
+									}
+								}
+							});
+						});
+
+						$(".city_select").click(function() {
+							$.when(ahs.ajax( {
+								method : "util.UserSelectCity",
+								dataType : "json",
+								data : {
+									cityId : parseInt($(this).data("cid"))
+								}
+							}, true)).done(function() {
+								location.href = "/";
+							});
+						});
+
+						//搜索框自动提示
+						var keyword_search_autocomplete = $("#txt-keyword")[0];
+						if (keyword_search_autocomplete) {
+							_ahs
+									.push( [
+											'/Static/js/common/jquery-autocomplete.js?v=1',
+											function() {
+												var GetExtraParams = function() {
+													var extParam = {};
+													return extParam;
+												};
+												$
+														.autocomplete(
+																keyword_search_autocomplete,
+																{
+																	url : "/util/GetProductionStip",
+																	matchCase : false,
+																	matchContains : true,
+																	extraParams : GetExtraParams,
+																	enterPressCallBack : function() {
+																		$(
+																				'#btnSearchKeyWords')
+																				.trigger(
+																						'click');
+																	},
+																	selectEvent : function() {
+																		$(
+																				'#btnSearchKeyWords')
+																				.trigger(
+																						'click');
+																	},
+																	cacheLength : 100,
+																	width : 270
+																});
+											} ]);
+						}
+
+						var $btnSearchKeyWords = $('#btnSearchKeyWords');
+						$btnSearchKeyWords.on('click', function(e) {
+							e.preventDefault(); // 链接化,阻止a标签跳转，但允许爬虫进入搜索页
+								var keyword = $("#txt-keyword").val();
+								if (keyword == $("#txt-keyword").attr(
+										'placeholder')) {
+									keyword = "";
+								}
+								ahs.formSubmit('/product/search', {
+									keyword : keyword
+								}, 'get');
+							});
+					} ]);
+
+	_ahs.push(function() {
+		$("#agencyLogin").click(function() {
+			ahs.PopWindow( {
+				name : "AgencyLogin",
+				param : {},
+				className : "agency_pop"
+			});
+		});
+
+		$("#kefu_help").click(function() {
+			ahs.PopWindow( {
+				name : "HelpPop",
+				param : {},
+				className : "help_pop"
+			});
+		});
+
+		$("#zixun_kefu").click(function() {
+			ahs.PopWindow( {
+				name : "HelpPop",
+				param : {},
+				className : "help_pop"
+			});
+		});
+
+		$(".kefu_pop").click(function() {
+			ahs.PopWindow( {
+				name : "HelpPop",
+				param : {},
+				className : "help_pop"
+			});
+		});
+
+		// 返回顶部
+			$("#goTop").bind("click", function() {
+				$('body,html').animate( {
+					scrollTop : 0
+				}, 400);
+			});
+
+			//控制显示顶部按钮是否显示
+			$(window).scroll(function() {
+				if ($("body").scrollTop() > 0 || $("html").scrollTop() > 0) {
+					$("#aside").removeClass("no_gotop");
+				} else {
+					$("#aside").addClass("no_gotop");
+				}
+			});
+			//初始化显示顶部按钮
+			$(window).trigger("scroll");
+
+			var originHeaderHeight = 60, ahsHeader = $("#header"), ahsHeight = ahsHeader
+					.outerHeight(true), adhBody = $("#body"), adhBodyMarginTop = parseFloat(adhBody
+					.css("margin-top"));
+
+			$(window).scroll(function() {
+				// setTimeout(function (){
+					if (ahsHeader.hasClass('noscroll')) {
+						return;
+					}
+					var sc_top = $(document).scrollTop();
+					if (sc_top > originHeaderHeight) {
+						if (!ahsHeader.hasClass('fixedTop')) {
+							ahsHeader.addClass("fixedTop");
+							adhBody.css("margin-top", ahsHeight);
+							ahsHeader.animate( {
+								top : 0
+							}, 300);
+							$('.ac_results').hide();
+						}
+					} else {
+						if (ahsHeader.hasClass('fixedTop')) {
+							$('.ac_results').hide();
+							ahsHeader.animate( {
+								top : '-80px'
+							}, 0);
+						}
+
+						ahsHeader.removeClass("fixedTop");
+						adhBody.css("margin-top", adhBodyMarginTop);
+					}
+
+					//  $('.ac_results').hide();
+					//}, 200);
+				});
+
+			$("#side_nav_link").click(function() {
+				$(window).scrollTop(0);
+			});
+
+			//回收车hover刷新商品
+			$('#recycle-cart').mouseenter(function() {
+				if ($(this).hasClass('updated')) {
+					getCartProds();
+				}
+			});
+
+			function getCartProds() {
+				$.when(ahs.ajax( {
+					method : 'cart.tip',
+					dataType : 'html'
+				}, true)).done(
+						function(response) {
+							$('#recycle-cart').find('#recycle-cart-pop').html(
+									response);
+							$('#recycle-cart').removeClass('updated');
+						});
+			}
+			// 第一次进入页面 获取回收车商品
+			getCartProds();
+
+		});
+
+	/* Google Statistics */
+	_ahs.push(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	});
+
+	/* DSP Statistics */
+	_ahs
+			.push(function() {
+				_mvq.push( [ '$logConversion' ]);
+				var mvl = document.createElement('script');
+				mvl.type = 'text/javascript';
+				mvl.async = true;
+				mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js'
+						: 'http://static.mediav.com/mvl.js');
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(mvl, s);
+			});
+
+	var _trc_ = {}, _prm_ = {};
+	/* BAIDU Statistics */
+	_ahs.push(function() {
+		// 默认
+			var bd = document.createElement('script');
+			bd.type = 'text/javascript';
+			bd.async = true;
+			bd.src = ('https:' == document.location.protocol ? 'https://hm.baidu.com/h.js?6206c0fb3ed4e6feb904c97664c91527'
+					: 'http://hm.baidu.com/h.js?6206c0fb3ed4e6feb904c97664c91527');
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(bd, s);
+
+			// 百姓网充值统计
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.async = true;
+				hm.src = "//hm.baidu.com/hm.js?d967f933b496a0741b57f403503a1d89";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+
+			//var _trc_ = _trc_ || {}, _prm_ = _prm_ || {};
+			(function() {
+				var e = document.createElement("script");
+				e.async = true;
+				e.src = "//trac.imarvelous.cn/tracking.js?ffb076727652c0abfb19096cb2b36a1c";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(e, s);
+			})();
+		});
+
+	var _paq = _paq || [];
+	/* Aihuishou Statistics */
+	_ahs.push(function() {
+		_paq
+				.push( [ "setDomains",
+						[ "*.www.aihuishou.com", "*.aihuishou.com" ] ]);
+		_paq.push( [ 'trackPageView' ]);
+		_paq.push( [ 'enableLinkTracking' ]);
+		(function() {
+			var u = "//tk.aihuishou.com/";
+			_paq.push( [ 'setTrackerUrl', u + 'piwik.php' ]);
+			_paq.push( [ 'setSiteId', 1 ]);
+			var d = document, g = d.createElement('script'), s = d
+					.getElementsByTagName('script')[0];
+			g.type = 'text/javascript';
+			g.async = true;
+			g.defer = true;
+			g.src = u + 'piwik.js';
+			s.parentNode.insertBefore(g, s);
+		})();
+	});
+</script>
+		<noscript>
+			<p>
+				<img src="//tk.aihuishou.com/piwik.php?idsite=1" style="border: 0;"
+					alt="" />
+			</p>
+		</noscript>
+
+		<script type="text/javascript">
+	_ahs.push( [ function() {
+		var userId = document.getElementById("userId").value;
+		var userIsLogin = document.getElementById("userIsLogin").value;
+		var ahs_um = document.getElementById("ahs_um").value;
+		NTKF_PARAM = {
+			siteid : "kf_9741", //企业ID，必填，取值参见文档开始表
+			settingid : "kf_9741_1428479892305", //缺省客服配置ID，必填，取值参见文档开始表
+			uid : userId.toString(), //用户ID,未登录可以为空
+			uname : ahs_um.toString(), //用户名，未登录可以为空
+			isvip : userIsLogin.toString(), //是否为vip用户
+			userlevel : (userId == 0 ? "未登录用户" : "已登录用户")
+		//网站自定义会员级别
+		};
+	}, "//dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9741" ]);
+</script>
+		<script type="text/javascript">
+	_ahs.push(function() {
+		var cart_refresh = function() {
+			//$.when(ahs.ajax({
+			//    method: 'cart.tip',
+			//    dataType: 'html'
+			//}, true)).done(function (response) {
+			//    $('#recycle-cart').find('#recycle-cart-pop').html(response);
+			//});
+			$.when(ahs.ajax( {
+				method : 'cart.CartCount',
+				dataType : 'json'
+			}, true)).done(function(response) {
+				var $recycleCount = $('#recycle-cart').find('.highlight');
+				var oldCount = parseInt($recycleCount.text());
+
+				if (oldCount != response.Count) {
+					$recycleCount.html(response.Count);
+					$('#recycle-cart').addClass('updated');
+				}
+			});
+		};
+		cart_refresh();
+
+		var cart_timmer = setInterval(cart_refresh, 1000 * 60);
+
+		ahs.cart = ahs.cart || {};
+		ahs.cart.refresh = cart_refresh;
+	});
+</script>
+
+	</body>
+
+</html>

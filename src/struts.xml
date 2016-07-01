@@ -103,7 +103,7 @@
 			<result name="success">/manager/article.jsp</result>
 		</action>
 
-		<action name="newsDetaile" class="newsAction" method="newsDetaile">
+		<action name="newsDetaileManager" class="newsAction" method="newsDetaile">
 			<result name="success">/manager/news_detail.jsp</result>
 		</action>
 
@@ -203,6 +203,21 @@
 		<action name="loginInAjax" class="userInfoAction" method="loginInAjax">
 			<result name="jsonres" type="json"></result>
 		</action>
+
+	</package>
+
+	<package name="public" extends="struts-default" namespace="/">
+		<action name="newsDetaile" class="newsAction" method="newsDetaile">
+			<result name="success">/public_news_detail.jsp</result>
+		</action>
+
+		<action name="publicLogin" class="userInfoAction" method="publicLogin">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="publicRegister" class="userInfoAction" method="publicRegister">
+			<result name="success" type="redirectAction">publicLogin</result>
+		</action>
+
 
 	</package>
 
