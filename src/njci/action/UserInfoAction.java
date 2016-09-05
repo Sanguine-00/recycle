@@ -70,10 +70,7 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 
 	private UserInfoService userInfoService;
 
-	private RoleInfoService roleInfoService;
-
 	public void setRoleInfoService(RoleInfoService roleInfoService) {
-		this.roleInfoService = roleInfoService;
 	}
 
 	public void setUserInfoService(UserInfoService userInfoService) {
@@ -184,7 +181,7 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 			logo = user.getLogo();
 			phone = user.getPhone();
 			address = user.getAddress();
-			roleInfoId = user.getRoleInfo().getId();
+			roleInfoId = user.getRole();
 		} else {
 			name = null;
 			logo = null;
@@ -219,7 +216,7 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 				userInfo.setAddress(address);
 				userInfo.setPhone(phone);
 				userInfo.setPassword(EncryptUtil.md5Crypt(password));
-				userInfo.setRoleInfo(roleInfoService.getById(roleInfoId));
+				userInfo.setRole(2);
 				userInfoService.save(userInfo);
 				if (id == -2) {
 					return LOGIN;
@@ -231,35 +228,6 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 			return ERROR;
 		}
 
-		return SUCCESS;
-	}
-
-	public String publicLogin() {
-
-		userInfoService.getUserByNameAndPwd(name, password);
-
-		System.out.println(name + "---" + password);
-		UserInfo userInfo = userInfoService.login(name, password);
-		if (userInfo != null) {
-			if (userInfo.getId() == 1) {
-				ActionContext.getContext().getSession().put("login", userInfo);
-				System.out.println("userInfo.getName()" + userInfo.getName());
-				session.put("loginUser", userInfo);
-				return SUCCESS;
-			} else {
-				return ERROR;
-			}
-		} else {
-			return ERROR;
-		}
-
-	}
-
-	public String publicRegister() {
-		UserInfo userInfo = new UserInfo();
-		userInfo.setName(name);
-		userInfo.setPassword(EncryptUtil.md5Crypt(password));
-		userInfo.setRoleInfo(roleInfoService.getById(1));
 		return SUCCESS;
 	}
 

@@ -7,20 +7,23 @@
 <hibernate-configuration>
 
 <session-factory>
-	<property name="dialect">
-		org.hibernate.dialect.MySQLDialect
-	</property>
 	<!--<property name="connection.url">
 		jdbc:mysql://localhost:3306/recycle
-	</property>
-	<property name="connection.username">root</property>
-	<property name="connection.password">000000</property>
-	<property name="connection.driver_class">
+		</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">000000</property>
+		<property name="connection.driver_class">
 		com.mysql.jdbc.Driver
-	</property>
-	--><property name="myeclipse.connection.profile">recycle2016</property>
+		</property>
+	-->
 	<property name="show_sql">true</property>
 	<property name="format_sql">true</property>
+	<property name="myeclipse.connection.profile">recycle2016</property>
+	<property name="connection.url">jdbc:mysql://localhost:3306/recycle</property>
+	<property name="connection.username">recycle</property>
+	<property name="connection.password">recycle</property>
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 	<mapping resource="njci/bean/OrderInfo.hbm.xml" />
 	<mapping resource="njci/bean/News.hbm.xml" />
 	<mapping resource="njci/bean/TypeInfo.hbm.xml" />
@@ -31,6 +34,7 @@
 	<mapping resource="njci/bean/BrandInfo.hbm.xml" />
 	<mapping resource="njci/bean/PublicInfo.hbm.xml" />
 	<mapping resource="njci/bean/NewsType.hbm.xml" />
+	<mapping resource="njci/bean/PackageInfo.hbm.xml" />
 
 </session-factory>
 

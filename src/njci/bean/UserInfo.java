@@ -15,7 +15,8 @@ public class UserInfo implements java.io.Serializable {
 	 */
 	private static final long serialVersionUID = 3424164389447787537L;
 	private Integer id;
-	private RoleInfo roleInfo;
+	private String loginId;
+	private Integer role;
 	private String name;
 	private String password;
 	private String phone;
@@ -27,6 +28,20 @@ public class UserInfo implements java.io.Serializable {
 	/** default constructor */
 	public UserInfo() {
 	}
+	
+	
+
+	public String getLoginId() {
+		return loginId;
+	}
+
+
+
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
+	}
+
+
 
 	/** minimal constructor */
 	public UserInfo(String name, String password) {
@@ -35,9 +50,9 @@ public class UserInfo implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public UserInfo(RoleInfo roleInfo, String name, String password,
+	public UserInfo(Integer role, String name, String password,
 			String phone, String logo, String address) {
-		this.roleInfo = roleInfo;
+		this.role = role;
 		this.name = name;
 		this.password = password;
 		this.phone = phone;
@@ -55,12 +70,12 @@ public class UserInfo implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public RoleInfo getRoleInfo() {
-		return this.roleInfo;
+	public Integer getRole() {
+		return this.role;
 	}
 
-	public void setRoleInfo(RoleInfo roleInfo) {
-		this.roleInfo = roleInfo;
+	public void setRole(Integer role) {
+		this.role = role;
 	}
 
 	public String getName() {
