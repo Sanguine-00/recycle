@@ -54,4 +54,9 @@ public class UserInfoServiceImpl extends HibernateDaoSupport implements
 		
 	}
 
+	public UserInfo appLogin(String loginId, String pwd) {
+		// TODO Auto-generated method stub
+		return userInfoDao.getUserByLoginIdAndPwd(loginId, pwd);
+	}
+
 }

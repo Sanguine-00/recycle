@@ -181,6 +181,13 @@
 
 	</bean>
 
+	<bean id="packageInfoAction" class="njci.action.PackageInfoAction">
+		<property name="packageInfoService" ref="packageInfoService">
+
+		</property>
+
+	</bean>
+
 	<!-- 上传的action    不用注入 -->
 	<bean id="fileUploadAction" class="njci.action.FileUploadAction">
 

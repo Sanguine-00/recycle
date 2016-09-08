@@ -8,6 +8,8 @@ public interface UserInfoDao {
 	public Integer save(UserInfo user);
 
 	public UserInfo getUserByNameAndPwd(String name, String pwd);
+	
+	public UserInfo getUserByLoginIdAndPwd(String loginId, String pwd);
 
 	public UserInfo update(UserInfo userInfo);
 	

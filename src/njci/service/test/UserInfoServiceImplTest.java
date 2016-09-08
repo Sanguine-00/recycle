@@ -36,5 +36,10 @@ public class UserInfoServiceImplTest {
 		Integer expected = 3;
 		Assert.assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testAppLogin(){
+		userInfoService.appLogin("0000125", "111111");
+	}
 
 }

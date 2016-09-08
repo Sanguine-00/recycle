@@ -10,6 +10,8 @@ public interface UserInfoService {
 
 	// ע��
 	public Integer save(UserInfo user);
+	
+	public UserInfo appLogin(String loginId, String pwd);
 
 	// ��½
 	public UserInfo getUserByNameAndPwd(String name, String pwd);

@@ -46,6 +46,7 @@ public class NewsAction extends ActionSupport implements SessionAware {
 
 	private NewsService newsService;
 	private NewsTypeService newsTypeService;
+	@SuppressWarnings("unused")
 	private UserInfoService userInfoService;
 
 	public void setUserInfoService(UserInfoService userInfoService) {

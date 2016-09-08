@@ -221,4 +221,24 @@
 
 	</package>
 
+
+	<package name="packageInfo" extends="json-default" namespace="/">
+		<action name="getBySn" class="packageInfoAction" method="getBySn">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="insertPackageInfo" class="packageInfoAction"
+			method="insert">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="delivery" class="packageInfoAction" method="delivery">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="sign" class="packageInfoAction" method="sign">
+			<result name="jsonres" type="json" />
+		</action>
+
+		<action name="appLogin" class="userInfoAction" method="appLogin">
+			<result name="jsonres" type="json" />
+		</action>
+	</package>
 </struts>

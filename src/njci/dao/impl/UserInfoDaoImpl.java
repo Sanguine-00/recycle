@@ -62,5 +62,22 @@ public class UserInfoDaoImpl extends HibernateDaoSupport implements UserInfoDao 
 		getHibernateTemplate().delete(userInfo);
 
 	}
+	
+	@SuppressWarnings("unchecked")
+	public UserInfo getUserByLoginIdAndPwd(String loginId, String pwd) {
+		// TODO Auto-generated method stub
+		String hql = "from UserInfo u where u.loginId = :loginId and u.password = :pwd";
+		String[] params = { "loginId", "pwd" };
+		Object[] values = { loginId, EncryptUtil.md5Crypt(pwd) };
+		List<UserInfo> list = getHibernateTemplate().findByNamedParam(hql,
+				params, values);
+		UserInfo user = null;
+		if (list != null && list.size() >= 0) {
+			user = list.get(0);
+			System.out.println(user.getName());
+		}
+
+		return user;
+	}
 
 }

@@ -19,6 +19,7 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 
 	private RoleInfo roleInfo;
 	private String name;
+	private String loginId;
 	private String password;
 	private String phone;
 	private String logo;
@@ -29,6 +30,14 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 
 	public Integer getRoleInfoId() {
 		return roleInfoId;
+	}
+
+	public String getLoginId() {
+		return loginId;
+	}
+
+	public void setLoginId(String loginId) {
+		this.loginId = loginId;
 	}
 
 	public void setRoleInfoId(Integer roleInfoId) {
@@ -145,6 +154,27 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 			session.put("messageInLogin.html", "登陆失败！");
 			return ERROR;
 		}
+	}
+
+	public String appLogin() {
+		UserInfo userInfo = userInfoService.appLogin(loginId, password);
+		if (userInfo != null) {
+			try {
+				JsonUtil.jsonFromObject(userInfo);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				try {
+					JsonUtil.jsonFromObject(ERROR);
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		}
+
+		return null;
+
 	}
 
 	public String logout() {
