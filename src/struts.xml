@@ -36,191 +36,6 @@
 		</action>
 	</package>
 
-	<package name="userInfo" extends="struts-default" namespace="/">
-		<action name="findAllUsers" method="findAllUsers" class="userInfoAction">
-			<result name="success">/manager//manager.jsp</result>
-		</action>
-
-		<action name="editUserInfo" method="editUserInfo" class="userInfoAction">
-			<result name="success">/manager//addmanager.jsp</result>
-		</action>
-
-		<action name="deleteUserById" method="deleteByUserId" class="userInfoAction">
-			<result name="success" type="redirectAction">findAllUsers</result>
-		</action>
-
-
-
-		<action name="editUserResult" method="editUserResult" class="userInfoAction">
-			<result name="success" type="redirectAction">findAllUsers</result>
-			<result name="error">/manager//addmanager.jsp</result>
-			<result name="login" type="redirectAction">login</result>
-		</action>
-
-		<action name="logout" method="logout" class="userInfoAction">
-			<result name="success">/manager/login.jsp</result>
-		</action>
-	</package>
-
-	<package name="newsType" extends="struts-default" namespace="/">
-
-		<action name="findAllNewsType" method="findAllNewsType" class="newsTypeAction">
-			<result name="success">/manager/article_category.jsp </result>
-		</action>
-		<action name="saveNewsType" method="save" class="newsTypeAction">
-			<result name="success" type="redirectAction">
-				findAllNewsType
-			</result>
-		</action>
-
-		<action name="editNewsType" method="editUserInfo" class="newsTypeAction">
-			<result name="success">/manager/add_article_category.jsp</result>
-		</action>
-
-		<action name="deleteNewsType" method="deleteByUserId" class="newsTypeAction">
-			<result name="success" type="redirectAction">
-				findAllNewsType
-			</result>
-		</action>
-	</package>
-
-	<package name="news" extends="struts-default" namespace="/">
-		<action name="findAllNews" class="newsAction" method="findAllNews">
-			<result name="success">/manager/article.jsp</result>
-		</action>
-		<action name="editNewsById" class="newsAction" method="editNewsById">
-			<result name="success">/manager/addarticle.jsp</result>
-		</action>
-
-		<action name="deleteNewsById" class="newsAction" method="deleteNewsById">
-			<result name="success" type="redirectAction">findAllNews</result>
-		</action>
-		<action name="saveUpdatedNews" class="newsAction" method="saveUpdatedNews">
-			<result name="success" type="redirectAction">findAllNews</result>
-		</action>
-
-		<action name="findNewsByTypeId" class="newsAction" method="findNewsByTypeId">
-			<result name="success">/manager/article.jsp</result>
-		</action>
-
-		<action name="newsDetaileManager" class="newsAction" method="newsDetaile">
-			<result name="success">/manager/news_detail.jsp</result>
-		</action>
-
-
-	</package>
-
-	<package name="typeInfo" extends="struts-default" namespace="/">
-		<action name="findAllTypeInfo" class="typeInfoAction" method="findAllTypeInfo">
-			<result name="success">/manager/product_category.jsp</result>
-		</action>
-		<action name="editTypeInfoById" class="typeInfoAction" method="editTypeInfoById">
-			<result name="success">/manager/add_product_category.jsp</result>
-		</action>
-		<action name="saveUpdatedTypeInfo" class="typeInfoAction"
-			method="saveUpdatedTypeInfo">
-			<result name="success" type="redirectAction">findAllTypeInfo</result>
-		</action>
-		<action name="deleteTypeInfoById" class="typeInfoAction"
-			method="deleteTypeInfoById">
-			<result name="success" type="redirectAction">findAllTypeInfo</result>
-		</action>
-
-	</package>
-	<package name="brandInfo" extends="struts-default" namespace="/">
-		<action name="findAllBrandInfo" class="brandInfoAction" method="findAllBrandInfo">
-			<result name="success">/manager/product_brand.jsp</result>
-		</action>
-		<action name="editBrandInfoById" class="brandInfoAction"
-			method="editNewsById">
-			<result name="success">/manager/add_brand.jsp</result>
-		</action>
-		<action name="saveUpdatedBrandInfo" class="brandInfoAction"
-			method="saveUpdatedBrandInfo">
-			<result name="success" type="redirectAction">findByTypeInfoId</result>
-		</action>
-		<action name="deleteBrandInfoById" class="brandInfoAction"
-			method="deleteBrandInfoById">
-			<result name="success" type="redirectAction">findByTypeInfoId</result>
-		</action>
-		<action name="findByTypeInfoId" class="brandInfoAction" method="findByTypeInfoId">
-			<result name="success">/manager/product_brand.jsp</result>
-		</action>
-
-
-	</package>
-	<package name="productInfo" extends="struts-default" namespace="/">
-
-		<action name="findAllProductInfo" class="productInfoAction"
-			method="findAllProductInfo">
-			<result name="success">/manager/product.jsp</result>
-		</action>
-		<action name="editProductById" class="productInfoAction"
-			method="editProductById">
-			<result name="success">/manager/addproduct.jsp</result>
-		</action>
-		<action name="saveUpdatedProductInfo" class="productInfoAction"
-			method="saveUpdatedProductInfo">
-
-			<result name="success" type="redirectAction">findAllProductInfo</result>
-		</action>
-		<action name="deleteProductInfoById" class="productInfoAction"
-			method="deleteProductInfoById">
-			<result name="success" type="redirectAction">findAllProductInfo</result>
-		</action>
-		<action name="findByUserInfoIdAndBrandInfoId" class="productInfoAction"
-			method="findByUserInfoIdAndBrandInfoId">
-			<result name="success">/manager/product.jsp</result>
-		</action>
-
-
-	</package>
-
-
-
-	<!-- 异步调用专用包 -->
-	<package name="jsonPacket" extends="json-default" namespace="/">
-
-		<action name="findAllTypeInfoInBrandInfo" class="brandInfoAction"
-			method="findAllTypeInfo">
-			<result name="jsonres" type="json" />
-		</action>
-
-		<action name="uploadPic" class="fileUploadAction" method="uploadPic">
-			<result name="jsonres" type="json" />
-		</action>
-
-		<action name="findAllUserInfoInProductInfo" class="productInfoAction"
-			method="findAllUserInfo">
-			<result name="jsonres" type="json" />
-		</action>
-		<action name="findAllBrandInfoInProductInfo" class="productInfoAction"
-			method="findAllBrandInfo">
-			<result name="jsonres" type="json" />
-		</action>
-
-
-		<action name="loginInAjax" class="userInfoAction" method="loginInAjax">
-			<result name="jsonres" type="json"></result>
-		</action>
-
-	</package>
-
-	<package name="public" extends="struts-default" namespace="/">
-		<action name="newsDetaile" class="newsAction" method="newsDetaile">
-			<result name="success">/public_news_detail.jsp</result>
-		</action>
-
-		<action name="publicLogin" class="userInfoAction" method="publicLogin">
-			<result name="success">/index.jsp</result>
-		</action>
-		<action name="publicRegister" class="userInfoAction" method="publicRegister">
-			<result name="success" type="redirectAction">publicLogin</result>
-		</action>
-
-
-	</package>
-
 
 	<package name="packageInfo" extends="json-default" namespace="/">
 		<action name="getBySn" class="packageInfoAction" method="getBySn">
@@ -238,6 +53,76 @@
 		</action>
 
 		<action name="appLogin" class="userInfoAction" method="appLogin">
+			<result name="jsonres" type="json" />
+		</action>
+
+		<action name="receiveByDate" class="countAction" method="receiveByDate">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="deliveryByDate" class="countAction" method="deliveryByDate">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="signByDate" class="countAction" method="signByDate">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="receiveByWeeks" class="countAction" method="receiveByWeeks">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="deliveryByWeeks" class="countAction" method="deliveryByWeeks">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="signByWeeks" class="countAction" method="signByWeeks">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="receiveByMonths" class="countAction" method="receiveByMonths">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="deliveryByMonths" class="countAction" method="deliveryByMonths">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="signByMonths" class="countAction" method="signByMonths">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="receiveByYears" class="countAction" method="receiveByYears">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="deliveryByYears" class="countAction" method="deliveryByYears">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="signByYears" class="countAction" method="signByYears">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getReceiveByWeekAndLoginId" class="countAction" method="getReceiveByWeekAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getReceiveByMonthAndLoginId" class="countAction" method="getReceiveByMonthAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getDeliveryByWeekAndLoginId" class="countAction" method="getDeliveryByWeekAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getDeliveryByMonthAndLoginId" class="countAction" method="getDeliveryByMonthAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getSignByWeekAndLoginId" class="countAction" method="getSignByWeekAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getSignByMonthAndLoginId" class="countAction" method="getSignByMonthAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getReceiveByDateAndLoginId" class="packageInfoAction"
+			method="getReceiveByDateAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getDeliveryByDateAndLoginId" class="packageInfoAction"
+			method="getDeliveryByDateAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="getSignByDateAndLoginId" class="packageInfoAction"
+			method="getSignByDateAndLoginId">
+			<result name="jsonres" type="json" />
+		</action>
+		<action name="appUpdate" class="userInfoAction" method="appUpdate">
 			<result name="jsonres" type="json" />
 		</action>
 	</package>

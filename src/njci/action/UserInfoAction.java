@@ -1,5 +1,6 @@
 package njci.action;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -156,8 +157,32 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 		}
 	}
 
+	Map<String, String> map = new HashMap<String, String>();
+
 	public String appLogin() {
-		UserInfo userInfo = userInfoService.appLogin(loginId, password);
+		if (userInfoService.getUserByLoginId(loginId) == null) {
+			try {
+				map.put("result", "error:user not exists");
+				JsonUtil.jsonFromMapString(map);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		UserInfo userInfo = null;
+		try {
+			userInfo = userInfoService.appLogin(loginId, password);
+		} catch (Exception e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+			map.put("result", "exception :");
+			try {
+				JsonUtil.jsonFromMapString(map);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		if (userInfo != null) {
 			try {
 				JsonUtil.jsonFromObject(userInfo);
@@ -165,16 +190,55 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				try {
-					JsonUtil.jsonFromObject(ERROR);
+					map.put("result", "exception :");
+					JsonUtil.jsonFromMapString(map);
 				} catch (Exception e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 			}
+		} else {
+			try {
+				map.put("result", "error:password");
+				JsonUtil.jsonFromMapString(map);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 		return null;
 
+	}
+
+	public String appUpdate() {
+		UserInfo userInfo = userInfoService.getUserByLoginId(getLoginId());
+		try {
+			if (getName() != null) {
+				userInfo.setName(getName());
+			}
+			if (getPassword() != null) {
+				userInfo.setPassword(getPassword());
+			}
+			if (getPhone() != null) {
+				userInfo.setPhone(getPhone());
+			}
+			userInfoService.update(userInfo);
+			map.put("result", "success :");
+			JsonUtil.jsonFromMapString(map);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			map.put("result", "exception :");
+			try {
+				JsonUtil.jsonFromMapString(map);
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+		}
+
+		return null;
 	}
 
 	public String logout() {

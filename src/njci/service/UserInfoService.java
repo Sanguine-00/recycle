@@ -23,6 +23,8 @@ public interface UserInfoService {
 	public List<UserInfo> findAllUsers();
 
 	public UserInfo getUserById(Integer id);
+	
+	public UserInfo getUserByLoginId(String loginId);
 
 	public void delete(UserInfo userInfo);
 

@@ -15,9 +15,10 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 public class JsonUtil {
 	// ת��ΪJson��ʽ
 	@SuppressWarnings("unchecked")
-	public static void jsonFromList(List list, Integer total) throws Exception {
+	public static void jsonFromList(List list) throws Exception {
 		HttpServletResponse response = ServletActionContext.getResponse();
 		response.setContentType("application/json;charset=utf-8");
+		JSON.DEFFAULT_DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
 		// JSONObject jobj = new JSONObject();// newһ��JSON
 		// jobj.accumulate("total", total);// total���һ���ж������

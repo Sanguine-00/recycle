@@ -188,7 +188,7 @@ public class BrandInfoAction extends ActionSupport {
 	public String findAllTypeInfo() {
 		typeInfoList = typeInfoService.findAllNews();
 		try {
-			JsonUtil.jsonFromList(typeInfoList, typeInfoList.size());
+			JsonUtil.jsonFromList(typeInfoList);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

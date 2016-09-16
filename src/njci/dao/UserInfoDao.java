@@ -19,5 +19,7 @@ public interface UserInfoDao {
 	
 	public UserInfo getUserById(Integer id);
 	
+	public UserInfo getUserByLoginId(String loginId);
+	
 	public List<UserInfo> findAllUsers();
 }

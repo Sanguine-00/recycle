@@ -13,7 +13,7 @@
 	default-autowire="byName">
 
 
-	<context:property-placeholder location="classpath:jdbc.local.properties" />
+	<context:property-placeholder location="classpath:jdbc.remote.properties" />
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -62,40 +62,6 @@
 
 	</bean>
 
-	<bean id="roleInfoDao" class="njci.dao.impl.RoleInfoDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-
-	</bean>
-
-	<bean id="newsTypeDao" class="njci.dao.impl.NewsTypeDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-
-	<bean id="newsDao" class="njci.dao.impl.NewsDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-
-	<bean id="typeInfoDao" class="njci.dao.impl.TypeInfoDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-	<bean id="brandInfoDao" class="njci.dao.impl.BrandInfoDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
-	<bean id="productInfoDao" class="njci.dao.impl.ProductInfoDaoImpl">
-		<property name="sessionFactory">
-			<ref bean="sessionFactory" />
-		</property>
-	</bean>
 
 	<bean id="packageInfoDao" class="njci.dao.impl.PackageInfoDaoImpl">
 
@@ -105,36 +71,22 @@
 
 	</bean>
 
+	<bean id="countDao" class="njci.dao.impl.CountDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+
+	</bean>
+
+	<bean id="searchDao" class="njci.dao.impl.SearchDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
 
 	<!-- service层 -->
 
 	<bean id="userInfoService" class="njci.service.impl.UserInfoServiceImpl">
 		<property name="userInfoDao" ref="userInfoDao"></property>
 	</bean>
-	<bean id="roleInfoService" class="njci.service.impl.RoleInfoServiceImpl">
-		<property name="roleInfoDao" ref="roleInfoDao"></property>
-	</bean>
 
-	<bean id="newsTypeService" class="njci.service.impl.NewsTypeServiceImpl">
-		<property name="newsTypeDao" ref="newsTypeDao"></property>
-	</bean>
-
-	<bean id="newsService" class="njci.service.impl.NewsServiceImpl">
-		<property name="newsDao" ref="newsDao"></property>
-	</bean>
-
-	<bean id="typeInfoService" class="njci.service.impl.TypeInfoServiceImpl">
-		<property name="typeInfoDao" ref="typeInfoDao"></property>
-	</bean>
-
-	<bean id="brandInfoService" class="njci.service.impl.BrandInfoServiceImpl">
-		<property name="brandInfoDao" ref="brandInfoDao"></property>
-	</bean>
-
-	<bean id="productInfoService" class="njci.service.impl.ProductInfoServiceImpl">
-		<property name="productInfoDao" ref="productInfoDao"></property>
-
-	</bean>
 
 	<bean id="packageInfoService" class="njci.service.impl.PackageInfoServiceImpl">
 
@@ -144,47 +96,35 @@
 
 	</bean>
 
+	<bean id="countService" class="njci.service.impl.CountServiceImpl">
+		<property name="countDao" ref="countDao"></property>
+
+	</bean>
+
+	<bean id="searchService" class="njci.service.impl.SearchServiceImpl">
+		<property name="searchDao" ref="searchDao"></property>
+	</bean>
+
 
 
 	<!-- action层 -->
 	<bean id="userInfoAction" class="njci.action.UserInfoAction">
 		<property name="userInfoService" ref="userInfoService"></property>
-		<property name="roleInfoService" ref="roleInfoService"></property>
 	</bean>
 
-	<bean id="newsTypeAction" class="njci.action.NewsTypeAction">
-		<property name="newsTypeService" ref="newsTypeService"></property>
-	</bean>
-	<bean id="newsAction" class="njci.action.NewsAction">
-		<property name="newsService" ref="newsService"></property>
-		<property name="newsTypeService" ref="newsTypeService"></property>
 
-	</bean>
-
-	<bean id="typeInfoAction" class="njci.action.TypeInfoAction">
-		<property name="typeInfoService" ref="typeInfoService"></property>
-	</bean>
-
-	<bean id="brandInfoAction" class="njci.action.BrandInfoAction">
-		<property name="brandInfoService" ref="brandInfoService">
-		</property>
-		<property name="typeInfoService" ref="typeInfoService"></property>
-
-
-	</bean>
-
-	<bean id="productInfoAction" class="njci.action.ProductInfoAction">
-
-		<property name="productInfoService" ref="productInfoService"></property>
-		<property name="brandInfoService" ref="brandInfoService"></property>
-		<property name="userInfoService" ref="userInfoService"></property>
-
-	</bean>
 
 	<bean id="packageInfoAction" class="njci.action.PackageInfoAction">
 		<property name="packageInfoService" ref="packageInfoService">
 
 		</property>
+		<property name="searchService" ref="searchService"></property>
+		<property name="countService" ref="countService"></property>
+
+	</bean>
+
+	<bean id="countAction" class="njci.action.CountAction">
+		<property name="countService" ref="countService"></property>
 
 	</bean>
 
@@ -193,10 +133,4 @@
 
 	</bean>
 
-
-	<!--
-		<import resource="applicationContext-dao.xml" /> <import
-		resource="applicationContext-service.xml" /> <import
-		resource="applicationContext-action.xml" />
-	-->
 </beans>

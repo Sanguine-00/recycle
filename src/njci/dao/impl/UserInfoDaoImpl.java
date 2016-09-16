@@ -19,7 +19,7 @@ public class UserInfoDaoImpl extends HibernateDaoSupport implements UserInfoDao 
 		List<UserInfo> list = getHibernateTemplate().findByNamedParam(hql,
 				params, values);
 		UserInfo user = null;
-		if (list != null && list.size() >= 0) {
+		if (list != null && list.size() > 0) {
 			user = list.get(0);
 			System.out.println(user.getName());
 		}
@@ -62,7 +62,7 @@ public class UserInfoDaoImpl extends HibernateDaoSupport implements UserInfoDao 
 		getHibernateTemplate().delete(userInfo);
 
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	public UserInfo getUserByLoginIdAndPwd(String loginId, String pwd) {
 		// TODO Auto-generated method stub
@@ -72,7 +72,23 @@ public class UserInfoDaoImpl extends HibernateDaoSupport implements UserInfoDao 
 		List<UserInfo> list = getHibernateTemplate().findByNamedParam(hql,
 				params, values);
 		UserInfo user = null;
-		if (list != null && list.size() >= 0) {
+		if (list != null && list.size() > 0) {
+			user = list.get(0);
+			System.out.println(user.getName());
+		}
+
+		return user;
+	}
+
+	@SuppressWarnings("unchecked")
+	public UserInfo getUserByLoginId(String loginId) {
+		String hql = "from UserInfo u where u.loginId = :loginId";
+		String[] params = { "loginId" };
+		Object[] values = { loginId };
+		List<UserInfo> list = getHibernateTemplate().findByNamedParam(hql,
+				params, values);
+		UserInfo user = null;
+		if (list != null && list.size() > 0) {
 			user = list.get(0);
 			System.out.println(user.getName());
 		}

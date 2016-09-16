@@ -198,7 +198,7 @@ public class ProductInfoAction extends ActionSupport {
 	public String findAllBrandInfo() {
 		brandInfoList = brandInfoService.findAllNews();
 		try {
-			JsonUtil.jsonFromList(brandInfoList, brandInfoList.size());
+			JsonUtil.jsonFromList(brandInfoList);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -210,7 +210,7 @@ public class ProductInfoAction extends ActionSupport {
 	public String findAllUserInfo() {
 		userInfoList = userInfoService.findAllUsers();
 		try {
-			JsonUtil.jsonFromList(userInfoList, userInfoList.size());
+			JsonUtil.jsonFromList(userInfoList);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

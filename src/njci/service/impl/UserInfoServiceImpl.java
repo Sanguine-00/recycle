@@ -51,12 +51,17 @@ public class UserInfoServiceImpl extends HibernateDaoSupport implements
 
 	public void delete(UserInfo userInfo) {
 		userInfoDao.delete(userInfo);
-		
+
 	}
 
 	public UserInfo appLogin(String loginId, String pwd) {
 		// TODO Auto-generated method stub
 		return userInfoDao.getUserByLoginIdAndPwd(loginId, pwd);
+	}
+
+	public UserInfo getUserByLoginId(String loginId) {
+		// TODO Auto-generated method stub
+		return userInfoDao.getUserByLoginId(loginId);
 	}
 
 }
