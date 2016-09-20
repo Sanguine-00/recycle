@@ -213,12 +213,14 @@ public class UserInfoAction extends ActionSupport implements SessionAware {
 
 	public String appUpdate() {
 		UserInfo userInfo = userInfoService.getUserByLoginId(getLoginId());
+		System.out.println(name+"=name");
+		System.out.println(phone+"=phone");
 		try {
 			if (getName() != null) {
 				userInfo.setName(getName());
 			}
 			if (getPassword() != null) {
-				userInfo.setPassword(getPassword());
+				userInfo.setPassword(EncryptUtil.md5Crypt(getPassword()));
 			}
 			if (getPhone() != null) {
 				userInfo.setPhone(getPhone());
